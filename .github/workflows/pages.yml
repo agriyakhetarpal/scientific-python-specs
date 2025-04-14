@@ -25,6 +25,9 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@8d9ed9ac5c53483de85588cdf95a591a75ab9f55 # v5.5.0
 
+      - name: Install Hugo
+        run: pip install hugo
+
       - name: Set up dart-sass
         run: |
           export DART_SASS_VERSION="1.83.4"
