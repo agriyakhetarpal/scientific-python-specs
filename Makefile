@@ -22,8 +22,8 @@ preview-serve: prepare-preview
 # Build website to dist/
 preview-build: prepare-preview
 	cd $(PREVIEW_DEST) && make html
-	mkdir -p $(OUTPUT_DIR)
-	cp -r $(PREVIEW_DEST)/public/* $(OUTPUT_DIR)/
+	mkdir -p dist
+	cp -r $(PREVIEW_DEST)/public dist/
 
 clean:
 	rm -rf $(PREVIEW_DEST)
