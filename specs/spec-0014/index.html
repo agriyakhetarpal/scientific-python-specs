@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" data-colorscheme="auto" >
   <head>
-    <!-- Generated 2025-04-14 20:45:58 UTC -->
+    <!-- Generated 2025-04-14 22:43:34 UTC -->
     <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -64,7 +64,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:image" content="https://scientific-python.org/images/logo.svg">
   <meta name="twitter:title" content="SPEC 14 — Interactive Documentation">
-  <meta name="twitter:description" content="Description# A common pain point for new users coming to Scientific Python projects—particularly projects containing compiled code—has been their difficulty of installation, with historic package management troubles arising as a by-product of Python’s strong capabilities for wrapping low-level languages such as C, C&#43;&#43;, Fortran, and Rust. While the situation has improved with enhancements across the Python package management ecosystem, setting up a working Python environment can still be quite difficult for beginners. Even for more advanced Python programmers, it can take a nontrivial amount of time to correctly install an unfamiliar package.">
+  <meta name="twitter:description" content="Description# A common pain point for new users coming to Scientific Python projects—particularly projects containing compiled code—has been their difficulty of installation, with historic package management troubles arising as a by-product of Python’s strong capabilities for wrapping low-level languages such as C, C&#43;&#43;, Fortran, and Rust. While the situation has improved with enhancements across the Python package management ecosystem, setting up a working Python environment can still be quite difficult for beginners. Even for experienced Python programmers, it can take a nontrivial amount of time to correctly install an unfamiliar package.">
 
   </head>
   <body>
@@ -154,9 +154,9 @@
 <!--
 Briefly and clearly describe the recommendation.
 -->
-<p>A common pain point for new users coming to Scientific Python projects—particularly projects containing compiled code—has been their difficulty of installation, with historic package management troubles arising as a by-product of Python&rsquo;s strong capabilities for wrapping low-level languages such as C, C++, Fortran, and Rust. While the situation has improved with enhancements across the Python package management ecosystem, setting up a working Python environment can still be quite difficult for beginners. Even for more advanced Python programmers, it can take a nontrivial amount of time to correctly install an unfamiliar package.</p>
-<p>In-browser interactive documentation offers users a chance to try out and explore projects without taking effort to install them locally. Even when users are able to install projects, interactive documentation provides a more immersive experience than copying and pasting code snippets into a local REPL, IDE/Editor or Notebook. It can thus offer benefits for beginners and more experienced Python programmers alike.</p>
-<p>This SPEC offers a primer on how Core Projects in the Scientific Python ecosystem can make their documentation interactive. This document primarily focuses on Sphinx-based, HTML documentation workflows for projects with a Python API; however, recommendations are also made for other forms of documentation tooling.</p>
+<p>A common pain point for new users coming to Scientific Python projects—particularly projects containing compiled code—has been their difficulty of installation, with historic package management troubles arising as a by-product of Python&rsquo;s strong capabilities for wrapping low-level languages such as C, C++, Fortran, and Rust. While the situation has improved with enhancements across the Python package management ecosystem, setting up a working Python environment can still be quite difficult for beginners. Even for experienced Python programmers, it can take a nontrivial amount of time to correctly install an unfamiliar package.</p>
+<p>In-browser interactive documentation offers users a chance to try out and explore projects without taking effort to install them locally. Even when users are able to install projects, interactive documentation provides a more immersive experience than copying and pasting code snippets into a local REPL, IDE/editor or Notebook. It can thus offer benefits for beginners and more experienced programmers alike.</p>
+<p>This SPEC offers a primer on how Core Projects in the Scientific Python ecosystem can make their documentation interactive. It primarily focuses on Sphinx-based, HTML documentation workflows for projects with a Python API; however, recommendations are also made for other forms of documentation tooling.</p>
 <h3 id="core-project-endorsement">Core Project Endorsement<a class="headerlink" href="#core-project-endorsement" title="Link to this heading">#</a></h3>
 <!--
 Discuss what it means for a core project to endorse this SPEC.
@@ -229,25 +229,18 @@ intended use-cases, and pseudo-code illustrating its use.
 <h3 id="recommendations">Recommendations<a class="headerlink" href="#recommendations" title="Link to this heading">#</a></h3>
 <p>This SPEC document makes the following recommendations, in order:</p>
 <ol>
-<li>
-<p>Support the WebAssembly platform by adding a CI job</p>
-<p>1.1. How to assess compatibility with WebAssembly</p>
-<p>1.2. What does adding support for WebAssembly mean?</p>
-</li>
-<li>
-<p>Enabling WASM builds for use in interactive documentation</p>
-</li>
-<li>
-<p>Enabling interactive documentation deployments</p>
-<p>3.1. Configuration</p>
-</li>
+<li><a href="#1-support-the-webassembly-platform-by-adding-a-pyodide-ci-job">Support the WebAssembly platform by adding a CI job</a>
+1.1. <a href="#11-how-to-assess-compatibility-with-webassembly">How to assess compatibility with WebAssembly</a>
+1.2. <a href="#12-what-does-adding-support-for-webassembly-look-like">What does adding support for WebAssembly look like?</a></li>
+<li><a href="#2-enabling-wasm-builds-for-use-in-interactive-documentation">Enabling WASM builds for use in interactive documentation</a></li>
+<li><a href="#3-enabling-interactive-documentation-deployments">Enabling interactive documentation deployments</a>
+3.1. <a href="#31-configuration">Configuration</a></li>
 </ol>
 <h4 id="1-support-the-webassembly-platform-by-adding-a-pyodide-ci-job">1. Support the WebAssembly platform by adding a Pyodide CI job<a class="headerlink" href="#1-support-the-webassembly-platform-by-adding-a-pyodide-ci-job" title="Link to this heading">#</a></h4>
-<!-- todo: explore more https://theme.scientific-python.org/shortcodes/ -->
 <div class="admonition note">
   <div class="admonition-title"> Note</div>
   <p>
-    &laquo; note &raquo; while this step is not required for enabling interactive documentation deployments alone, it is recommend to ensure they work properly and ease their maintenance.
+    While this step is not required for enabling interactive documentation deployments alone, it is recommended to ensure that they work properly and ease their maintenance.
   </p>
 </div>
 
@@ -257,8 +250,10 @@ intended use-cases, and pseudo-code illustrating its use.
 <p>There are two major projects currently providing ports of CPython to a WebAssembly runtime through the Emscripten compiler toolchain: Pyodide and emscripten-forge. They are largely compatible with CPython akin to how it runs on a standard Linux machine, albeit with a few differences, limitations, and exceptions:</p>
 <ul>
 <li>The bitness is 32-bit, with 64-bit memory indices left for future iterations of the WebAssembly specification</li>
-<li>CPython is directly compiled to WASM, specifically, the <code>wasm32-unknown-emscripten</code> target triplet, and the Python virtual machine that runs Python programs itself runs inside browsers&rsquo; WebAssembly virtual machine implementations. While the Emscripten compiler toolchain used provides JavaScript glue code that integrates with web-based elements while in the browser; POSIX standard compliance—while generally high—is implemented differently due to the browser’s file system and memory sandboxing features. This means that specific modules from the Python standard library are unavailable and have been removed, and there is a lack of support for the <code>threading</code> and <code>multiprocessing</code> modules. Core Projects relying on parallel programming functionality for example must adapt their code accordingly. This is described in more detail in the Pyodide documentation: <a href="https://pyodide.org/en/stable/usage/wasm-constraints.html">https://pyodide.org/en/stable/usage/wasm-constraints.html</a>.</li>
+<li>CPython is directly compiled to WASM, specifically, the <code>wasm32-unknown-emscripten</code> target triplet, and the Python virtual machine that runs Python programs itself runs inside browsers&rsquo; WebAssembly virtual machine implementations. While the Emscripten compiler toolchain used provides JavaScript glue code that integrates with web-based elements while in the browser; POSIX standard compliance—while generally high—is implemented differently due to the browser’s file system and memory sandboxing features.</li>
+<li>This means that specific modules from the Python standard library are unavailable and have been removed, and there is a lack of support for the <code>threading</code> and <code>multiprocessing</code> modules. Core Projects relying on parallel programming functionality for example must adapt their code accordingly.</li>
 </ul>
+<p>For more details, refer to <a href="https://pyodide.org/en/stable/usage/wasm-constraints.html">the Pyodide documentation on &ldquo;Pyodide Python compatibility&rdquo;</a>.</p>
 <h5 id="12-what-does-adding-support-for-webassembly-look-like">1.2. What does adding support for WebAssembly look like?<a class="headerlink" href="#12-what-does-adding-support-for-webassembly-look-like" title="Link to this heading">#</a></h5>
 <p>First, Core Projects should check if this criterion is satisfied already, as <a href="https://github.com/Quansight-Labs/czi-scientific-python-mgmt/issues/18">many Scientific Python projects are now well-tested for usage and interoperability in a WebAssembly runtime provided by Pyodide and emscripten-forge</a>. This goal&rsquo;s accomplishment amplifies the notion of Scientific Python being runnable in browser-based runtimes.</p>
 <p>Compatibility can be established by implementing a CI job that builds WASM-tagged wheels and runs the test suite with them in a WebAssembly environment provided by the Pyodide distribution: <a href="https://pyodide.org/en/stable/development/building-and-testing-packages.html">https://pyodide.org/en/stable/development/building-and-testing-packages.html</a></p>
@@ -271,19 +266,19 @@ intended use-cases, and pseudo-code illustrating its use.
 <p>subsequently, runs the entire test suite or applicable portions with these wheels</p>
 </li>
 <li>
-<p>Additionally, this SPEC recommends that <a href="https://github.com/pyodide/pyodide/issues/4506">project contacts</a> volunteer themselves as recipe maintainers for their respective packages, so that they can provide help with build or testing issues that may arise when the Pyodide or emscripten-forge maintainers try to upgrade packages.</p>
+<p>Additionally, this SPEC recommends that <a href="https://github.com/pyodide/pyodide/issues/4506">project contacts</a> volunteer as recipe maintainers for the packages they maintain, so that they can provide help with builds or testing issues that may arise when the Pyodide or emscripten-forge maintainers try to upgrade packages, or with usage issues that may arise when users try to use Pyodide or emscripten-forge.</p>
 </li>
 </ul>
 <h4 id="2-enabling-wasm-builds-for-use-in-interactive-documentation">2. Enabling WASM builds for use in interactive documentation<a class="headerlink" href="#2-enabling-wasm-builds-for-use-in-interactive-documentation" title="Link to this heading">#</a></h4>
-<p>The next step is to use the added compatibility with WebAssembly by making binaries available through the appropriate channels: through the Pyodide distribution or the emscripten-forge channel.</p>
+<p>The next step is to use the added compatibility with WebAssembly by making binaries available through the appropriate channels; i.e., through the Pyodide distribution or the emscripten-forge channel.</p>
 <p>Pyodide provides an entire distribution of packages along with it through the jsDelivr CDN as its package index. Packages are bundled as WebAssembly-tagged wheels, which can be installed with <a href="https://github.com/pyodide/micropip/"><code>micropip</code></a>, Pyodide&rsquo;s in-browser package manager.</p>
 <p><a href="https://emscripten-forge.org/">The <code>emscripten-forge</code> channel</a> also has a growing collection of packages that support the <code>wasm32-unknown-emscripten</code> target, often mirroring Pyodide in terms of the versions of packages available, though it differs in usage:</p>
 <ul>
 <li>It is possible to use the distribution only through the JupyterLite project, unlike Pyodide, which also supports Node.js</li>
-<li>The version of Emscripten used across both is different, and therefore the ABI is different as well</li>
-<li>It uses <code>conda</code>-based packaging standards and its file formats, rather than that for PyPI that Pyodide uses, which supports wheels.</li>
+<li>The versions of Emscripten used across both are different, and therefore the ABI is, too</li>
+<li>It uses <code>conda</code>-based packaging standards and file formats, rather than that for PyPI that Pyodide uses (wheels).</li>
 </ul>
-<p>Therefore, if a project and its dependencies are compatible with WebAssembly but may not yet be available for usage via Pyodide or emscripten-forge, it is possible to add them to these distributions. This process is described in their respective documentation websites:</p>
+<p>Therefore, if a project and its dependencies are compatible with WebAssembly as noted above, but may not yet be available via Pyodide or emscripten-forge, it is possible to add them to these distributions. This process is described in their respective documentation websites:</p>
 <ol>
 <li><a href="https://pyodide.org/en/stable/development/new-packages.html">https://pyodide.org/en/stable/development/new-packages.html</a></li>
 <li><a href="https://emscripten-forge.org/development/adding_packages/">https://emscripten-forge.org/development/adding_packages/</a></li>
@@ -298,23 +293,28 @@ intended use-cases, and pseudo-code illustrating its use.
 </ul>
 <p>We recommend installing and configuring <a href="https://jupyterlite-sphinx.readthedocs.io/en/stable/">the <code>jupyterlite-sphinx</code> project</a> and one of the two kernels within Core Projects’ Sphinx-based documentation workflows in order to build a JupyterLite deployment and interact with it through Sphinx.</p>
 <h5 id="31-configuration">3.1 Configuration<a class="headerlink" href="#31-configuration" title="Link to this heading">#</a></h5>
-<p>Next, we discuss how to configure JupyterLite, jupyterlite-sphinx, and the installed kernel of choice together.</p>
-<p>We have observed that documentation for Scientific Python projects typically comes in two forms: API reference documentation and narrative long-form content.</p>
+<p>Next, we discuss how to configure JupyterLite, jupyterlite-sphinx, and the installed kernel(s) of choice together.</p>
+<p>We have observed that documentation for Scientific Python projects typically comes in two forms:</p>
+<ul>
+<li>API reference documentation, and</li>
+<li>narrative long-form content</li>
+</ul>
+<p>For both of these, we have different approaches to enable interactivity:</p>
 <h6 id="api-documentation">API documentation<a class="headerlink" href="#api-documentation" title="Link to this heading">#</a></h6>
 <p><code>jupyterlite-sphinx</code> offers the <a href="https://jupyterlite-sphinx.readthedocs.io/en/stable/directives/try_examples.html"><code>try_examples</code> directive</a>, which can make &ldquo;Examples&rdquo; sections within API documentation interactive, adding buttons which swap the rendered code snippets in-place with an interactive mini-notebook. There is an option to have the directives inserted into &ldquo;Examples&rdquo; sections automatically for documentation that uses <a href="https://numpydoc.readthedocs.io/">Numpydoc</a>, and with <a href="https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html"><code>sphinx.ext.napoleon</code></a> supported on a best-effort basis. The look, shape, feel, text, and inclusion of these buttons across the documentation can be configured through user-defined options.</p>
 <h6 id="narrative-documentation-and-tutorials-long-form-content">Narrative documentation and tutorials (long-form content)<a class="headerlink" href="#narrative-documentation-and-tutorials-long-form-content" title="Link to this heading">#</a></h6>
 <p>For longer-form narrative content such as tutorials, how-to guides, and explanatory documentation:</p>
 <ul>
 <li><code>jupyterlite-sphinx</code> offers its own directives to render long-form content written in notebooks (the <a href="https://jupyterlite-sphinx.readthedocs.io/en/stable/directives/jupyterlite.html"><code>jupyterlite</code> directive</a>, the <a href="https://jupyterlite-sphinx.readthedocs.io/en/stable/directives/notebooklite.html"><code>notebooklite</code> directive</a>, and so on), which can be configured to open notebooks in new tabs or in iframes within the same tab. It supports both traditional IPyNB files and MyST Markdown notebooks. Unlike the <code>try_examples</code> directive, these directives do not work with reST-based content. We recommend using MyST Markdown notebooks, as they integrate well with version control.</li>
-<li>The Sphinx-Gallery project offers a <a href="https://sphinx-gallery.github.io/stable/configuration.html#jupyterlite">JupyterLite integration, built with <code>jupyterlite-sphinx</code></a> which enables a &ldquo;JupyterLite&rdquo; button in the secondary sidebar to open a notebook in the JupyterLite deployments. It provides a <code>notebook_modification_function</code> configuration option via <code>conf.py</code> that can be used to configure code cells or Markdown cells at the top of a notebook, with custom pip-install commands, imports from other libraries, or extra admonitions.</li>
+<li>The Sphinx-Gallery project offers a <a href="https://sphinx-gallery.github.io/stable/configuration.html#jupyterlite">JupyterLite integration, built with <code>jupyterlite-sphinx</code></a> which enables a &ldquo;JupyterLite&rdquo; button in the secondary sidebar to open a notebook in the JupyterLite deployments. It provides a <code>notebook_modification_function</code> configuration option via <code>conf.py</code> that can be used to configure code cells or Markdown cells at the top of a notebook, with custom <code>%pip</code>-install commands, imports from other libraries, or extra admonitions.</li>
 </ul>
 <hr>
-<p>Once interactive documentation has been configured and deployed, the <a href="#Updating-package-and-kernel-versions-for-Pyodide-powered-or-emscripten-forge-powered-websites">Updating package and kernel versions for Pyodide-powered or emscripten-forge-powered websites</a> section contains information on how to increment the versions of the packages and the distribution/kernel used.</p>
+<p>Once interactive documentation has been configured and deployed, the <a href="#Updating-package-and-kernel-versions-for-Pyodide-powered-or-emscripten-forge-powered-websites">&ldquo;Updating package and kernel versions for Pyodide-powered or emscripten-forge-powered websites&rdquo;</a> section contains information on how to increment the versions of the packages and the distribution/kernel used.</p>
 <h4 id="what-distribution-should-projects-choose-pyodide-or-emscripten-forge">What distribution should projects choose: Pyodide or emscripten-forge?<a class="headerlink" href="#what-distribution-should-projects-choose-pyodide-or-emscripten-forge" title="Link to this heading">#</a></h4>
 <!-- I have not had a better answer to this beyond "it depends" so I don't know how to end this section even though I have known to start it -->
-<p>The Pyodide and emscripten-forge ecosystems are both great choices. Pyodide must be used with the <code>jupyterlite-pyodide-kernel</code> project, and the emscripten-forge distribution. is available through the Xeus kernel.</p>
-<p>While we have noted the difference between both kernels, the key difference is that the Pyodide kernel, at the moment, allows one to dynamically install packages with a <code>%pip install</code> magic through <a href="https://jupyterlite.readthedocs.io/en/stable/howto/pyodide/packages.html#installing-packages-at-runtime"><code>piplite</code></a>, a package that provides abstractions over <code>micropip</code>, while the Xeus kernel does not as it lacks an in-browser package manager (<a href="https://github.com/mamba-org/picomamba"><code>picomamba</code></a> may soon address this).</p>
-<p>See <a href="https://jupyterlite.readthedocs.io/en/stable/howto/configure/kernels.html#adding-a-python-kernel">https://jupyterlite.readthedocs.io/en/stable/howto/configure/kernels.html#adding-a-python-kernel</a> for more.</p>
+<p>The Pyodide and emscripten-forge ecosystems are both great choices. Pyodide must be used with the <code>jupyterlite-pyodide-kernel</code> project, and the emscripten-forge distribution is available through the Xeus kernel.</p>
+<p>While we have noted the difference between both kernels, the key difference is that the Pyodide kernel, at the moment, allows one to dynamically install packages with a <code>%pip install</code> magic through <a href="https://jupyterlite.readthedocs.io/en/stable/howto/pyodide/packages.html#installing-packages-at-runtime"><code>piplite</code></a>, a package that provides abstractions over <code>micropip</code>, while the Xeus kernel does not as it lacks an in-browser package manager (<a href="https://github.com/mamba-org/picomamba"><code>picomamba</code></a> may soon address this). An environment file has to be used with the Xeus kernel, which pre-installs packages at the time of building the documentation.</p>
+<p>See <a href="https://jupyterlite.readthedocs.io/en/stable/howto/configure/kernels.html#adding-a-python-kernel">the JupyterLite documentation on &ldquo;Adding a Python kernel&rdquo;</a> for more.</p>
 <h3 id="runtime-considerations">Runtime considerations<a class="headerlink" href="#runtime-considerations" title="Link to this heading">#</a></h3>
 <p>During the process, it is necessary for us to discuss common aspects and scenarios that should be kept in mind when enabling interactive documentation deployments.</p>
 <h4 id="webassembly-computation-is-serverless-and-runs-in-the-browser">WebAssembly computation is serverless and runs in the browser<a class="headerlink" href="#webassembly-computation-is-serverless-and-runs-in-the-browser" title="Link to this heading">#</a></h4>
@@ -324,14 +324,14 @@ intended use-cases, and pseudo-code illustrating its use.
 </ul>
 <h4 id="bandwidth-usage-and-browser-limitations">Bandwidth usage and browser limitations<a class="headerlink" href="#bandwidth-usage-and-browser-limitations" title="Link to this heading">#</a></h4>
 <p><a href="https://pyodide.org/en/stable/project/roadmap.html#reducing-download-sizes-and-initialization-times">Pyodide currently requires a 6.4 MiB download and a few seconds of loading time, with additional overhead from the Pyodide kernel</a>. Scientific Python projects—especially ones containing large amounts of compiled code—can be substantial in size: a typical environment including NumPy, SciPy, and pandas can require approximately 80 MiB of bandwidth. This renders interactive documentation utilities not ideal for low-resource platforms, such as mobile or tablet devices. Taking note of this, <code>jupyterlite-sphinx</code> currently disables the examples completely for such platforms.</p>
-<p>JupyterLite is also best supported on more conventional platforms and browser configurations.</p>
+<p>JupyterLite is also best supported on more conventional platforms and browser configurations:</p>
 <ul>
 <li>For example, iOS&rsquo;s WASM runtime is not well supported upstream and unexpected problems may occur.</li>
 <li>Firefox in incognito mode does not have proper support for accessing the Emscripten file system, because service workers, which JupyterLite uses, are not supported.</li>
 </ul>
 <p>First-time visitors may experience a longer loading time, as large resources such as WASM wheels and other static assets are fetched. However, browsers will cache downloaded wheels, which substantially reduces bandwidth requirements for JupyterLite and subsequent loading times for interactive examples.</p>
 <h4 id="the-lack-of-synchronisation-between-a-core-projects-documentations-version-and-the-version-of-the-available-binaries-pyodide-kernel-only">The lack of synchronisation between a Core Project’s documentation’s version and the version of the available binaries (Pyodide kernel only)<a class="headerlink" href="#the-lack-of-synchronisation-between-a-core-projects-documentations-version-and-the-version-of-the-available-binaries-pyodide-kernel-only" title="Link to this heading">#</a></h4>
-<p>At the moment, Pyodide version 0.27 (and previous versions) as an entire distribution couples the version of the packages available within it, along with the Pyodide runtime. This is planning to change with <a href="https://github.com/pyodide/pyodide/issues/4918">Pyodide 0.28</a>, which will allow the compilation and usage of Pyodide’s packages outside of Pyodide&rsquo;s releases.</p>
+<p>At the moment, Pyodide version 0.27 (and previous versions of it) as an entire distribution bundles the versions of the packages available within it, along with the Pyodide runtime.</p>
 <p>This creates a problem for documentation website maintainers, as they will want to use up-to-date wheels for their interactive documentation deployments, but those wheels might not be available as a part of Pyodide. This means that users may experience a mismatch: the interactive example runs version $x$, whereas the documentation is for a different version $y$. This lack of synchronisation can show up in the following scenarios:</p>
 <ul>
 <li>when a user browses the documentation for a stable version of a project, and the project&rsquo;s WebAssembly wheels have not been updated to match that version</li>
@@ -339,44 +339,47 @@ intended use-cases, and pseudo-code illustrating its use.
 <li>when working on the documentation and serving it locally</li>
 </ul>
 <p>The best way to address point (1) is to upgrade to as recent a version of Pyodide available via <code>jupyterlite-pyodide-kernel</code> as possible, and upgrade the version of the relevant Core Project(s), or assist the Pyodide maintainers in doing so, so that Pyodide releases can include as up-to-date package versions as possible.</p>
-<p>To address point (2), nightly Pyodide wheels for various packages are now being uploaded on <a href="https://anaconda.org/scientific-python-nightly-wheels">the Scientific Python Nightly Wheels channel on Anaconda.org</a>, which can be installed with <code>piplite</code>. See <a href="../spec-0004/">&ldquo;SPEC 4 — Using and Creating Nightly Wheels&rdquo;</a> for more.</p>
+<p>To address point (2), nightly Pyodide wheels for various packages are now being uploaded on <a href="https://anaconda.org/scientific-python-nightly-wheels">the Scientific Python Nightly Wheels channel on Anaconda.org</a>, which can be installed with <a href="https://jupyterlite.readthedocs.io/en/stable/howto/pyodide/packages.html#installing-packages-at-runtime"><code>piplite</code></a>. See <a href="../spec-0004/">&ldquo;SPEC 4 — Using and Creating Nightly Wheels&rdquo;</a> for more.</p>
 <!-- even though wheels are being uploaded are being used for scikit-learn, there's no “nice” way to use them yet: see https://github.com/jupyterlite/pyodide-kernel/pull/158 and https://github.com/jupyterlite/pyodide-kernel/issues/166 -->
 <!-- PyPI/TestPyPI has also supported CORS headers for the case of pure Python packages but I don't know if it is necessary to include that point here. -->
 <p>It is also possible to bundle a wheel as a part of the documentation build process in CI; see <a href="https://github.com/scikit-image/scikit-image/pull/7644">https://github.com/scikit-image/scikit-image/pull/7644</a> for an example which configures the Pyodide kernel to load an extra wheel and add it to a local index that is available for Pyodide to install.</p>
-<p>The emscripten-forge distribution does not have this limitation. Still, packages need to be continually updated, supported, and patched in the same way they need to be for inclusion in Pyodide.</p>
+<p>The emscripten-forge distribution does not have this limitation. Still, packages there need to be continually updated, supported, and patched in the same way they need to be for inclusion in Pyodide. This is planning to change with the upcoming <a href="https://github.com/pyodide/pyodide/issues/4918">Pyodide version 0.28</a>, which will allow the distribution of Pyodide’s packages outside of Pyodide&rsquo;s releases.</p>
 <h3 id="the-maintenance-of-interactive-documentation-utilities">The maintenance of interactive documentation utilities<a class="headerlink" href="#the-maintenance-of-interactive-documentation-utilities" title="Link to this heading">#</a></h3>
-<p>After interactive documentation deployments are rolled out, a question arises about their maintenance.</p>
-<p>As a result, we recommend that projects that use the Pyodide distribution host interactive documentation deployments on an experimental and best-effort basis, built for quick prototyping and pedagogical use cases for beginners and intermediate users.</p>
-<p>Also, we recommend that issues concerning interactive documentation rollouts be handled for the &ldquo;stable&rdquo; and &ldquo;development&rdquo; versions of the documentation only.</p>
+<p>After interactive documentation deployments are rolled out, a question arises about their maintenance. Here, we provide the following recommendations:</p>
+<ul>
+<li>that projects that use the Pyodide distribution host interactive documentation deployments on an experimental and best-effort basis, built for quick prototyping and pedagogical use cases for beginners and intermediate users, and</li>
+<li>that issues concerning interactive documentation rollouts be handled for the &ldquo;stable&rdquo; and &ldquo;development&rdquo; versions of the documentation only.</li>
+</ul>
 <!-- should we recommend that? -->
-<p>The maintenance of these deployments has a few aspects, which we cover below:</p>
+<p>The maintenance of these deployments has a couple of aspects, which we cover below:</p>
 <h5 id="disabling-interactive-buttons-when-code-doesnt-work">Disabling interactive buttons when code doesn&rsquo;t work<a class="headerlink" href="#disabling-interactive-buttons-when-code-doesnt-work" title="Link to this heading">#</a></h5>
 <p>If there are areas in the public API documentation for a project for which interactive examples are not useful for inclusion (or are supposed to be hidden to end users as far as interactivity is concerned), they may be hidden at runtime using <a href="https://jupyterlite-sphinx.readthedocs.io/en/stable/directives/try_examples.html#try-examples-json-configuration-file">a <code>try_examples.json</code> configuration file</a>, which will exclude them from being rendered interactive using a regular expression pattern.</p>
 <h5 id="updating-package-and-kernel-versions-for-pyodide-powered-or-emscripten-forge-powered-websites">Updating package and kernel versions for Pyodide-powered or emscripten-forge-powered websites<a class="headerlink" href="#updating-package-and-kernel-versions-for-pyodide-powered-or-emscripten-forge-powered-websites" title="Link to this heading">#</a></h5>
 <ul>
-<li>Attempts are made for packages to update to the latest versions at the time of an Emscripten version bump and at the time of a new release for Pyodide. Breakages in builds and/or tests for packages are rare but inevitable and some packages need to be disabled, where recipe maintainers with their understanding of the package internals will have the ability to help debug issues in collaboration with the Pyodide maintainers to resolve any breakages. The same process follows with emscripten-forge.</li>
-<li>The best way to ensure that interactive documentation websites for projects remain up to date is to use pinned versions of JupyterLite (<code>jupyterlite-core</code>) and <code>jupyterlite-pyodide-kernel</code> (which controls the Pyodide version used), update them periodically, and add corresponding updates to packages&rsquo; recipes in Pyodide and emscripten-forge as applicable.</li>
+<li>Attempts are made for packages to update to the latest versions at the time of an Emscripten version bump and at the time of a new release for Pyodide. Breakages in builds and/or tests for packages are rare but inevitable, and some packages need to be disabled, where recipe maintainers with their understanding of the packages&rsquo; internals will have the ability to help debug issues in collaboration with the Pyodide maintainers to resolve them. The same process follows with the emscripten-forge distribution.</li>
+<li>The best way to ensure that interactive documentation websites for projects remain up to date is to use pinned versions of <code>jupyterlite-core</code>, and <code>jupyterlite-pyodide-kernel</code> (which controls the Pyodide version used), update them periodically, and add corresponding updates to packages&rsquo; recipes in Pyodide and emscripten-forge as applicable to keep them up to date. This is a manual process for Pyodide, and is automated for emscripten-forge.</li>
 </ul>
 <h4 id="resolving-common-issues-with-web-requests-in-the-browser">Resolving common issues with web requests in the browser<a class="headerlink" href="#resolving-common-issues-with-web-requests-in-the-browser" title="Link to this heading">#</a></h4>
-<p>While HTTP libraries such as <code>httpx</code>, <code>requests</code>, and so on have gained compatibility with Pyodide, it is still necessary to use <a href="https://github.com/koenvo/pyodide-http"><code>pyodide-http</code></a> to patch them for usage, or add code paths that use <a href="https://pyodide.org/en/stable/usage/api/python-api/http.html">Pyodide-specific networking capabilities</a>.</p>
-<p>Data files, if present in the repository or in an external source that are later downloaded by <code>pooch</code> or similar tools as a means for usage in test suites or as a part of a &ldquo;fetcher&rdquo;-like public API attribute, may not work by default due to <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS">CORS restrictions</a>.</p>
-<p>For example:</p>
+<p>While HTTP libraries such as <code>httpx</code>, <code>requests</code>, and so on have gained compatibility with Pyodide, it is still necessary to use <a href="https://github.com/koenvo/pyodide-http"><code>pyodide-http</code></a> to patch them for usage inside JupyterLite, or add code paths that use <a href="https://pyodide.org/en/stable/usage/api/python-api/http.html">Pyodide-specific networking capabilities</a>.</p>
+<p>Data files, if present in the repository or in an external source that are later downloaded by <code>pooch</code> or similar tools as a means for usage in test suites or as a part of a &ldquo;fetcher&rdquo;-like public API attribute, may not work by default due to <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS">CORS restrictions</a> enforced by web browsers.</p>
+<p>In particular, the following points apply:</p>
 <ul>
-<li>CORS headers are present if they are hosted on raw GitHub URLs.</li>
+<li>CORS headers are present if data files are hosted on raw GitHub URLs.</li>
 <li>If they are hosted on GitHub Releases, CORS headers are absent.</li>
 <li>If they are hosted on GitLab, <a href="https://gitlab.com/gitlab-org/gitlab/-/issues/16732">CORS headers are absent</a>.</li>
 </ul>
-<p>In this case, we recommend wrapping URLs to files within data registries with a CDN that acts as a CORS proxy server and adds these headers over such URLs. <a href="https://statically.io/">Statically</a> and <a href="https://raw.githack.com/">GitHack</a> are both reasonable options.</p>
+<p>In this case, we recommend wrapping URLs to files within data registries with a CDN that acts as a CORS proxy server and adds CORS headers over such URLs. <a href="https://statically.io/">Statically</a> and <a href="https://raw.githack.com/">GitHack</a> are both reasonable free options with no limits on traffic, and they add CORS headers to the files they serve.</p>
+<p>For example, a URL like <code>https://raw.githubusercontent.com/scikit-image/scikit-image/main/skimage/data/chelsea.png</code> may be wrapped with Statically as <code>https://cdn.statically.io/gh/scikit-image/scikit-image/main/skimage/data/chelsea.png</code>.</p>
 <h2 id="background-and-additional-context">Background and additional context<a class="headerlink" href="#background-and-additional-context" title="Link to this heading">#</a></h2>
 <!-- this section will be linked to in applicable parts of the document, it’s just that HackMD doesn’t support doing this properly →
 
 <!-- this section can also be refined, happy to take more suggestions here -->
-<p>Emscripten, unlike glibc, does not provide a backwards-compatible ABI. There has been a recent effort to standardise support for it through a <code>manylinux</code>-like standard as a means towards uploading to PyPI through <a href="https://peps.python.org/pep-0776/">PEP 776 – Emscripten Support</a> (see also, previous discussion at <a href="https://github.com/pypi/warehouse/issues/10416)">https://github.com/pypi/warehouse/issues/10416)</a>. Emscripten has been a Tier III target platform for CPython (it was restored with the upcoming Python version 3.14), however, the lack of standardisation of a Pyodide ABI means that every package has to be rebuilt with newer versions of Emscripten with each corresponding update in Pyodide or emscripten-forge. This goal is in progress at <a href="https://github.com/pyodide/pyodide/issues/5580">https://github.com/pyodide/pyodide/issues/5580</a>.</p>
-<p>Usually, it is recommended to reach out to the Pyodide maintainers to see if it is necessary to include the package in Pyodide and attempt to add &ldquo;explicit&rdquo; support for it, especially with pure Python packages, as most of them work out of the box unless they support niche use cases or interact with components of the Python runtime or standard library that are not supported well (see below). As Scientific Python projects are numerical in nature, they have usually worked well with or without patches by collaborators in the Pyodide/WASM ecosystem and with support from the recipe maintainers.</p>
+<p>Emscripten, unlike glibc, does not provide a backward-compatible ABI. There has been a recent effort to standardise support for it through a <code>manylinux</code>-like standard as a means towards uploading to PyPI through <a href="https://peps.python.org/pep-0776/">PEP 776 – Emscripten Support</a> (see also, previous discussion at <a href="https://github.com/pypi/warehouse/issues/10416)">https://github.com/pypi/warehouse/issues/10416)</a>. Emscripten has been a Tier III target platform for CPython (it was restored with the upcoming Python version 3.14), however, the lack of standardisation of a Pyodide ABI means that every package has to be rebuilt with newer versions of Emscripten with each corresponding update in Pyodide or emscripten-forge. This goal is in progress at <a href="https://github.com/pyodide/pyodide/issues/5580">https://github.com/pyodide/pyodide/issues/5580</a> and <a href="https://peps.python.org/pep-0783/">PEP 783 – Emscripten Packaging</a>.</p>
+<p>Usually, it is recommended to reach out to the Pyodide maintainers to see if it is necessary to include a package in Pyodide and attempt to add &ldquo;explicit&rdquo; support for it, especially with pure Python packages, as most of them work out of the box unless they support niche use cases or interact with components of the Python runtime or standard library that are not supported well (see <a href="#11-how-to-assess-compatibility-with-webassembly">&ldquo;How to assess compatibility with WebAssembly&rdquo;</a> for more). As Scientific Python projects are numerical in nature, they have usually worked well with or without patches by collaborators in the Pyodide/WASM ecosystem and with support from the recipe maintainers.</p>
 <h2 id="recommendations-on-other-documentation-tooling">Recommendations on other documentation tooling<a class="headerlink" href="#recommendations-on-other-documentation-tooling" title="Link to this heading">#</a></h2>
 <p>While this SPEC provides recommendations on integration with Sphinx; we also offer suggestions for other documentation development tooling as well:</p>
 <ol>
-<li><a href="https://www.mkdocs.org/">MkDocs</a> does not currently have a JupyterLite plugin that provides functionality equivalent to <code>jupyterlite-sphinx</code>. However, there are some ways through which interactive documentation deployments can be achieved, somewhat:
+<li><a href="https://www.mkdocs.org/">MkDocs</a> does not currently have a JupyterLite plugin that provides functionality equivalent to <code>jupyterlite-sphinx</code>. However, there are some ways through which interactive documentation deployments can somewhat be achieved:
 <ul>
 <li>Projects like <a href="https://github.com/samuelcolvin/mkdocs-run-code">https://github.com/samuelcolvin/mkdocs-run-code</a> and <a href="https://github.com/JeffersGlass/mkdocs-pyscript">https://github.com/JeffersGlass/mkdocs-pyscript</a> provide integrations to embed interactive components.</li>
 <li>As a JupyterLite site contains static assets and HTML files, it can be bundled and served alongside an MkDocs-based documentation website, with both separate from each other.</li>
