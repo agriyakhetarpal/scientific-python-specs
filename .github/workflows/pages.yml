@@ -30,7 +30,7 @@ jobs:
           repository: agriyakhetarpal/scientific-python-hugo-theme
           submodules: recursive
           ref: spec-14
-          path: spht
+          path: scientific-python-hugo-theme
           fetch-depth: 0
 
       - name: Set up Python
@@ -51,13 +51,13 @@ jobs:
           echo "/tmp/dart-sass" >> $GITHUB_PATH
 
       - name: Build static site
-        working-directory: spht
+        working-directory: scientific-python-hugo-theme
         run: make main
 
       - name: Copy static site
         run: |
           mkdir -p dist
-          cp -r spht/main/public/* dist/
+          cp -r scientific-python-hugo-theme/main/public/* dist/
 
       - name: Upload assets for debugging
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
