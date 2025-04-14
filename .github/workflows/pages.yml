@@ -23,6 +23,16 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
 
+      - name: Checkout SPHT
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+          repository: agriyakhetarpal/scientific-python-hugo-theme
+          submodules: recursive
+          ref: spec-14
+          path: spht
+          fetch-depth: 0
+
       - name: Set up Python
         uses: actions/setup-python@8d9ed9ac5c53483de85588cdf95a591a75ab9f55 # v5.5.0
 
@@ -41,7 +51,13 @@ jobs:
           echo "/tmp/dart-sass" >> $GITHUB_PATH
 
       - name: Build static site
-        run: make preview-build
+        working-directory: spht
+        run: make main
+
+      - name: Copy static site
+        run: |
+          mkdir -p dist
+          cp -r spht/main/public/* dist/
 
       - name: Upload assets for debugging
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
