@@ -1,7 +1,8 @@
 PREVIEW_DEST:=$(if $(PREVIEW_DEST),$(PREVIEW_DEST),/tmp/__specs.scientific-python.org_site-preview)
 HUGO_OPTS=--disableFastRender
+OUTPUT_DIR:=dist
 
-.PHONY: clean preview prepare-preview preview
+.PHONY: clean preview prepare-preview preview-serve preview-build
 .DEFAULT_GOAL: preview-serve
 
 # Substitute the SPECs in specs.scientific-python.org with
@@ -18,11 +19,12 @@ prepare-preview: clean
 preview-serve: prepare-preview
 	cd $(PREVIEW_DEST) && make serve
 
-# Build website to $(PREVIEW_DEST)/public
+# Build website to dist/
 preview-build: prepare-preview
 	cd $(PREVIEW_DEST) && make html
+	mkdir -p $(OUTPUT_DIR)
+	cp -r $(PREVIEW_DEST)/public/* $(OUTPUT_DIR)/
 
 clean:
 	rm -rf $(PREVIEW_DEST)
-
-.PHONY: clean preview
+	rm -rf $(OUTPUT_DIR)
