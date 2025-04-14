@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2023 Developer Summit on Scientific Python</title>
+    <link>https://scientific-python.org/summits/developer/2023/</link>
+    <description>Recent content in 2023 Developer Summit on Scientific Python</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jan 0001 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://scientific-python.org/summits/developer/2023/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>General Planning Meeting</title>
+      <link>https://scientific-python.org/summits/developer/2023/general-planning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/summits/developer/2023/general-planning/</guid>
+      <description>&lt;h2 id=&#34;information&#34;&gt;Information&lt;a class=&#34;headerlink&#34; href=&#34;#information&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Date: Monday, &lt;a href=&#34;https://www.timeanddate.com/worldclock/converter.html?iso=20230227T170000&amp;amp;p1=224&#34;&gt;February 27th 9AM - 10AM Pacific time (click for your timezone)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Zoom Link: &lt;a href=&#34;https://caltech.zoom.us/j/87686129450&#34;&gt;https://caltech.zoom.us/j/87686129450&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;participants&#34;&gt;Participants&lt;a class=&#34;headerlink&#34; href=&#34;#participants&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Jarrod Millman&lt;/li&gt;&#xA;&lt;li&gt;Stéfan van der Walt&lt;/li&gt;&#xA;&lt;li&gt;Brigitta Sipőcz&lt;/li&gt;&#xA;&lt;li&gt;Juanita Gomez&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;agenda&#34;&gt;Agenda&lt;a class=&#34;headerlink&#34; href=&#34;#agenda&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The summit is scheduled for 1 hour and will consist of a series of high-level&#xA;birds-of-a-feather (BoF)-style talks, followed by more focused discussion.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;(5 min) Welcome &amp;amp; Introductions (Jarrod Millman)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;(10 min) Logistics&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;(30) Meeting Topics&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

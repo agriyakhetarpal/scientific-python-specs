@@ -1,0 +1,134 @@
+[
+  {
+    "title": "IPython",
+    "avatar": "https://avatars.githubusercontent.com/u/230453",
+    "homepage": "https://ipython.org",
+    "repository": "https://github.com/ipython/ipython",
+    "pypi": "https://pypi.org/project/ipython",
+    "libraries-io": "https://libraries.io/pypi/ipython",
+    "license": "https://github.com/ipython/ipython/blob/master/LICENSE",
+    "license-type": "3-clause BSD",
+    "contact": "Carreau ivanov"
+  },
+  {
+    "title": "Matplotlib",
+    "avatar": "https://avatars.githubusercontent.com/u/215947",
+    "homepage": "https://matplotlib.org",
+    "repository": "https://github.com/matplotlib/matplotlib",
+    "pypi": "https://pypi.org/project/matplotlib",
+    "libraries-io": "https://libraries.io/pypi/matplotlib",
+    "license": "https://matplotlib.org/stable/users/license.html",
+    "license-type": "Matplotlib license",
+    "contact": "QuLogic"
+  },
+  {
+    "title": "NetworkX",
+    "avatar": "https://avatars.githubusercontent.com/u/388785",
+    "homepage": "https://networkx.org/",
+    "repository": "https://github.com/networkx/networkx",
+    "pypi": "https://pypi.org/project/networkx",
+    "libraries-io": "https://libraries.io/pypi/networkx",
+    "license": "https://networkx.org/documentation/stable/license.html",
+    "license-type": "3-clause BSD",
+    "contact": "rossbar"
+  },
+  {
+    "title": "NumPy",
+    "avatar": "https://avatars.githubusercontent.com/u/288276",
+    "homepage": "https://numpy.org",
+    "repository": "https://github.com/numpy/numpy",
+    "pypi": "https://pypi.org/project/numpy",
+    "libraries-io": "https://libraries.io/pypi/numpy",
+    "license": "https://github.com/numpy/numpy/blob/main/LICENSE.txt",
+    "license-type": "3-clause BSD",
+    "contact": "melissawm"
+  },
+  {
+    "title": "pandas",
+    "avatar": "https://avatars.githubusercontent.com/u/21206976",
+    "homepage": "https://pandas.pydata.org/",
+    "repository": "https://github.com/pandas-dev/pandas",
+    "pypi": "https://pypi.org/project/pandas",
+    "libraries-io": "https://libraries.io/pypi/pandas",
+    "license": "https://github.com/pandas-dev/pandas/blob/master/LICENSE",
+    "license-type": "3-clause BSD",
+    "contact": "jorisvandenbossche"
+  },
+  {
+    "title": "PySAL",
+    "avatar": "https://avatars.githubusercontent.com/u/3769919",
+    "homepage": "https://pysal.org",
+    "repository": "https://github.com/pysal/pysal",
+    "pypi": "https://pypi.org/project/pysal",
+    "libraries-io": "https://libraries.io/pypi/pysal",
+    "license": "https://github.com/pysal/pysal/blob/main/LICENSE.txt",
+    "license-type": "3-clause BSD",
+    "contact": "sjsrey"
+  },
+  {
+    "title": "Scikit-HEP",
+    "avatar": "https://avatars.githubusercontent.com/u/23454624",
+    "homepage": "https://scikit-hep.org",
+    "repository": "https://github.com/scikit-hep/scikit-hep",
+    "pypi": "https://pypi.org/project/scikit-hep",
+    "libraries-io": "https://libraries.io/pypi/scikit-hep",
+    "license": "https://github.com/scikit-hep/scikit-hep/blob/main/LICENSE",
+    "license-type": "3-clause BSD",
+    "contact": "matthewfeickert"
+  },
+  {
+    "title": "scikit-image",
+    "avatar": "https://avatars.githubusercontent.com/u/897180",
+    "homepage": "https://scikit-image.org",
+    "repository": "https://github.com/scikit-image/scikit-image",
+    "pypi": "https://pypi.org/project/scikit-image",
+    "libraries-io": "https://libraries.io/pypi/scikit-image",
+    "license": "https://github.com/scikit-image/scikit-image/blob/main/LICENSE.txt",
+    "license-type": "3-clause BSD",
+    "contact": "jni"
+  },
+  {
+    "title": "scikit-learn",
+    "avatar": "https://avatars.githubusercontent.com/u/365630",
+    "homepage": "https://scikit-learn.org",
+    "repository": "https://github.com/scikit-learn/scikit-learn",
+    "pypi": "https://pypi.org/project/scikit-learn",
+    "libraries-io": "https://libraries.io/pypi/scikit-learn",
+    "license": "https://github.com/scikit-learn/scikit-learn/blob/main/COPYING",
+    "license-type": "3-clause BSD",
+    "contact": "thomasjpfan"
+  },
+  {
+    "title": "SciPy",
+    "avatar": "https://raw.githubusercontent.com/scipy/archive/main/branding/logos/scipy_logo.svg",
+    "homepage": "https://scipy.org",
+    "repository": "https://github.com/scipy/scipy",
+    "pypi": "https://pypi.org/project/scipy",
+    "libraries-io": "https://libraries.io/pypi/scipy",
+    "license": "https://github.com/scipy/scipy/blob/main/LICENSE.txt",
+    "license-type": "3-clause BSD",
+    "contact": "rgommers"
+  },
+  {
+    "title": "xarray",
+    "avatar": "https://numfocus.org/wp-content/uploads/2018/09/xarray-logo-square.png",
+    "homepage": "https://xarray.dev/",
+    "repository": "https://github.com/pydata/xarray",
+    "pypi": "https://pypi.org/project/xarray",
+    "libraries-io": "https://libraries.io/pypi/xarray",
+    "license": "https://github.com/pydata/xarray/blob/main/LICENSE",
+    "license-type": "Apache 2.0",
+    "contact": "andersy005"
+  },
+  {
+    "title": "Zarr-Python",
+    "avatar": "https://raw.githubusercontent.com/zarr-developers/zarr-logo/main/zarr-pink-stacked.svg",
+    "homepage": "https://zarr.dev",
+    "repository": "https://github.com/zarr-developers/zarr-python",
+    "pypi": "https://pypi.org/project/zarr",
+    "libraries-io": "https://libraries.io/pypi/zarr",
+    "license": "https://github.com/zarr-developers/zarr-python/blob/main/LICENSE.txt",
+    "license-type": "MIT",
+    "contact": "msankeys963"
+  }
+]

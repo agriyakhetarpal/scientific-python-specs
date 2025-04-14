@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scientific Python</title>
+    <link>https://scientific-python.org/</link>
+    <description>Recent content on Scientific Python</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://scientific-python.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SPEC 14 — Interactive Documentation</title>
+      <link>https://scientific-python.org/specs/spec-0014/</link>
+      <pubDate>Mon, 14 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/spec-0014/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;a class=&#34;headerlink&#34; href=&#34;#description&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;!--&#xA;Briefly and clearly describe the recommendation.&#xA;--&gt;&#xA;&lt;p&gt;A common pain point for new users coming to Scientific Python projects—particularly projects containing compiled code—has been their difficulty of installation, with historic package management troubles arising as a by-product of Python&amp;rsquo;s strong capabilities for wrapping low-level languages such as C, C++, Fortran, and Rust. While the situation has improved with enhancements across the Python package management ecosystem, setting up a working Python environment can still be quite difficult for beginners. Even for more advanced Python programmers, it can take a nontrivial amount of time to correctly install an unfamiliar package.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>News</title>
+      <link>https://scientific-python.org/news/</link>
+      <pubDate>Fri, 28 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/news/</guid>
+      <description>&lt;h2 id=&#34;20250328-third-developer-summit-will-be-held-in-seattle--11-14-may-2025&#34;&gt;2025&amp;ndash;03&amp;ndash;28: Third Developer Summit will be held in Seattle – 11-14 May 2025&lt;a class=&#34;headerlink&#34; href=&#34;#20250328-third-developer-summit-will-be-held-in-seattle--11-14-may-2025&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;See &lt;a href=&#34;./summits/developer/2025/&#34;&gt;summit website&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;20240411-second-developer-summit-will-be-held-in-seattle-june-2-5-2024&#34;&gt;2024&amp;ndash;04&amp;ndash;11: Second Developer Summit will be held in Seattle – June 2-5, 2024&lt;a class=&#34;headerlink&#34; href=&#34;#20240411-second-developer-summit-will-be-held-in-seattle-june-2-5-2024&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;See &lt;a href=&#34;./summits/developer/2024/&#34;&gt;summit website&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;20230530-first-developer-summit-held-in-seattle&#34;&gt;2023&amp;ndash;05&amp;ndash;30: First Developer Summit held in Seattle&lt;a class=&#34;headerlink&#34; href=&#34;#20230530-first-developer-summit-held-in-seattle&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;See &lt;a href=&#34;./summits/developer/2023&#34;&gt;summit website&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;h2 id=&#34;20210421-specs-announced-at-scipy-2021&#34;&gt;2021&amp;ndash;04&amp;ndash;21: SPECs announced at SciPy 2021&lt;a class=&#34;headerlink&#34; href=&#34;#20210421-specs-announced-at-scipy-2021&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Stéfan van der Walt announces the Scientific Python Ecosystem Coordination project and&#xA;talks about the SPEC documents during SciPy 2021.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SPEC 8 — Securing the Release Process</title>
+      <link>https://scientific-python.org/specs/spec-0008/</link>
+      <pubDate>Tue, 04 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/spec-0008/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;a class=&#34;headerlink&#34; href=&#34;#description&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;!--&#xA;Briefly and clearly describe the recommendation.&#xA;https://github.com/scientific-python/summit-2024/issues/9&#xA;--&gt;&#xA;&lt;p&gt;Open source libraries constitute a significant portion of the world&amp;rsquo;s digital infrastructure. Securing the Open Source supply chain (OSSC) is therefore an increasing concern, with examples of sophisticated attacks against the ecosystem (e.g., the 2024 &lt;a href=&#34;https://en.wikipedia.org/wiki/XZ_Utils_backdoor&#34;&gt;&lt;code&gt;xz&lt;/code&gt; utils backdoor&lt;/a&gt;) and &lt;a href=&#34;https://blog.pypi.org/posts/2024-04-10-domain-abuse/&#34;&gt;malware attacks on PyPI&lt;/a&gt; highlighting the need for supply chain security to be taken seriously.&#xA;The Python Software Foundation (PSF) is also taking the importance of the OSSC seriously, as demonstrated by the &lt;a href=&#34;https://pyfound.blogspot.com/2023/06/announcing-our-new-security-developer.html&#34;&gt;creation of the PSF Security Developer in Residence position in 2023&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SPEC 9 — Governance</title>
+      <link>https://scientific-python.org/specs/spec-0009/</link>
+      <pubDate>Tue, 04 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/spec-0009/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;a class=&#34;headerlink&#34; href=&#34;#description&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;This SPEC describes what governance is, and offers recommendations for choosing a&#xA;governance model for open-source projects.&lt;/p&gt;&#xA;&lt;p&gt;Open-source project communities are amalgamations of software and the humans who&#xA;use and maintain it. Governance models define methods for decision-making&#xA;within a project, roles for the community members imbued with decision-making&#xA;authority, and processes for filling (and, if needed, vacating) those&#xA;leadership roles. In the context of open-source software projects, governance&#xA;models often also define the granting of necessary permissions or access to&#xA;organization secrets necessary for the implementation of project-related&#xA;decisions. Governance models are complementary to Codes of Conduct and&#xA;Community Guidelines, which define the expectations and responsibilities of all&#xA;participants in a project (including users of the software), regardless of&#xA;their status as a project leader (cf. SPEC XXX), ensuring the long-term&#xA;sustainability of a project.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SPEC 7 — Seeding Pseudo-Random Number Generation</title>
+      <link>https://scientific-python.org/specs/spec-0007/</link>
+      <pubDate>Wed, 19 Apr 2023 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/spec-0007/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;a class=&#34;headerlink&#34; href=&#34;#description&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Currently, libraries across the ecosystem provide various APIs for seeding pseudo-random number generation.&#xA;This SPEC suggests a unified, pragmatic API, taking into account technical and historical factors.&#xA;Adopting such a uniform API will simplify the user experience, especially for those who rely on multiple projects.&lt;/p&gt;&#xA;&lt;p&gt;We recommend:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;standardizing the usage and interpretation of an &lt;code&gt;rng&lt;/code&gt; keyword for seeding, and&lt;/li&gt;&#xA;&lt;li&gt;avoiding the use of global state and legacy bitstream generators.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;We suggest implementing these principles by:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SPEC 6 — Keys to the Castle</title>
+      <link>https://scientific-python.org/specs/spec-0006/</link>
+      <pubDate>Mon, 19 Dec 2022 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/spec-0006/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;a class=&#34;headerlink&#34; href=&#34;#description&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;!--&#xA;Briefly and clearly describe the proposal.&#xA;Explain the general need and the advantages of this specific proposal.&#xA;If relevant, include examples of how the new functionality would be used,&#xA;intended use-cases, and pseudo-code illustrating its use.&#xA;--&gt;&#xA;&lt;p&gt;Projects engage with restricted resources all the time.&#xA;Examples include access to add &amp;amp; remove team members, grant commit rights, or make uploads to certain hosts.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Documenting resources&lt;/strong&gt; is critical to ensuring uninterrupted operations.&#xA;It is important that team members know &lt;em&gt;who&lt;/em&gt; have access to resources, and how to &lt;em&gt;gain access&lt;/em&gt; to resources.&#xA;For example, if updated project documentation needs to be uploaded to a remote server via SSH, who are the team members that can do that, and by which process can a release manager request access?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SPEC 5 — CI Best Practices</title>
+      <link>https://scientific-python.org/specs/spec-0005/</link>
+      <pubDate>Thu, 22 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/spec-0005/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;a class=&#34;headerlink&#34; href=&#34;#description&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;!--&#xA;Briefly and clearly describe the recommendation.&#xA;--&gt;&#xA;&lt;h3 id=&#34;core-project-endorsement&#34;&gt;Core Project Endorsement&lt;a class=&#34;headerlink&#34; href=&#34;#core-project-endorsement&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;!--&#xA;Briefly discuss what it means for a core project to endorse this SPEC.&#xA;--&gt;&#xA;&lt;h3 id=&#34;ecosystem-adoption&#34;&gt;Ecosystem Adoption&lt;a class=&#34;headerlink&#34; href=&#34;#ecosystem-adoption&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;!--&#xA;Briefly discuss what it means for a project to adopt this SPEC.&#xA;--&gt;&#xA;&lt;h4 id=&#34;badges&#34;&gt;Badges&lt;a class=&#34;headerlink&#34; href=&#34;#badges&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h4&gt;&#xA;&lt;p&gt;Projects can highlight their adoption of this SPEC by including a SPEC badge.&#xA;&#xA;&lt;div class=&#34;tabs&#34;&gt;&#xA;  &lt;div role=&#34;tablist&#34; class=&#34;automatic&#34;&gt;&#xA;    &lt;button id=&#34;-tab-0&#34; type=&#34;button&#34; role=&#34;tab&#34; aria-selected=&#34;true&#34; aria-controls=&#34;-tabpanel-0&#34;&gt;&#xA;      Rendered badge&#xA;    &lt;/button&gt;&#xA;    &lt;button id=&#34;-tab-1&#34; type=&#34;button&#34; role=&#34;tab&#34; aria-selected=&#34;false&#34; aria-controls=&#34;-tabpanel-1&#34;&gt;&#xA;      Markdown&#xA;    &lt;/button&gt;&#xA;    &lt;button id=&#34;-tab-2&#34; type=&#34;button&#34; role=&#34;tab&#34; aria-selected=&#34;false&#34; aria-controls=&#34;-tabpanel-2&#34;&gt;&#xA;      reStructuredText&#xA;    &lt;/button&gt;&#xA;  &lt;/div&gt;&#xA;  &lt;div id=&#34;-tabpanel-0&#34; role=&#34;tabpanel&#34; tabindex=&#34;0&#34; aria-labelledby=&#34;$-tab-0&#34;&gt;&lt;a href=&#34;https://scientific-python.org/specs/spec-0005/&#34;&gt;&lt;img src=&#34;https://img.shields.io/badge/SPEC-5-green?labelColor=%23004811&amp;amp;color=%235CA038&#34; alt=&#34;SPEC 5 — CI Best Practices&#34;&gt;&lt;/a&gt;&lt;/div&gt;&#xA;  &lt;div id=&#34;-tabpanel-1&#34; role=&#34;tabpanel&#34; tabindex=&#34;0&#34; aria-labelledby=&#34;$-tab-1&#34;&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&#xA;  &lt;pre&gt;[![SPEC 5 — CI Best Practices](https://img.shields.io/badge/SPEC-5-green?labelColor=%23004811&amp;amp;color=%235CA038)](https://scientific-python.org/specs/spec-0005/)&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;/div&gt;&#xA;  &lt;div id=&#34;-tabpanel-2&#34; role=&#34;tabpanel&#34; tabindex=&#34;0&#34; aria-labelledby=&#34;$-tab-2&#34;&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&#xA;  &lt;pre&gt;|SPEC 5 — CI Best Practices| &#xA;&#xA;.. |SPEC 5 — CI Best Practices| image:: https://img.shields.io/badge/SPEC-5-green?labelColor=%23004811&amp;amp;color=%235CA038&#xA;   :target: https://scientific-python.org/specs/spec-0005/&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&#xA;To indicate adoption of multiple SPECS with one badge, see &lt;a href=&#34;../purpose-and-process/#badges&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SPEC 4 — Using and Creating Nightly Wheels</title>
+      <link>https://scientific-python.org/specs/spec-0004/</link>
+      <pubDate>Mon, 05 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/spec-0004/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;a class=&#34;headerlink&#34; href=&#34;#description&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;This SPEC describes how to test against nightly wheels of several widely used&#xA;projects and how to create nightly wheels for your project. The document uses the word&#xA;&lt;em&gt;nightly&lt;/em&gt; to refer to some semi regular interval, like daily, weekly, or every three days.&lt;/p&gt;&#xA;&lt;p&gt;Regularly running your project&amp;rsquo;s tests while using the nightly version of your&#xA;dependencies allows you to spot problems caused by upstream changes before a new release&#xA;is made. This way potential issues can be resolved before they find their way&#xA;into a release, at which point it becomes much harder to change or revert&#xA;something.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SPEC 3 — Accessibility</title>
+      <link>https://scientific-python.org/specs/spec-0003/</link>
+      <pubDate>Mon, 14 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/spec-0003/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;a class=&#34;headerlink&#34; href=&#34;#description&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Technology is a great tool to make the world accessible to the full range of human experience, which includes &lt;a href=&#34;https://www.cdc.gov/ncbddd/disabilityandhealth/infographic-disability-impacts-all.html&#34;&gt;those with disabilities&lt;/a&gt;. The reach of accessibility guidelines extends beyond the scientific Python ecosystem including the &lt;a href=&#34;https://www.w3.org/TR/WCAG/&#34;&gt;Web Content Accessibility Guidelines (W3C)&lt;/a&gt;, a comprehensive set of international standards designed to make web content more accessible.&lt;/p&gt;&#xA;&lt;p&gt;The primary objective of this SPEC (Scientific Python Accessibility) is to provide fundamental recommendations for the Scientific Python communities and their projects. These recommendations aim to ensure accessibility and inclusivity for individuals with disabilities, particularly regarding web-based content and tools.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SPEC 2 — API Dispatch</title>
+      <link>https://scientific-python.org/specs/spec-0002/</link>
+      <pubDate>Thu, 16 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/spec-0002/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;a class=&#34;headerlink&#34; href=&#34;#description&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;!--&#xA;Briefly and clearly describe the recommendation.&#xA;--&gt;&#xA;&lt;p&gt;This SPEC (Scientific Python Ecosystem Coordination) recommendation for API dispatching is designed to enhance interoperability and performance within the scientific Python ecosystem, leveraging the capabilities of &lt;a href=&#34;https://packaging.python.org/en/latest/specifications/entry-points/&#34;&gt;Python &lt;code&gt;entry_points&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;This recommendation presents a systematic approach that enables users to redirect function calls to alternative computation backends seamlessly. This flexibility allows users to take advantage of optimized implementations simply by configuring an environment variable or adding an additional keyword argument (more on this later), rather than having to learn a new API&amp;rsquo;s interface, which might not be very &amp;ldquo;python-user&amp;rdquo;-friendly. Such adaptability facilitates the integration of hardware-specific optimizations, reimplementations in other programming languages (such as C or Rust), and the utilization of entirely new data structures.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SPEC 0 — Minimum Supported Dependencies</title>
+      <link>https://scientific-python.org/specs/spec-0000/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/spec-0000/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;a class=&#34;headerlink&#34; href=&#34;#description&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;This SPEC recommends that all projects across the Scientific Python ecosystem adopt a common time-based policy for dropping dependencies. From the perspective of this SPEC, the dependencies in question are core packages as well as older Python versions.&lt;/p&gt;&#xA;&lt;p&gt;All versions refer to feature releases (i.e., Python 3.8.0, NumPy 1.19.0; not Python 3.8.1, NumPy 1.19.2).&lt;/p&gt;&#xA;&lt;p&gt;Specifically, we recommend that:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Support for Python versions be dropped &lt;strong&gt;3 years&lt;/strong&gt; after their initial release.&lt;/li&gt;&#xA;&lt;li&gt;Support for core package dependencies be dropped &lt;strong&gt;2 years&lt;/strong&gt; after their initial release.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;admonition note&#34;&gt;&#xA;  &lt;div class=&#34;admonition-title&#34;&gt; Note&lt;/div&gt;&#xA;  &lt;p&gt;&#xA;    Core packages may or may not decide to provide bug fix releases during the full 2 year period after release.&#xA;Therefore, projects may occasionally want to drop support for core package dependencies earlier than recommended by this SPEC.&#xA;For instance, if a newer minimum version of a core package is needed by a project due to a critical bug fix,&#xA;which is not backported to older versions.&#xA;  &lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SPEC 1 — Lazy Loading of Submodules and Functions</title>
+      <link>https://scientific-python.org/specs/spec-0001/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/spec-0001/</guid>
+      <description>&lt;h2 id=&#34;description&#34;&gt;Description&lt;a class=&#34;headerlink&#34; href=&#34;#description&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;This SPEC recommends a lazy loading mechanism—targeted at libraries—that avoids import slowdowns&#xA;and provides explicit submodule exports.&lt;/p&gt;&#xA;&lt;p&gt;For example, it allows the following behavior:&lt;/p&gt;&#xA;&#xA;&#xA;&lt;div class=&#34;highlight&#34;&gt;&#xA;  &lt;pre class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;kn&#34;&gt;import&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;skimage&lt;/span&gt; &lt;span class=&#34;k&#34;&gt;as&lt;/span&gt; &lt;span class=&#34;nn&#34;&gt;ski&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# cheap operation; does not load submodules&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ski&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;filters&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# cheap operation; loads the filters submodule, but not&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;             &lt;span class=&#34;c1&#34;&gt;# any of its submodules or functions&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;ski&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;filters&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;.&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;gaussian&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;...&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;  &lt;span class=&#34;c1&#34;&gt;# loads the file in which gaussian is implemented&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;                           &lt;span class=&#34;c1&#34;&gt;# and calls that function&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;This has several advantages:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://scientific-python.org/specs/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/readme/</guid>
+      <description>&lt;h1 id=&#34;spec&#34;&gt;SPEC&lt;a class=&#34;headerlink&#34; href=&#34;#spec&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;The Scientific Python Ecosystem Coordination (SPEC) mechanism is used to recommend&#xA;project policies, coding conventions, and standard tooling.&lt;/p&gt;&#xA;&lt;p&gt;See &lt;a href=&#34;https://scientific-python.org/specs/&#34;&gt;https://scientific-python.org/specs/&lt;/a&gt; for a list of SPECs and their statuses.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Code of Conduct</title>
+      <link>https://scientific-python.org/code_of_conduct/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/code_of_conduct/</guid>
+      <description>&lt;p&gt;This code of conduct applies to all spaces managed by the scientific Python&#xA;ecosystem project, including all public and private mailing lists,&#xA;issue trackers, wikis, and any other communication channel used by our&#xA;community.&lt;/p&gt;&#xA;&lt;p&gt;This code of conduct should be honored by everyone who participates in the&#xA;scientific Python ecosystem community formally or informally, or&#xA;claims any affiliation with the project, in any project-related activities and&#xA;especially when representing the project, in any role.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>General Planning Meeting</title>
+      <link>https://scientific-python.org/summits/developer/2023/general-planning/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/summits/developer/2023/general-planning/</guid>
+      <description>&lt;h2 id=&#34;information&#34;&gt;Information&lt;a class=&#34;headerlink&#34; href=&#34;#information&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Date: Monday, &lt;a href=&#34;https://www.timeanddate.com/worldclock/converter.html?iso=20230227T170000&amp;amp;p1=224&#34;&gt;February 27th 9AM - 10AM Pacific time (click for your timezone)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Zoom Link: &lt;a href=&#34;https://caltech.zoom.us/j/87686129450&#34;&gt;https://caltech.zoom.us/j/87686129450&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;participants&#34;&gt;Participants&lt;a class=&#34;headerlink&#34; href=&#34;#participants&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Jarrod Millman&lt;/li&gt;&#xA;&lt;li&gt;Stéfan van der Walt&lt;/li&gt;&#xA;&lt;li&gt;Brigitta Sipőcz&lt;/li&gt;&#xA;&lt;li&gt;Juanita Gomez&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;agenda&#34;&gt;Agenda&lt;a class=&#34;headerlink&#34; href=&#34;#agenda&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The summit is scheduled for 1 hour and will consist of a series of high-level&#xA;birds-of-a-feather (BoF)-style talks, followed by more focused discussion.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;(5 min) Welcome &amp;amp; Introductions (Jarrod Millman)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;(10 min) Logistics&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;(30) Meeting Topics&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Governance and Decision Making</title>
+      <link>https://scientific-python.org/about/governance/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/about/governance/</guid>
+      <description>&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;a class=&#34;headerlink&#34; href=&#34;#abstract&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;Scientific Python is a consensus-based community project.&#xA;Anyone with an interest in the project can join the community, contribute to the project design,&#xA;and participate in the decision making process.&#xA;This document describes how that participation takes place, how to find consensus, and how&#xA;deadlocks are resolved.&lt;/p&gt;&#xA;&lt;p&gt;Note that this document only applies to the Scientific Python project, which&#xA;aims to better coordinate the ecosystem and&#xA;prepare scientific Python for the next decade of data science.&#xA;However, every project in the ecosystem has its own governance structure.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>IPython</title>
+      <link>https://scientific-python.org/specs/core-projects/ipython/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/core-projects/ipython/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Matplotlib</title>
+      <link>https://scientific-python.org/specs/core-projects/matplotlib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/core-projects/matplotlib/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Meeting 1</title>
+      <link>https://scientific-python.org/summits/domain-stacks/meeting1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/summits/domain-stacks/meeting1/</guid>
+      <description>&lt;h2 id=&#34;information&#34;&gt;Information&lt;a class=&#34;headerlink&#34; href=&#34;#information&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;When: September 6th 8am PDT&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Where:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://berkeley.zoom.us/j/93150321184?pwd=aEp4RGFhc1pLQ2l3b1VKNHJRUGpOUT09&#34;&gt;https://berkeley.zoom.us/j/93150321184?pwd=aEp4RGFhc1pLQ2l3b1VKNHJRUGpOUT09&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Passcode: 029244&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Main page: &lt;a href=&#34;https://scientific-python.org/summits/domain-stacks/&#34;&gt;https://scientific-python.org/summits/domain-stacks/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Discussion: &lt;a href=&#34;https://discuss.scientific-python.org/t/domain-stacks-summit/329&#34;&gt;https://discuss.scientific-python.org/t/domain-stacks-summit/329&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;participants&#34;&gt;Participants&lt;a class=&#34;headerlink&#34; href=&#34;#participants&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Stéfan van der Walt (Scientific Python)&lt;/li&gt;&#xA;&lt;li&gt;Juanita Gomez (Scientific Python)&lt;/li&gt;&#xA;&lt;li&gt;Pamphile Roy (Scientific Python)&lt;/li&gt;&#xA;&lt;li&gt;Paige Martin (Pangeo)&lt;/li&gt;&#xA;&lt;li&gt;Ryan Abernathey (Pangeo)&lt;/li&gt;&#xA;&lt;li&gt;Jim Pivarski (Scikit-HEP)&lt;/li&gt;&#xA;&lt;li&gt;Henry Schreiner (Scikit-HEP)&lt;/li&gt;&#xA;&lt;li&gt;Levi Wolf (Geography)&lt;/li&gt;&#xA;&lt;li&gt;Martin Fleischmann (Geography)&lt;/li&gt;&#xA;&lt;li&gt;Pey Lian Lim (Astropy)&lt;/li&gt;&#xA;&lt;li&gt;Isaac Virshup (scverse)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;agenda&#34;&gt;Agenda&lt;a class=&#34;headerlink&#34; href=&#34;#agenda&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;(10 min) Stéfan discuss purpose of meeting and goals (10 min)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Meeting 1</title>
+      <link>https://scientific-python.org/summits/sparse/meeting1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/summits/sparse/meeting1/</guid>
+      <description>&lt;h2 id=&#34;information&#34;&gt;Information&lt;a class=&#34;headerlink&#34; href=&#34;#information&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Date: Monday, &lt;a href=&#34;https://www.timeanddate.com/worldclock/converter.html?iso=20220926T180000&amp;amp;p1=224&#34;&gt;September 26th 11AM - 12PM Pacific time (click for your timezone)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Zoom Link (sign in required): &lt;a href=&#34;https://berkeley.zoom.us/j/96628687450?pwd=Q29oeDc5NnJEYlFHVU1yVUFITzNQUT09&#34;&gt;https://berkeley.zoom.us/j/96628687450?pwd=Q29oeDc5NnJEYlFHVU1yVUFITzNQUT09&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;participants&#34;&gt;Participants&lt;a class=&#34;headerlink&#34; href=&#34;#participants&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Hameer Abbasi&lt;/li&gt;&#xA;&lt;li&gt;Nezar Abdennur&lt;/li&gt;&#xA;&lt;li&gt;Ross Barnowski&lt;/li&gt;&#xA;&lt;li&gt;CJ Carey&lt;/li&gt;&#xA;&lt;li&gt;Jérémie du Boisberranger&lt;/li&gt;&#xA;&lt;li&gt;Julien Jerphanion&lt;/li&gt;&#xA;&lt;li&gt;Jim Kitchen&lt;/li&gt;&#xA;&lt;li&gt;Jarrod Millman&lt;/li&gt;&#xA;&lt;li&gt;Dan Schult&lt;/li&gt;&#xA;&lt;li&gt;Stéfan van der Walt&lt;/li&gt;&#xA;&lt;li&gt;Isaac Virshup&lt;/li&gt;&#xA;&lt;li&gt;Erik Welch&lt;/li&gt;&#xA;&lt;li&gt;Meekail Zain&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;agenda&#34;&gt;Agenda&lt;a class=&#34;headerlink&#34; href=&#34;#agenda&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The summit is scheduled for 1 hour and will consist of a series of high-level&#xA;birds-of-a-feather (BoF)-style talks, followed by more focused discussion.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Meeting 2</title>
+      <link>https://scientific-python.org/summits/sparse/meeting2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/summits/sparse/meeting2/</guid>
+      <description>&lt;h2 id=&#34;information&#34;&gt;Information&lt;a class=&#34;headerlink&#34; href=&#34;#information&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Date: Thursday, &lt;a href=&#34;https://www.timeanddate.com/worldclock/converter.html?iso=20230427T180000&amp;amp;p1=224&#34;&gt;April 27th 11AM - 12PM Pacific time (click for your timezone)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Zoom Link: &lt;a href=&#34;https://ucsc.zoom.us/j/93937164560?pwd=UmZKTmlHeGRMRkN3a2h2SDNJY3lvZz09&#34;&gt;https://ucsc.zoom.us/j/93937164560?pwd=UmZKTmlHeGRMRkN3a2h2SDNJY3lvZz09&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;participants&#34;&gt;Participants&lt;a class=&#34;headerlink&#34; href=&#34;#participants&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;agenda&#34;&gt;Agenda&lt;a class=&#34;headerlink&#34; href=&#34;#agenda&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;The summit is scheduled for 1 hour and will focus on the proposed array semantics in &lt;code&gt;scipy.sparse&lt;/code&gt; &lt;a href=&#34;https://scientific-python.org/doc/sparse-arrays-grant-2022.pdf&#34;&gt;(download)&lt;/a&gt;&#xA;and what work can be accomplished during the &lt;a href=&#34;https://scientific-python.org/summits/developer/2023/&#34;&gt;2023 Scientific Python developer summit&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;(5 min) Welcome &amp;amp; Introductions (Jarrod Millman)&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;(50 min) Discussion&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Who will be working on scipy sparse arrays during the summit?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NetworkX</title>
+      <link>https://scientific-python.org/specs/core-projects/networkx/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/core-projects/networkx/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NumPy</title>
+      <link>https://scientific-python.org/specs/core-projects/numpy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/core-projects/numpy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>pandas</title>
+      <link>https://scientific-python.org/specs/core-projects/pandas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/core-projects/pandas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Press kit</title>
+      <link>https://scientific-python.org/press-kit/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/press-kit/</guid>
+      <description>&lt;p&gt;We would like to make it easy for you to include the Scientific Python project identity in your next academic paper, course materials, or presentation.&lt;/p&gt;&#xA;&lt;p&gt;You will find SVG versions of the Scientific Python logo &lt;a href=&#34;https://github.com/scientific-python/archive/tree/main/branding/logo&#34;&gt;here&lt;/a&gt;.&#xA;Note that by using the scientific-python.org resources, you accept the &lt;a href=&#34;./code_of_conduct&#34;&gt;Scientific Python Code of Conduct&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>PySAL</title>
+      <link>https://scientific-python.org/specs/core-projects/pysal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/core-projects/pysal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Roadmap</title>
+      <link>https://scientific-python.org/roadmap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/roadmap/</guid>
+      <description>&lt;p&gt;With an extensive and high-quality ecosystem of libraries, scientific Python&#xA;has emerged as the leading platform for data analysis.&#xA;This ecosystem is sustained by independent volunteers with separate mailing lists,&#xA;websites, roadmaps, documentation, engineering and packaging solutions,&#xA;and governance structures.&lt;/p&gt;&#xA;&lt;p&gt;The Scientific Python project aims to better coordinate the ecosystem and&#xA;prepare scientific Python for the next decade of data science.&#xA;We provide resources, planning, and coordination for the community.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Scikit-HEP</title>
+      <link>https://scientific-python.org/specs/core-projects/scikit-hep/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/core-projects/scikit-hep/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>scikit-image</title>
+      <link>https://scientific-python.org/specs/core-projects/scikit-image/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/core-projects/scikit-image/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>scikit-learn</title>
+      <link>https://scientific-python.org/specs/core-projects/scikit-learn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/core-projects/scikit-learn/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SciPy</title>
+      <link>https://scientific-python.org/specs/core-projects/scipy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/core-projects/scipy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Summit Follow Up June 17</title>
+      <link>https://scientific-python.org/summits/sparse/array-followup-2023-06-17/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/summits/sparse/array-followup-2023-06-17/</guid>
+      <description>&lt;h1 id=&#34;friday-june-17-2023-1400-to-1500-utc&#34;&gt;Friday June 17 2023, 14:00 to 15:00 UTC&lt;a class=&#34;headerlink&#34; href=&#34;#friday-june-17-2023-1400-to-1500-utc&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;attendees&#34;&gt;Attendees&lt;a class=&#34;headerlink&#34; href=&#34;#attendees&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Dan&lt;/li&gt;&#xA;&lt;li&gt;Erik&lt;/li&gt;&#xA;&lt;li&gt;Isaac&lt;/li&gt;&#xA;&lt;li&gt;CJ&lt;/li&gt;&#xA;&lt;li&gt;Julien&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;agenda&#34;&gt;Agenda&lt;a class=&#34;headerlink&#34; href=&#34;#agenda&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sort out and attribute &lt;a href=&#34;https://hackmd.io/1Q2832LDR_2Uv_-cV-wnYg#What-remains-to-be-done&#34;&gt;what remains to be done&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Roadmap/ plan for array-like sparse arrays&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Deprecation plan for matrices&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/scipy/scipy/issues/18592&#34;&gt;Creation routines&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Interop with other sparse matrix packages (isaac)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Blog post&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;a class=&#34;headerlink&#34; href=&#34;#notes&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Introduction, Erik works on libraries using sparse datastructures&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[Julien] Erik: here is &lt;a href=&#34;https://hackmd.io/iEtdfbxfSbGwOAJTXmqyIQ&#34;&gt;the worklog of the summit&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;what-remains-to-be-done&#34;&gt;What remains to be done&lt;a class=&#34;headerlink&#34; href=&#34;#what-remains-to-be-done&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;How do we work&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[Dan] Where does in-progress work go&#xA;&lt;ul&gt;&#xA;&lt;li&gt;CJ&amp;rsquo;s fork, make PRs onto branch there&lt;/li&gt;&#xA;&lt;li&gt;Using the view on the diff on GitHub might prevent the creation of spurious Draft PR&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Dense pretending to be sparse can be ephermeral, never needs to go to scipy&lt;/li&gt;&#xA;&lt;li&gt;Dan will make a branch for exploration that people can fork and make PRs to. Dan will try to keep it up-to-date with the main branch too.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;1d sparse array support&#xA;Timeline? - Dan + CJ working on it - Targeting 1.12&lt;/li&gt;&#xA;&lt;li&gt;nd sparse array support&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Julien, CJ: seems like low priority and this would be a huge maintenance cost SciPy for relatively rare use-cases&lt;/li&gt;&#xA;&lt;li&gt;CJ: Array api makes interop easier, we can lean on external packages for now&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;creation functions &lt;a href=&#34;https://github.com/scipy/scipy/issues/18592&#34;&gt;scipy#18592&lt;/a&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Want to get them out in a single release&lt;/li&gt;&#xA;&lt;li&gt;Is Ross going to implement these, or need to assign elsewhere?&lt;/li&gt;&#xA;&lt;li&gt;Current plan: &lt;code&gt;_array&lt;/code&gt; methods, so we can apply this to the fast_matrix_market io at the same type&lt;/li&gt;&#xA;&lt;li&gt;Bundling in api changes (like tuples for shapes)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Deprecate &lt;code&gt;isspmatrix_&lt;/code&gt; methods?&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Sounds like combination of classes + format attribute cover this&lt;/li&gt;&#xA;&lt;li&gt;(Julien) Deprecation plan: have suggested code to replace these things with&lt;/li&gt;&#xA;&lt;li&gt;Add a section in the documentation explaining the change of semantic and a migration plan for downstream libraries during the deprecation cycle.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Make a roadmap for array api&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;scikit-learn&#xA;&lt;ul&gt;&#xA;&lt;li&gt;When will scikit-learn be willing to support a compatible version of scipy?&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Julien:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;reasoning is based on some linux package manager not supporting latest numpy scipy&lt;/li&gt;&#xA;&lt;li&gt;Personally would like scikit-learn to follow SPEC 0&lt;/li&gt;&#xA;&lt;li&gt;See discussion for &lt;a href=&#34;https://github.com/scikit-learn/scikit-learn/issues/26438&#34;&gt;1.3&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/scikit-learn/scikit-learn/issues/26418&#34;&gt;Dedicated RFC&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Some part of scikit-learn&amp;rsquo;s behavior depends on SciPy&amp;rsquo;s version (e.g. see &lt;a href=&#34;https://github.com/scikit-learn/scikit-learn/blob/784ba9ef9f65d5e4e33087dd7f5b87d65b605efc/sklearn/preprocessing/_polynomial.py#L61-L73&#34;&gt;this one&lt;/a&gt;); we might potentially rely on similar mechanism for the support of sparse arrays (e.g. reshaping outputs)&lt;/li&gt;&#xA;&lt;li&gt;scikit-learn uses nightly builds to test the developer version of SciPy and NumPy and failing tests are updated in &lt;a href=&#34;https://github.com/scikit-learn/scikit-learn/issues/26154&#34;&gt;this issue&lt;/a&gt;. We can watch those for breakage in scikit-learn when we make changes in SciPy.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;General speed ups&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&amp;ldquo;Fast path for canonical&amp;rdquo;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;TODO (Isaac)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Figure out canonical for all the formats, probably normalize APIs&lt;/li&gt;&#xA;&lt;li&gt;Add keyword public argument for constructors&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;broad-plan-for-deprecation&#34;&gt;Broad plan for deprecation&lt;a class=&#34;headerlink&#34; href=&#34;#broad-plan-for-deprecation&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Add support for sparse_arrays everywhere we can&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Creation functions: target 1.12&lt;/li&gt;&#xA;&lt;li&gt;1d COO: target 1.12&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Deprecate spmatrix-specific functions (where there&amp;rsquo;s an easy replacement)&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Target: 1.12&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Once everything works with sparse arrays, then deprecate spmatrix&#xA;&lt;ul&gt;&#xA;&lt;li&gt;And the sparse array API is stable! (specifically, 1d support)&lt;/li&gt;&#xA;&lt;li&gt;Target: 1.13&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;actionable-items&#34;&gt;Actionable items&lt;a class=&#34;headerlink&#34; href=&#34;#actionable-items&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;[Julien] Add a section in the documentation explaining the change of semantic and a migration plan for downstream libraries during the deprecation cycle.&lt;/li&gt;&#xA;&lt;li&gt;[Julien] Drop &lt;code&gt;isspmatrix_-&lt;/code&gt; checks in scikit-learn and use &lt;code&gt;issparse&lt;/code&gt; and &lt;code&gt;format&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;next-meeting-date-and-time&#34;&gt;Next meeting date and time&lt;a class=&#34;headerlink&#34; href=&#34;#next-meeting-date-and-time&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Every two weeks with the option to drop every other meeting (at least once a month)&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;[name=Julien] +1. I proposed to meet every two week for 1h on the same timeslot&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>xarray</title>
+      <link>https://scientific-python.org/specs/core-projects/xarray/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/core-projects/xarray/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Zarr-Python</title>
+      <link>https://scientific-python.org/specs/core-projects/zarr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/specs/core-projects/zarr/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

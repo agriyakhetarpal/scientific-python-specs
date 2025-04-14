@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en-us" data-colorscheme="auto" >
+  <head>
+    <!-- Generated 2025-04-14 20:45:58 UTC -->
+    <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    
+    <title>Scientific Python - SPEC Purpose and Process</title>
+
+    
+    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900">
+
+<link rel="icon" href="../../images/favicon.ico" />
+
+  
+      <link rel="stylesheet" type="text/css" href="../../theme-css/sphinx-design/index.scss.min.acf226aa2ff428a500491b1393bef415c3883113dac542174f5814fba5532592.css" integrity="sha256-rPImqi/0KKUASRsTk770FcOIMRPaxUIXT1gU&#43;6VTJZI=">  
+      <link rel="stylesheet" type="text/css" href="../../theme-css/pst/bootstrap.scss.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css" integrity="sha256-47DEQpj8HBSa&#43;/TImW&#43;5JCeuQeRkm5NMpJWZG3hSuFU=">  
+      <link rel="stylesheet" type="text/css" href="../../theme-css/pst/pydata-sphinx-theme.scss.min.1032a66ba1e0ab03bfcbfd265dce1d831879c5ea9d57e8575a68eeeb887b617e.css" integrity="sha256-EDKma6HgqwO/y/0mXc4dgxh5xeqdV&#43;hXWmju64h7YX4=">  
+      <link rel="stylesheet" type="text/css" href="../../theme-css/spht/index.scss.min.ad03de1683bb39a0d1b31395797b97188e59cda6d778c0671a99db0b4fb799a9.css" integrity="sha256-rQPeFoO7OaDRsxOVeXuXGI5ZzabXeMBnGpnbC0&#43;3mak=">
+    <link rel="stylesheet" href="../../theme-css/backtotop.min.af4a1eb2a3e4e5ca38353a8320dafc9b1e1fd2edd480caa5fff0ae4e751d991c.css" integrity="sha256-r0oesqPk5co4NTqDINr8mx4f0u3UgMql//CuTnUdmRw=">
+    <link rel="stylesheet" href="../../theme-css/bulma.min.f488b160722c9b7a2a760c03808dc8df5173e6c9dd25cb7481451ddb3c4f35dc.css" integrity="sha256-9IixYHIsm3oqdgwDgI3I31Fz5sndJct0gUUd2zxPNdw=">
+    <link rel="stylesheet" href="../../theme-css/code-highlight.min.d0bd96ff1dbeb4b62536da5935b92af5cd7edb6d6f52b316d721e62078d9f089.css" integrity="sha256-0L2W/x2&#43;tLYlNtpZNbkq9c1&#43;221vUrMW1yHmIHjZ8Ik=">
+    <link rel="stylesheet" href="../../theme-css/content.min.1de9b096ffc099fee4b538589fea6b622be33d69de64c451e11f2c91476029c5.css" integrity="sha256-Hemwlv/Amf7ktThYn&#43;prYivjPWneZMRR4R8skUdgKcU=">
+    <link rel="stylesheet" href="../../theme-css/dark-mode.min.5acf8f4101cd9f24228036af1488ce5c137f9c7e45fbc9c24c20200ea5140ac0.css" integrity="sha256-Ws&#43;PQQHNnyQigDavFIjOXBN/nH5F&#43;8nCTCAgDqUUCsA=">
+    <link rel="stylesheet" href="../../theme-css/footer.min.4be63c4d5628cb485efcfa5c9475fa1daa18933eb83741a2ca2bcd444ec270a2.css" integrity="sha256-S&#43;Y8TVYoy0he/PpclHX6HaoYkz64N0GiyivNRE7CcKI=">
+    <link rel="stylesheet" href="../../theme-css/hero.min.aa8286fd7d31d78e297e71594436c47b17d4f28660fd16f2b252e3f55fa500be.css" integrity="sha256-qoKG/X0x144pfnFZRDbEexfU8oZg/RbyslLj9V&#43;lAL4=">
+    <link rel="stylesheet" href="../../theme-css/lists.min.83821789384ebadc1a1ff75ef9f4b29ba53fe45eb30a46a228aa55772a393396.css" integrity="sha256-g4IXiThOutwaH/de&#43;fSym6U/5F6zCkaiKKpVdyo5M5Y=">
+    <link rel="stylesheet" href="../../theme-css/navbar.min.c15f7eadb5a7e1532309c04d94e1b0099d4fa75aaded30829bbfd21ebdb51ad5.css" integrity="sha256-wV9&#43;rbWn4VMjCcBNlOGwCZ1Pp1qt7TCCm7/SHr21GtU=">
+    <link rel="stylesheet" href="../../theme-css/news.min.8875ffae62ae22741a27025581fcb3341c18442be06bf132e45f8d6027692876.css" integrity="sha256-iHX/rmKuInQaJwJVgfyzNBwYRCvga/Ey5F&#43;NYCdpKHY=">
+    <link rel="stylesheet" href="../../theme-css/posts.min.9505f87d5973f3f08c99c613c0781b3a42411f4795657e8da7ef29c7ad37c23d.css" integrity="sha256-lQX4fVlz8/CMmcYTwHgbOkJBH0eVZX6Np&#43;8px603wj0=">
+    <link rel="stylesheet" href="../../theme-css/search.min.ee3423de82ad5535fd375aa47bc4fe618ecaa5d10eb0b68fe6dfc85a78790676.css" integrity="sha256-7jQj3oKtVTX9N1qke8T&#43;YY7KpdEOsLaP5t/IWnh5BnY=">
+    <link rel="stylesheet" href="../../theme-css/shortcuts.min.f90addf0a2a3c4e075eb5c3c78e4cc27d9b4fba18a02a17808695212762224c1.css" integrity="sha256-&#43;Qrd8KKjxOB161w8eOTMJ9m0&#43;6GKAqF4CGlSEnYiJME=">
+    <link rel="stylesheet" href="../../theme-css/styles.min.00c75e5e25cb21123ca151cb4f4a130891157870829d91cefa425316ecf23de2.css" integrity="sha256-AMdeXiXLIRI8oVHLT0oTCJEVeHCCnZHO&#43;kJTFuzyPeI=">
+    <link rel="stylesheet" href="../../theme-css/tables.min.7a44b6bd698323dd3d379b714bd534132e76bf4ba0d3dec61997a8d9ba9db5fb.css" integrity="sha256-ekS2vWmDI909N5txS9U0Ey52v0ug097GGZeo2bqdtfs=">
+    <link rel="stylesheet" href="../../theme-css/tabs.min.8884c317231b5f2331b2fd9f65e4f7900fe9124aafae93b78cef175960289683.css" integrity="sha256-iITDFyMbXyMxsv2fZeT3kA/pEkqvrpO3jO8XWWAoloM=">
+    <link rel="stylesheet" href="../../theme-css/vars.min.3d537d14ea6e6fb59012fa9d357adf4b209dab8c2535fb94ab37afb6a37020fd.css" integrity="sha256-PVN9FOpub7WQEvqdNXrfSyCdq4wlNfuUqzevtqNwIP0=">
+    <link rel="stylesheet" href="../../css/custom.min.aee833ad7adac4c1bf8442e439dc06cfdbce30777bb985654641a329ce6b60da.css" integrity="sha256-rugzrXraxMG/hELkOdwGz9vOMHd7uYVlRkGjKc5rYNo=">
+    
+
+
+    
+    
+
+    
+    
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://scientific-python.org/images/logo.svg">
+  <meta name="twitter:title" content="SPEC Purpose and Process">
+  <meta name="twitter:description" content="Description# The SPEC process is designed to identify areas of shared concern between projects in the scientific Python ecosystem and to produce collaboratively written, community adopted guidelines for addressing these. Such guidelines are known as SPECs: Scientific Python Ecosystem Coordination documents.
+Specifically, the purpose of the SPEC process is
+to help unify the ecosystem for users and developers; to provide guidance to projects on technical issues or processes; to document standard APIs, development tools, and community practices; and to foster ecosystem-wide discussions of common problems and to develop shared solutions. Projects in the ecosystem have an existing, diverse set of proposal processes and development constraints. SPECs complement these: they are a mechanism to encourage shared practices and improve uniformity of experience across projects. SPECs may, for example, capture established practices so that new projects can learn from them; or they may propose a new practice that the authors believe will benefit the ecosystem as a whole.">
+
+  </head>
+  <body>
+    
+    
+<nav id="nav" class="navbar" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="../../">
+        <img class="navbar-logo" src="../../images/logo.svg" alt="A green tree on a white hill at the end of a green path in the shape of the letter &#39;S&#39;.">
+        <div class="navbar-logo-text">Scientific Python</div>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbar-menu" class="navbar-menu">
+
+      <div class="navbar-end">
+        <a href="../../" class="navbar-item">
+          Home
+        </a>
+        <a href="https://blog.scientific-python.org" class="navbar-item">
+          Blog
+        </a>
+        <a href="https://learn.scientific-python.org" class="navbar-item">
+          Learn
+        </a>
+        <a href="https://tools.scientific-python.org" class="navbar-item">
+          Tools
+        </a>
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    
+
+    
+
+<section class="content-padding flex-row">
+  <div class="content-container">
+    <nav aria-label="Breadcrumb">
+<ul id="breadcrumbs" class="bd-breadcrumbs">
+  <li class="breadcrumb-item breadcrumb-home"><a href="../../" class="nav-link" aria-label="Home"><i class="fas fa-home"></i></a></li>
+  <li class="breadcrumb-item"><a href="../../specs/" class="nav-link">Scientific Python Ecosystem Coordination</a></li>
+
+  <li class="breadcrumb-item active" aria-current="page">SPEC Purpose and Process</li>
+</ul>
+</nav>
+
+    <h1>SPEC Purpose and Process</h1>
+    
+    <h2 id="description">Description<a class="headerlink" href="#description" title="Link to this heading">#</a></h2>
+<p>The SPEC process is designed to identify areas of shared concern between projects
+in the scientific Python ecosystem and to produce collaboratively written,
+community adopted guidelines for addressing these.
+Such guidelines are known as SPECs: Scientific Python Ecosystem Coordination documents.</p>
+<p>Specifically, the purpose of the SPEC process is</p>
+<ol>
+<li>to help unify the ecosystem for users and developers;</li>
+<li>to provide guidance to projects on technical issues or processes;</li>
+<li>to document standard APIs, development tools, and community practices; and</li>
+<li>to foster ecosystem-wide discussions of common problems and to develop shared solutions.</li>
+</ol>
+<p>Projects in the ecosystem have an existing, diverse set of proposal processes
+and development constraints.
+SPECs complement these: they are a mechanism to encourage shared practices and
+improve uniformity of experience across projects.
+SPECs may, for example, capture established practices so that new projects can
+learn from them; or they may propose a new practice that the authors believe
+will benefit the ecosystem as a whole.</p>
+<p>Projects decide for themselves whether to adopt any given SPEC—often, this
+would be through team consensus.
+A SPEC may not be a good fit for every single project, and thus there is no
+expectation that all SPECs must be adopted by all projects.
+That said, SPECs serve their purpose through being adopted by
+several projects—and their authority stems from the extent to which they are.</p>
+<p>Participants in the SPEC process must adhere to our
+<a href="https://scientific-python.org/code_of_conduct/">Code of Conduct</a>.</p>
+<h3 id="key-terms">Key Terms<a class="headerlink" href="#key-terms" title="Link to this heading">#</a></h3>
+<dl>
+<dt>Scientific Python Ecosystem</dt>
+<dd>The <strong>ecosystem</strong> is a loose federation of community developed Python projects
+widely used in scientific research that interact well with one another and that
+follow similar norms of development, documentation, testing, and so forth.</dd>
+<dt>SPEC Core Projects</dt>
+<dd>The <a href="../../specs/core-projects">Core Projects</a>
+are a small subset of the ecosystem consisting of mature, community developed projects
+that are (a) depended upon by most of the other projects and (b) responsible for
+reviewing, discussing, implementing, and endorsing SPEC documents.</dd>
+<dt>SPEC Steering Committee</dt>
+<dd>The <a href="../../specs/steering-committee">Steering Committee</a> leads the SPEC project and
+manages the SPEC process including moderating
+the <a href="https://discuss.scientific-python.org/c/specs/">SPECs discussion forum</a>,
+accepting SPEC documents, and maintaining the SPEC process documents.</dd>
+<dt>SPEC Process</dt>
+<dd>The SPEC process is outlined in this document and the associated
+<a href="../../specs/steering-committee">SPEC Steering Committee</a> and
+<a href="../../specs/core-projects">SPEC Core Projects</a> documents.
+This process is managed and overseen by the Steering Committee, and functions in collaboration
+with the Core Projects, community members, and projects across the ecosystem.</dd>
+<dt>SPEC Document</dt>
+<dd>A <strong>SPEC document</strong> provides operational guidelines for projects and helps
+coordinate the ecosystem to provide a more unified experience for users and developers.
+These documents are developed collaboratively with the Core Projects and other interested
+ecosystem projects and community members.</dd>
+</dl>
+<h3 id="format">Format<a class="headerlink" href="#format" title="Link to this heading">#</a></h3>
+<p>SPECs are UTF-8 encoded text files using
+<a href="https://www.markdownguide.org/">Markdown</a> format and stored in the
+<a href="https://github.com/scientific-python/specs">SPEC repository</a>.
+The SPEC documents are converted to HTML by code in the
+<a href="https://github.com/scientific-python/scientific-python.org/">scientific-python.org repository</a> using
+<a href="https://gohugo.io/">Hugo</a> and deployed to
+<a href="https://scientific-python.org/specs/">https://scientific-python.org/specs/</a>.
+Each SPEC has two corresponding discussions: one under <a href="https://discuss.scientific-python.org/c/specs/ideas">SPECS → Ideas</a>, where the SPEC committee discussed its viability, and another under <a href="https://discuss.scientific-python.org/c/specs/web-comments">SPECS → Web Comments</a>, where public comments from <a href="https://scientific-python.org/specs">https://scientific-python.org/specs</a> are stored.</p>
+<h2 id="implementation">Implementation<a class="headerlink" href="#implementation" title="Link to this heading">#</a></h2>
+<p>The Steering Committee manages the SPEC process and will provide guidance to contributors
+throughout the process.
+In this section, we provide an overview of the main decision points in the SPEC process
+and provide guidance for how to get started with a new SPEC proposal.</p>
+<h3 id="decision-points">Decision Points<a class="headerlink" href="#decision-points" title="Link to this heading">#</a></h3>
+<p>A SPEC passes through four decision points over the course of
+its development and implementation:
+<strong>Accept</strong>, <strong>Publish</strong>, <strong>Endorse</strong>, and <strong>Adopt</strong>.</p>
+<!-- prettier-ignore-start -->
+<pre class="mermaid">graph LR
+
+START[ ]--> |Propose| A[Accept]
+A--> |Develop| B[Publish]
+B--> |Canvass| C[Endorse]
+C--> |Recommend| D[Adopt]
+
+click A callback "Steering Committee Action"
+click B callback "Author Action"
+click C callback "Core Project Action"
+click D callback "Ecosystem Action"
+
+style START fill:#FFFFFF, stroke:#FFFFFF;
+</pre>
+
+<!-- prettier-ignore-end -->
+<p>The authors starts by <em>proposing</em> a SPEC, as outlined in <a href="#new-spec-proposals">New SPEC
+Proposals</a>.
+The decision to <strong>accept</strong> a SPEC is made by the Steering Committee,
+at which point it is added to the main branch of the <a href="https://github.com/scientific-python/specs">SPEC
+repository</a>, clearly
+labeled as a draft.
+Proposed SPECs are accepted once (a) there is agreement that the SPEC
+concept is applicable to the ecosystem, (b) a draft pull request is
+written to clearly explain the area of common concern and a general
+approach to a shared solution, and (c) there are contributors (from at least two Core
+Projects) interested in working on the new SPEC and in championing it
+to their projects as well as the larger community.
+Additional details may be found in <a href="../../specs/steering-committee">Steering Committee
+documentation</a>.</p>
+<p>In the accepted phase, the authors <em>develop</em> their SPEC, in
+consultation with Core Projects and interested community members.
+This is done in a collabortive and iterative process, focused on
+ensuring that the SPEC is broadly applicable and likely to be widely
+adopted.
+The intent is that most SPECs will have authors from several projects,
+including Core Projects.
+Once authors consider their SPEC complete, they <strong>publish</strong> it,
+removing its draft status.</p>
+<p>The author now <em>canvasses</em> their project with the Core Projects, so
+they may <strong>endorse</strong> it.
+Once a SPEC is endorsed, substantive changes require the approval of
+all endorsing Core Projects.</p>
+<p>A SPEC is <em>recommended</em> for wide-spread adoption once it is endorsed by
+two (or more) Core Projects.
+Additional details may be found in <a href="../../specs/core-projects">Core Project
+documentation</a>.
+Individual projects choose to <strong>adopt</strong> the SPEC according to their
+own decision-making processes.
+Each SPEC describes what adopting it means in its <em>Ecosystem Adoption</em> section.
+Ecosystem projects are welcome to adopt a SPEC at any point in the
+process, however, it may make sense to wait until a SPEC is endorsed
+by several Core Projects to ensure that the SPEC has been vetted and
+is deemed stable enough for widespread adoption.
+Once a SPEC is endorsed, it may still evolve, but the barrier for
+modifying the SPEC will increase substantially (since all endorsing
+projects would need to agree to changes).
+Projects that adopt a SPEC early should engage in the collaborative
+process leading to the SPEC being endorsed by the Core Projects, to
+ensure that their use cases are incorporated.</p>
+<h4 id="badges">Badges<a class="headerlink" href="#badges" title="Link to this heading">#</a></h4>
+<p>Projects can highlight their adoption of specific SPECs with a SPEC badge.
+For example, for SPEC 0, we recommend using</p>
+
+<div class="tabs">
+  <div role="tablist" class="automatic">
+    <button id="000-tab-0" type="button" role="tab" aria-selected="true" aria-controls="000-tabpanel-0">
+      Rendered badge
+    </button>
+    <button id="000-tab-1" type="button" role="tab" aria-selected="false" aria-controls="000-tabpanel-1">
+      Markdown
+    </button>
+    <button id="000-tab-2" type="button" role="tab" aria-selected="false" aria-controls="000-tabpanel-2">
+      reStructuredText
+    </button>
+  </div>
+  <div id="000-tabpanel-0" role="tabpanel" tabindex="0" aria-labelledby="$000-tab-0"><a href="https://scientific-python.org/specs/spec-0000/"><img src="https://img.shields.io/badge/SPEC-0-green?labelColor=%23004811&amp;color=%235CA038" alt="SPEC 0 — Minimum Supported Dependencies"></a></div>
+  <div id="000-tabpanel-1" role="tabpanel" tabindex="0" aria-labelledby="$000-tab-1">
+<div class="highlight">
+  <pre>[![SPEC 0 — Minimum Supported Dependencies](https://img.shields.io/badge/SPEC-0-green?labelColor=%23004811&amp;color=%235CA038)](https://scientific-python.org/specs/spec-0000/)</pre>
+</div>
+
+</div>
+  <div id="000-tabpanel-2" role="tabpanel" tabindex="0" aria-labelledby="$000-tab-2">
+<div class="highlight">
+  <pre>|SPEC 0 — Minimum Supported Dependencies|
+
+.. |SPEC 0 — Minimum Supported Dependencies| image:: https://img.shields.io/badge/SPEC-0-green?labelColor=%23004811&amp;color=%235CA038
+   :target: https://scientific-python.org/specs/spec-0000/</pre>
+</div>
+
+</div>
+</div>
+
+
+<p>Alternatively, you can use one badge to indicate adoption of multiple SPECs.
+For example, to indicate adoption of SPECs 0, 1, and 4, we recommend the following</p>
+
+<div class="tabs">
+  <div role="tablist" class="automatic">
+    <button id="001-tab-0" type="button" role="tab" aria-selected="true" aria-controls="001-tabpanel-0">
+      Rendered badge
+    </button>
+    <button id="001-tab-1" type="button" role="tab" aria-selected="false" aria-controls="001-tabpanel-1">
+      Markdown
+    </button>
+    <button id="001-tab-2" type="button" role="tab" aria-selected="false" aria-controls="001-tabpanel-2">
+      reStructuredText
+    </button>
+  </div>
+  <div id="001-tabpanel-0" role="tabpanel" tabindex="0" aria-labelledby="$001-tab-0"><a href="https://scientific-python.org/specs/"><img src="https://img.shields.io/badge/SPEC-0,1,4-green?labelColor=%23004811&amp;color=%235CA038" alt="Scientific Python Ecosystem Coordination"></a></div>
+  <div id="001-tabpanel-1" role="tabpanel" tabindex="0" aria-labelledby="$001-tab-1">
+<div class="highlight">
+  <pre>[![Scientific Python Ecosystem Coordination](https://img.shields.io/badge/SPEC-0,1,4-green?labelColor=%23004811&amp;color=%235CA038)](https://scientific-python.org/specs/)</pre>
+</div>
+
+</div>
+  <div id="001-tabpanel-2" role="tabpanel" tabindex="0" aria-labelledby="$001-tab-2">
+<div class="highlight">
+  <pre>|Scientific Python Ecosystem Coordination|
+
+.. |Scientific Python Ecosystem Coordination| image:: https://img.shields.io/badge/SPEC-0,1,4-green?labelColor=%23004811&amp;color=%235CA038
+   :target: https://scientific-python.org/specs/</pre>
+</div>
+
+</div>
+</div>
+
+
+<h3 id="new-spec-proposals">New SPEC Proposals<a class="headerlink" href="#new-spec-proposals" title="Link to this heading">#</a></h3>
+<p>A good SPEC proposal focuses on a single key recommendation or idea
+for coordinating projects in the scientific Python ecosystem.
+Before proposing a SPEC, we highly recommended that you first <strong>vet
+the idea</strong> by doing one or more of the following:</p>
+<ol>
+<li>discuss the idea with at least one project in the ecosystem,</li>
+<li>discuss the idea with at least one other member of the ecosystem, or</li>
+<li>create a minimal, proof of concept prototype.</li>
+</ol>
+<p>Before a proposed SPEC can be accepted:</p>
+<ol>
+<li>The idea must be proposed on the discussion forum under the <a href="https://discuss.scientific-python.org/c/specs/ideas/9"><code>SPECS/Ideas</code>
+topic</a>.</li>
+<li>A draft SPEC document must be submitted via pull request to the <a href="https://github.com/scientific-python/specs">SPEC repository</a>.</li>
+</ol>
+<p>Use the <code>quickstart.py</code> script to create the new SPEC document.
+Located at the top-level of the <a href="https://github.com/scientific-python/specs">SPEC
+repository</a>, the script
+will ask you a few questions<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> and then create a new file
+appropriately named with a basic template for you to complete (e.g.,
+<code>spec-0000/index.md</code>).
+Once the SPEC is in reasonable shape, file a pull request against the
+<a href="https://github.com/scientific-python/specs">SPEC repository</a>.</p>
+<h2 id="notes">Notes<a class="headerlink" href="#notes" title="Link to this heading">#</a></h2>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>When asked to enter the SPEC number, choose the next available number that
+has not yet been used.
+Before the SPEC is merged, the Steering Committee may ask you to change the SPEC number so
+that it doesn&rsquo;t conflict with another pull request.
+If so, just rename the file as appropriate and update the SPEC number in the
+<code>title</code> field of the SPEC header.</p>
+<p>The script currently only supports adding one author.
+If you need to add additional authors, just edit the text file.</p>
+<p>Additional files associated with a SPEC document may be kept in the directory
+containing the SPEC.
+For example, files associated with <code>spec-0000/index.md</code> are in <code>spec-0000/</code>.</p>
+<p>Leave the <code>draft</code> field set to <code>true</code> and the <code>endorsed-by</code> field empty.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+    
+  </div>
+</section>
+
+
+
+    
+    <div id="backtotop"><a href="#" id="backtotop-color"><i class="fa-solid fa-arrow-up"></i></a></div>
+
+    
+    
+
+<footer id="footer">
+  <div class="container">
+    <div id="footer-columns">
+      <div id="footer-logo-column">
+        <img id="footer-logo" src="../../images/logo.svg" alt="Scientific Python logo. A green tree on a white hill at the end of a green path in the shape of the letter &#39;S&#39;.">
+      </div>
+      <div class="footer-column">
+        <div class="footer-item">
+          <a href="../../about/">
+            About
+          </a>
+        </div>
+        <div class="footer-item">
+          <a href="../../roadmap/">
+            Roadmap
+          </a>
+        </div>
+        <div class="footer-item">
+          <a href="../../code_of_conduct/">
+            Code of Conduct
+          </a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <div class="footer-item">
+          <a href="../../specs/">
+            SPECs
+          </a>
+        </div>
+        <div class="footer-item">
+          <a href="../../summits/">
+            Summits
+          </a>
+        </div>
+        <div class="footer-item">
+          <a href="../../calendars">
+            Calendars
+          </a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <div class="footer-item">
+          <a href="../../press-kit">
+            Press kit
+          </a>
+        </div>
+      </div>
+        <div class="footer-actions">
+          
+
+          <div class="community-icons">
+            <a href="https://github.com/scientific-python/" aria-label="https://github.com/scientific-python/">
+              
+
+
+
+
+
+<svg class="icon github-icon" viewBox="0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+
+
+            </a>
+            <a href="https://www.youtube.com/c/ScientificPython-org" aria-label="https://www.youtube.com/c/ScientificPython-org">
+              
+
+
+
+
+
+<svg class="icon youtube-icon" viewBox="0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+
+
+            </a>
+            <a href="https://fosstodon.org/@scientific_python" aria-label="https://fosstodon.org/@scientific_python">
+              
+
+
+
+
+
+<svg class="icon mastodon-icon" viewBox="0 0 24 24" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Mastodon</title><path d="M23.268 5.313c-.35-2.578-2.617-4.61-5.304-5.004C17.51.242 15.792 0 11.813 0h-.03c-3.98 0-4.835.242-5.288.309C3.882.692 1.496 2.518.917 5.127.64 6.412.61 7.837.661 9.143c.074 1.874.088 3.745.26 5.611.118 1.24.325 2.47.62 3.68.55 2.237 2.777 4.098 4.96 4.857 2.336.792 4.849.923 7.256.38.265-.061.527-.132.786-.213.585-.184 1.27-.39 1.774-.753a.057.057 0 0 0 .023-.043v-1.809a.052.052 0 0 0-.02-.041.053.053 0 0 0-.046-.01 20.282 20.282 0 0 1-4.709.545c-2.73 0-3.463-1.284-3.674-1.818a5.593 5.593 0 0 1-.319-1.433.053.053 0 0 1 .066-.054c1.517.363 3.072.546 4.632.546.376 0 .75 0 1.125-.01 1.57-.044 3.224-.124 4.768-.422.038-.008.077-.015.11-.024 2.435-.464 4.753-1.92 4.989-5.604.008-.145.03-1.52.03-1.67.002-.512.167-3.63-.024-5.545zm-3.748 9.195h-2.561V8.29c0-1.309-.55-1.976-1.67-1.976-1.23 0-1.846.79-1.846 2.35v3.403h-2.546V8.663c0-1.56-.617-2.35-1.848-2.35-1.112 0-1.668.668-1.67 1.977v6.218H4.822V8.102c0-1.31.337-2.35 1.011-3.12.696-.77 1.608-1.164 2.74-1.164 1.311 0 2.302.5 2.962 1.498l.638 1.06.638-1.06c.66-.999 1.65-1.498 2.96-1.498 1.13 0 2.043.395 2.74 1.164.675.77 1.012 1.81 1.012 3.12z"/></svg>
+
+
+            </a>
+            <a href="https://discuss.scientific-python.org" aria-label="https://discuss.scientific-python.org">
+              
+
+
+
+
+
+<svg class="icon discourse-icon" viewBox="0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12.103 0C18.666 0 24 5.485 24 11.997c0 6.51-5.33 11.99-11.9 11.99L0 24V11.79C0 5.28 5.532 0 12.103 0zm.116 4.563c-2.593-.003-4.996 1.352-6.337 3.57-1.33 2.208-1.387 4.957-.148 7.22L4.4 19.61l4.794-1.074c2.745 1.225 5.965.676 8.136-1.39 2.17-2.054 2.86-5.228 1.737-7.997-1.135-2.778-3.84-4.59-6.84-4.585h-.008z"/></svg>
+
+
+            </a>
+            <a href="https://discord.com/invite/vur45CbwMz" aria-label="https://discord.com/invite/vur45CbwMz">
+              
+
+
+
+
+
+<svg class="icon discord-icon" viewBox="0 0 24 24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+
+
+            </a>
+          </div>
+          <div class="copyright">&copy; 2025 Scientific Python team. All rights reserved.</div>
+        </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+<script type="text/javascript" src=../../js/bundle.min.js></script><script type="text/javascript">setupShortcuts(maxLevel= 2 );</script>
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11.4.0/dist/mermaid.esm.min.mjs';
+
+  const theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'default';
+
+  mermaid.initialize({ startOnLoad: false, theme: theme });
+  await mermaid.run({ querySelector: '.mermaid' });
+</script>
+
+<script defer data-domain="scientific-python.org" src="https://views.scientific-python.org/js/script.js"></script>
+
+</html>

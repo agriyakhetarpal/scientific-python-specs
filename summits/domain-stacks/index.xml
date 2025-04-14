@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Domain Stacks on Scientific Python</title>
+    <link>https://scientific-python.org/summits/domain-stacks/</link>
+    <description>Recent content in Domain Stacks on Scientific Python</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://scientific-python.org/summits/domain-stacks/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Meeting 1</title>
+      <link>https://scientific-python.org/summits/domain-stacks/meeting1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://scientific-python.org/summits/domain-stacks/meeting1/</guid>
+      <description>&lt;h2 id=&#34;information&#34;&gt;Information&lt;a class=&#34;headerlink&#34; href=&#34;#information&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;When: September 6th 8am PDT&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Where:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://berkeley.zoom.us/j/93150321184?pwd=aEp4RGFhc1pLQ2l3b1VKNHJRUGpOUT09&#34;&gt;https://berkeley.zoom.us/j/93150321184?pwd=aEp4RGFhc1pLQ2l3b1VKNHJRUGpOUT09&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Passcode: 029244&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Main page: &lt;a href=&#34;https://scientific-python.org/summits/domain-stacks/&#34;&gt;https://scientific-python.org/summits/domain-stacks/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Discussion: &lt;a href=&#34;https://discuss.scientific-python.org/t/domain-stacks-summit/329&#34;&gt;https://discuss.scientific-python.org/t/domain-stacks-summit/329&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;participants&#34;&gt;Participants&lt;a class=&#34;headerlink&#34; href=&#34;#participants&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Stéfan van der Walt (Scientific Python)&lt;/li&gt;&#xA;&lt;li&gt;Juanita Gomez (Scientific Python)&lt;/li&gt;&#xA;&lt;li&gt;Pamphile Roy (Scientific Python)&lt;/li&gt;&#xA;&lt;li&gt;Paige Martin (Pangeo)&lt;/li&gt;&#xA;&lt;li&gt;Ryan Abernathey (Pangeo)&lt;/li&gt;&#xA;&lt;li&gt;Jim Pivarski (Scikit-HEP)&lt;/li&gt;&#xA;&lt;li&gt;Henry Schreiner (Scikit-HEP)&lt;/li&gt;&#xA;&lt;li&gt;Levi Wolf (Geography)&lt;/li&gt;&#xA;&lt;li&gt;Martin Fleischmann (Geography)&lt;/li&gt;&#xA;&lt;li&gt;Pey Lian Lim (Astropy)&lt;/li&gt;&#xA;&lt;li&gt;Isaac Virshup (scverse)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;agenda&#34;&gt;Agenda&lt;a class=&#34;headerlink&#34; href=&#34;#agenda&#34; title=&#34;Link to this heading&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;(10 min) Stéfan discuss purpose of meeting and goals (10 min)&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

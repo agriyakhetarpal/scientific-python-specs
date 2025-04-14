@@ -1,0 +1,58 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py 0.8.0-dev0 - http://git.io/lLljaA
+BEGIN:VEVENT
+DTSTART:20250107T170000Z
+DTEND:20250107T180000Z
+SUMMARY:Make Your Own JupyterLab Extension
+UID:0993c8c5-8033-4a12-8755-8a8ec05788aa@0993.org
+DESCRIPTION:Make your own JupyterLab extension in this tutorial. JupyterLab
+  is a free and open source\, browser based integrated development 
+ environment (IDE) that is the successor to Jupyter Notebook. Designed from
+  the core to be extensible\, JupyterLab is itself an extension of the 
+ Jupyter framework. Since its release\, open source developers have 
+ contributed hundreds of third party extensions (652 third-party extensions
+  as of 2024-10-15).\n\nMeetup: https://www.meetup.com/data-
+ umbrella/events/304917194/\nWebinarlink: 
+ https://www.bigmarker.com/neo4j/Data-Umbrella-Webinar\nVideo: 
+ https://www.youtube.com/@DataUmbrella
+URL:https://www.bigmarker.com/neo4j/Data-Umbrella-Webinar
+DTSTAMP:20250414T204556Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241210T170000Z
+DTEND:20241210T180000Z
+SUMMARY:Introduction to Git
+UID:033fe279-8103-4402-96f7-b31fe86cd062@033f.org
+DESCRIPTION:Join us for an introductory session on Git. Discover 
+ some\nfundamental concepts\, explore its practical applications\, 
+ and\nlearn how to efficiently use both the command line and the 
+ Visual\nStudio Code graphical user interface (GUI).\n\nMeetup: 
+ https://www.meetup.com/data-umbrella/events/304521945/\nWebinarlink: 
+ https://www.bigmarker.com/neo4j/Data-Umbrella-Webinar\nVideo: 
+ https://youtu.be/edCiPBn_dj8?feature=shared
+URL:https://www.bigmarker.com/neo4j/Data-Umbrella-Webinar
+DTSTAMP:20250414T204556Z
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241119T170000Z
+DTEND:20241119T180000Z
+SUMMARY:Polars & Narwhals - Understanding Expressions When You're Used to 
+ pandas
+UID:fba96fbb-44ff-4ee0-a467-3cdf9f16be33@fba9.org
+DESCRIPTION:When it comes to dataframes\, pandas is the go-to library 
+ for\nmany people. Yet Polars is taking the world by storm\, and so\nmany 
+ data practitioners are curious about trying it out. There\nis a learning 
+ curve though\, as Polars introduces some concepts\nwhich pandas users 
+ might not be familiar with. This talk is a\ndeep dive into one of those 
+ concepts (expressions) and will focus\non how you can understand them from
+  a pandas perspective.\n\nMeetup: https://www.meetup.com/data-
+ umbrella/events/304005848/\nWebinarlink: 
+ https://www.bigmarker.com/neo4j/Data-Umbrella-Webinar\nVideo: 
+ https://youtu.be/kPtUPe5Egak
+URL:https://www.bigmarker.com/neo4j/Data-Umbrella-Webinar
+DTSTAMP:20250414T204556Z
+END:VEVENT
+NAME:Data Umbrella Events Calendar
+X-WR-CALNAME:Data Umbrella Events Calendar
+END:VCALENDAR
