@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py 0.8.0-dev0 - http://git.io/lLljaA
+BEGIN:VEVENT
+DTSTART:20220720T160000Z
+DTEND:20220720T170000Z
+SUMMARY:Weekly SunPy Community Call
+UID:128f9d0d-d4f5-487a-b75f-9628d329fcab@128f.org
+DESCRIPTION:The weekly call for the SunPy community.\nAgenda: 
+ https://sunpy.org/community_meeting_agenda
+URL:https://sunpy.org/jitsi
+DTSTAMP:20250414T183133Z
+RRULE:FREQ=DAILY;INTERVAL=7;UNTIL=20250101T000000
+END:VEVENT
+NAME:SunPy Community Calendar
+X-WR-CALNAME:SunPy Community Calendar
+END:VCALENDAR

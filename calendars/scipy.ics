@@ -1,0 +1,54 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py 0.8.0-dev0 - http://git.io/lLljaA
+BEGIN:VEVENT
+DTSTART:20241113T140000Z
+DTEND:20241113T150000Z
+SUMMARY:SciPy Community Call (Europe/Asia)
+UID:60215fdd-98b7-4826-bd2c-882567c7e5d3@6021.org
+DESCRIPTION:This is the Europe/Asia-friendly meeting.\n\nMeeting notes: 
+ https://hackmd.io/pyhudrC5TgSwdJtpPldHgQ
+URL:https://us06web.zoom.us/j/6345425936
+DTSTAMP:20250414T183133Z
+RRULE:FREQ=DAILY;INTERVAL=56;UNTIL=20260101T000000
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241211T200000Z
+DTEND:20241211T210000Z
+SUMMARY:SciPy Community Call (Americas)
+UID:b81f70c9-6f13-4e83-927a-3c62368e2421@b81f.org
+DESCRIPTION:This is the Americas-friendly meeting.\n\nMeeting notes: 
+ https://hackmd.io/pyhudrC5TgSwdJtpPldHgQ
+URL:https://us06web.zoom.us/j/6345425936
+DTSTAMP:20250414T183133Z
+RRULE:FREQ=DAILY;INTERVAL=56;UNTIL=20260101T000000
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20241018T120000Z
+DTEND:20241018T130000Z
+SUMMARY:Monthly SciPy New Contributor Meeting (Europe/Asia)
+UID:d46234f8-98f4-46e4-8a78-8fb588c7e940@d462.org
+DESCRIPTION:The monthly call for new contributors to SciPy 🎉\n\nThis is the
+  Europe/Asia-friendly meeting.\n\nAll are welcome.\n\nMeeting notes: 
+ https://hackmd.io/@melissawm/H15ahr5wq
+URL:https://us06web.zoom.us/j/89085469494?pwd=dVFwK3dVczRyRUowZWZkckFtTmloU
+ T09
+DTSTAMP:20250414T183133Z
+RRULE:FREQ=DAILY;INTERVAL=56;UNTIL=20260101T000000
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230303T200000Z
+DTEND:20230303T210000Z
+SUMMARY:Monthly SciPy New Contributor Meeting (Americas)
+UID:44297b7a-1cb1-4abf-949f-0543e7a9b244@4429.org
+DESCRIPTION:The monthly call for new contributors to SciPy 🎉\n\nThis is the
+  Americas-friendly meeting.\n\nAll are welcome.\n\nMeeting notes: 
+ https://hackmd.io/@melissawm/H15ahr5wq
+URL:https://us06web.zoom.us/j/89085469494?pwd=dVFwK3dVczRyRUowZWZkckFtTmloU
+ T09
+DTSTAMP:20250414T183133Z
+RRULE:FREQ=DAILY;INTERVAL=56;UNTIL=20260101T000000
+END:VEVENT
+NAME:SciPy Community Calendar
+X-WR-CALNAME:SciPy Community Calendar
+END:VCALENDAR
