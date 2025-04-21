@@ -51,7 +51,7 @@ Discuss what it means for a core project to endorse this SPEC.
 
 Core projects endorsing this SPEC would mean that they:
 
-- enable interactivity within applicable sections of their documentation websites through interfaces described herewith; and
+- enable interactivity within applicable sections of their documentation websites through interfaces described in this document; and
 - further encourage other Scientific Python projects to adopt similar interfaces.
 
 ### Ecosystem Adoption
