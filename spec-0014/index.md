@@ -37,7 +37,7 @@ endorsed-by:
 Briefly and clearly describe the recommendation.
 -->
 
-A common pain point for new users coming to Scientific Python projects—particularly projects containing compiled code—has been their difficulty of installation, with historic package management troubles arising as a by-product of Python's strong capabilities for wrapping low-level languages such as C, C++, Fortran, and Rust. While the situation has improved with enhancements across the Python package management ecosystem, setting up a working Python environment can still be quite difficult for beginners. Even for experienced Python programmers, it can take a nontrivial amount of time to correctly install an unfamiliar package.
+A comon barrier for beginners trying to get started with Scientific Python projects is difficulty of installation. Even for experienced Python programmers, it can take a nontrivial amount of time to correctly install an unfamiliar package.
 
 In-browser interactive documentation offers users a chance to try out and explore projects without taking effort to install them locally. Even when users are able to install projects, interactive documentation provides a smoother experience than copying and pasting code snippets into a local REPL, IDE/editor or Notebook. It can thus offer benefits for beginners and more experienced programmers alike.
 
