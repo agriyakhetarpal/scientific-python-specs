@@ -97,11 +97,14 @@ With these assumptions in mind, we can now make recommendations for how to set u
 This SPEC document makes the following recommendations:
 
 1. [Support the WebAssembly platform by adding a CI job](#1-support-the-webassembly-platform-by-adding-a-pyodide-ci-job)
-   1.1. [How to assess compatibility with WebAssembly](#11-how-to-assess-compatibility-with-webassembly)
-   1.2. [What does adding support for WebAssembly look like?](#12-what-does-adding-support-for-webassembly-look-like)
+    <br>
+    1.1. [How to assess compatibility with WebAssembly](#11-how-to-assess-compatibility-with-webassembly)
+    <br>
+    1.2. [What does adding support for WebAssembly look like?](#12-what-does-adding-support-for-webassembly-look-like)
 2. [Enabling WASM builds for use in interactive documentation](#2-enabling-wasm-builds-for-use-in-interactive-documentation)
 3. [Enabling interactive documentation deployments](#3-enabling-interactive-documentation-deployments)
-   3.1. [Configuration](#31-configuration)
+    <br>
+    3.1. [Configuration](#31-configuration)
 
 #### 1. Support the WebAssembly platform by adding a Pyodide CI job
 
