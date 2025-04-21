@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" data-colorscheme="auto" >
   <head>
-    <!-- Generated 2025-04-21 11:22:09 UTC -->
+    <!-- Generated 2025-04-21 11:28:27 UTC -->
     <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -231,10 +231,13 @@ intended use-cases, and pseudo-code illustrating its use.
 <p>This SPEC document makes the following recommendations:</p>
 <ol>
 <li><a href="#1-support-the-webassembly-platform-by-adding-a-pyodide-ci-job">Support the WebAssembly platform by adding a CI job</a>
+<br>
 1.1. <a href="#11-how-to-assess-compatibility-with-webassembly">How to assess compatibility with WebAssembly</a>
+<br>
 1.2. <a href="#12-what-does-adding-support-for-webassembly-look-like">What does adding support for WebAssembly look like?</a></li>
 <li><a href="#2-enabling-wasm-builds-for-use-in-interactive-documentation">Enabling WASM builds for use in interactive documentation</a></li>
 <li><a href="#3-enabling-interactive-documentation-deployments">Enabling interactive documentation deployments</a>
+<br>
 3.1. <a href="#31-configuration">Configuration</a></li>
 </ol>
 <h4 id="1-support-the-webassembly-platform-by-adding-a-pyodide-ci-job">1. Support the WebAssembly platform by adding a Pyodide CI job<a class="headerlink" href="#1-support-the-webassembly-platform-by-adding-a-pyodide-ci-job" title="Link to this heading">#</a></h4>
@@ -377,7 +380,7 @@ intended use-cases, and pseudo-code illustrating its use.
 <!-- this section can also be refined, happy to take more suggestions here -->
 <p>Emscripten, unlike glibc, does not provide a backward-compatible ABI. There has been a recent effort to standardise support for it through a <code>manylinux</code>-like standard as a means towards uploading to PyPI through <a href="https://peps.python.org/pep-0776/">PEP 776 – Emscripten Support</a> (see also, previous discussion at <a href="https://github.com/pypi/warehouse/issues/10416)">https://github.com/pypi/warehouse/issues/10416)</a>. Emscripten has been a Tier III target platform for CPython (it was restored with the upcoming Python version 3.14), however, the lack of standardisation of a Pyodide ABI means that every package has to be rebuilt with newer versions of Emscripten with each corresponding update in Pyodide or emscripten-forge. This goal is in progress at <a href="https://github.com/pyodide/pyodide/issues/5580">https://github.com/pyodide/pyodide/issues/5580</a> and <a href="https://peps.python.org/pep-0783/">PEP 783 – Emscripten Packaging</a>.</p>
 <p>Usually, it is recommended to reach out to the Pyodide maintainers to see if it is necessary to include a package in Pyodide and attempt to add &ldquo;explicit&rdquo; support for it, especially with pure Python packages, as most of them work out of the box unless they support niche use cases or interact with components of the Python runtime or standard library that are not supported well (see <a href="#11-how-to-assess-compatibility-with-webassembly">&ldquo;How to assess compatibility with WebAssembly&rdquo;</a> for more). As Scientific Python projects are numerical in nature, they have usually worked well with or without patches by collaborators in the Pyodide/WASM ecosystem and with support from the recipe maintainers.</p>
-<h2 id="recommendations-on-other-documentation-tooling">Recommendations on other documentation tooling<a class="headerlink" href="#recommendations-on-other-documentation-tooling" title="Link to this heading">#</a></h2>
+<h2 id="suggestions-on-other-documentation-tooling">Suggestions on other documentation tooling<a class="headerlink" href="#suggestions-on-other-documentation-tooling" title="Link to this heading">#</a></h2>
 <p>While this SPEC provides recommendations on integration with Sphinx; we also offer suggestions for other documentation development tooling as well:</p>
 <ol>
 <li><a href="https://www.mkdocs.org/">MkDocs</a> does not currently have a JupyterLite plugin that provides functionality equivalent to <code>jupyterlite-sphinx</code>. However, there are some ways through which interactive documentation deployments can somewhat be achieved:

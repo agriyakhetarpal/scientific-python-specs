@@ -5,11 +5,11 @@ BEGIN:VEVENT
 DTSTART:20220817T153000Z
 DTEND:20220817T160000Z
 SUMMARY:Bi-Weekly Xarray Community Developers Meeting
-UID:5409ed78-b469-4f25-9ce5-2b6117adf565@5409.org
+UID:fee9b02e-6339-4561-8700-e3dca181b650@fee9.org
 DESCRIPTION:The bi-weekly call for the xarray community.\nAgenda: 
  https://hackmd.io/Vv6g2ABzTPKbe2MWBQqS1w
 URL:https://github.com/pydata/xarray/issues/4001
-DTSTAMP:20250421T112208Z
+DTSTAMP:20250421T112827Z
 RRULE:FREQ=DAILY;INTERVAL=14;UNTIL=20250101T000000
 END:VEVENT
 NAME:Xarray Community Calendar
