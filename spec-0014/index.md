@@ -85,7 +85,7 @@ We assume that:
 
 - The target project has a hosted documentation website served over static HTML, built with the Sphinx documentation framework.
 - Compatibility:
-  - For compiled projects: WebAssembly binaries for the target project and its dependencies are available with either the [Pyodide](https://pyodide.org/en/stable/usage/packages-in-pyodide.html) or [emscripten-forge](https://emscripten-forge.org/) distributions, or can be made available with a reasonable amount of effort if not yet available.
+  - For projects with compiled extensions: WebAssembly binaries for the target project and its dependencies are available with either the [Pyodide](https://pyodide.org/en/stable/usage/packages-in-pyodide.html) or [emscripten-forge](https://emscripten-forge.org/) distributions, or can be made available with a reasonable amount of effort if not yet available.
   - For pure Python projects: their dependencies—if any—are [compatible with WebAssembly](#11-how-to-assess-compatibility-with-webassembly) and are [available with either Pyodide or emscripten-forge](#12-what-does-adding-support-for-webassembly-look-like).
 
 <hr>
@@ -94,7 +94,7 @@ With these assumptions in mind, we can now make recommendations for how to set u
 
 ### Recommendations
 
-This SPEC document makes the following recommendations, in order:
+This SPEC document makes the following recommendations:
 
 1. [Support the WebAssembly platform by adding a CI job](#1-support-the-webassembly-platform-by-adding-a-pyodide-ci-job)
    1.1. [How to assess compatibility with WebAssembly](#11-how-to-assess-compatibility-with-webassembly)
@@ -106,7 +106,7 @@ This SPEC document makes the following recommendations, in order:
 #### 1. Support the WebAssembly platform by adding a Pyodide CI job
 
 {{< admonition note >}}
-While this step is not required for enabling interactive documentation deployments alone, it is recommended to ensure that they work properly and ease their maintenance.
+While this step is not required for enabling interactive documentation deployments alone, it is recommended to ensure that they work properly and make maintenance easier.
 {{< /admonition >}}
 
 ##### 1.1. How to assess compatibility with WebAssembly
