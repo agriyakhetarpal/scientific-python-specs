@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" data-colorscheme="auto" >
   <head>
-    <!-- Generated 2025-04-21 11:12:47 UTC -->
+    <!-- Generated 2025-04-21 11:22:09 UTC -->
     <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -220,7 +220,7 @@ intended use-cases, and pseudo-code illustrating its use.
 <li>The target project has a hosted documentation website served over static HTML, built with the Sphinx documentation framework.</li>
 <li>Compatibility:
 <ul>
-<li>For compiled projects: WebAssembly binaries for the target project and its dependencies are available with either the <a href="https://pyodide.org/en/stable/usage/packages-in-pyodide.html">Pyodide</a> or <a href="https://emscripten-forge.org/">emscripten-forge</a> distributions, or can be made available with a reasonable amount of effort if not yet available.</li>
+<li>For projects with compiled extensions: WebAssembly binaries for the target project and its dependencies are available with either the <a href="https://pyodide.org/en/stable/usage/packages-in-pyodide.html">Pyodide</a> or <a href="https://emscripten-forge.org/">emscripten-forge</a> distributions, or can be made available with a reasonable amount of effort if not yet available.</li>
 <li>For pure Python projects: their dependencies—if any—are <a href="#11-how-to-assess-compatibility-with-webassembly">compatible with WebAssembly</a> and are <a href="#12-what-does-adding-support-for-webassembly-look-like">available with either Pyodide or emscripten-forge</a>.</li>
 </ul>
 </li>
@@ -228,7 +228,7 @@ intended use-cases, and pseudo-code illustrating its use.
 <hr>
 <p>With these assumptions in mind, we can now make recommendations for how to set up and deploy interactive HTML documentation.</p>
 <h3 id="recommendations">Recommendations<a class="headerlink" href="#recommendations" title="Link to this heading">#</a></h3>
-<p>This SPEC document makes the following recommendations, in order:</p>
+<p>This SPEC document makes the following recommendations:</p>
 <ol>
 <li><a href="#1-support-the-webassembly-platform-by-adding-a-pyodide-ci-job">Support the WebAssembly platform by adding a CI job</a>
 1.1. <a href="#11-how-to-assess-compatibility-with-webassembly">How to assess compatibility with WebAssembly</a>
@@ -241,7 +241,7 @@ intended use-cases, and pseudo-code illustrating its use.
 <div class="admonition note">
   <div class="admonition-title"> Note</div>
   <p>
-    While this step is not required for enabling interactive documentation deployments alone, it is recommended to ensure that they work properly and ease their maintenance.
+    While this step is not required for enabling interactive documentation deployments alone, it is recommended to ensure that they work properly and make maintenance easier.
   </p>
 </div>
 
