@@ -292,7 +292,7 @@ Emscripten, unlike glibc, does not provide a backward-compatible ABI. There has 
 
 Usually, it is recommended to reach out to the Pyodide maintainers to see if it is necessary to include a package in Pyodide and attempt to add "explicit" support for it, especially with pure Python packages, as most of them work out of the box unless they support niche use cases or interact with components of the Python runtime or standard library that are not supported well (see ["How to assess compatibility with WebAssembly"](#11-how-to-assess-compatibility-with-webassembly) for more). As Scientific Python projects are numerical in nature, they have usually worked well with or without patches by collaborators in the Pyodide/WASM ecosystem and with support from the recipe maintainers.
 
-## Recommendations on other documentation tooling
+## Suggestions on other documentation tooling
 
 While this SPEC provides recommendations on integration with Sphinx; we also offer suggestions for other documentation development tooling as well:
 
