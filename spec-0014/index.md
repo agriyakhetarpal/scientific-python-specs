@@ -111,7 +111,8 @@ This SPEC document makes the following recommendations:
 #### 1. Support the WebAssembly platform by adding a Pyodide CI job
 
 {{< admonition note >}}
-While this step is not required for enabling interactive documentation deployments alone, it is recommended to ensure that they work properly and make maintenance easier.
+While this step is not required for enabling interactive documentation deployments alone, it is recommended to ensure that projects work in the WebAssembly environment used for such deployments properly and make their maintenance easier. We recommend that both pure Python projects and projects with compiled extensions do this.
+
 {{< /admonition >}}
 
 ##### 1.1. How to assess compatibility with WebAssembly
@@ -132,12 +133,14 @@ For more details, refer to [the Pyodide documentation on "Pyodide Python compati
 
 First, Core Projects should check if this criterion is satisfied already, as [many Scientific Python projects are now well-tested for usage and interoperability in a WebAssembly runtime provided by Pyodide and emscripten-forge](https://github.com/Quansight-Labs/czi-scientific-python-mgmt/issues/18). This goal's accomplishment amplifies the notion of Scientific Python being runnable in browser-based runtimes.
 
-Compatibility can be established by implementing a CI job that builds WASM-tagged wheels and runs the test suite with them in a WebAssembly environment provided by the Pyodide distribution: https://pyodide.org/en/stable/development/building-and-testing-packages.html
+Compatibility can be established by implementing a CI job that builds wheels for a project and runs the test suite with them in a WebAssembly environment provided by the Pyodide distribution: https://pyodide.org/en/stable/development/building-and-testing-packages.html
 
 We consider a project well-tested if there exists a CI job, which:
 
-- builds the source code for the project using the Emscripten compiler toolchain for the `wasm32-unknown-emscripten` target into Pyodide-tagged wheels, and
-- subsequently, runs the entire test suite or applicable portions with these wheels
+- builds the source code for the project:
+    - for projects with compiled extensions: using the Emscripten compiler toolchain for the `wasm32-unknown-emscripten` target into Pyodide-tagged wheels,
+    - for pure Python projects: building wheels through existing build frontends such as `pip` or `pypa/build`
+- subsequently, runs the entire test suite or applicable portions with these wheels installed into a Pyodide virtual environment provided with `pyodide venv`
 
 - Additionally, this SPEC recommends that [project contacts](https://github.com/pyodide/pyodide/issues/4506) volunteer as recipe maintainers for the packages they maintain, so that they can provide help with builds or testing issues that may arise when the Pyodide or emscripten-forge maintainers try to upgrade packages, or with usage issues that may arise when users try to use Pyodide or emscripten-forge.
 
