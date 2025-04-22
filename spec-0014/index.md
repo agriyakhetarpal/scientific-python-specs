@@ -118,7 +118,7 @@ While this step is not required for enabling interactive documentation deploymen
 
 First, we discuss assessing whether a project is compatible with WebAssembly.
 
-While we note that Core Projects will need to keep the below points in mind when aiming to establish compatibility with WebAssembly, [most of them are already available in the Pyodide distribution](https://pyodide.org/en/stable/usage/packages-in-pyodide.html), thanks to the pioneering work collectively done by the Pyodide maintainers, the emscripten-forge team, and several external collaborators, which we describe later in this document.
+While we note that Core Projects will need to keep the below points in mind when aiming to establish compatibility with WebAssembly, [most of them are already available in the Pyodide distribution](https://pyodide.org/en/stable/usage/packages-in-pyodide.html), thanks to the pioneering work collectively done by the Pyodide maintainers, the emscripten-forge team, and several external collaborators.
 
 There are two major projects currently providing ports of CPython to a WebAssembly runtime through the Emscripten compiler toolchain: Pyodide and emscripten-forge. They are largely compatible with CPython akin to how it runs on a standard Linux machine, albeit with a few differences, limitations, and exceptions:
 
