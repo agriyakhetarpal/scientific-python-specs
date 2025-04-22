@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" data-colorscheme="auto" >
   <head>
-    <!-- Generated 2025-04-21 12:34:43 UTC -->
+    <!-- Generated 2025-04-22 17:26:37 UTC -->
     <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -245,13 +245,13 @@ intended use-cases, and pseudo-code illustrating its use.
 <div class="admonition note">
   <div class="admonition-title"> Note</div>
   <p>
-    While this step is not required for enabling interactive documentation deployments alone, it is recommended to ensure that they work properly and make maintenance easier.
+    While this step is not required for enabling interactive documentation deployments alone, it is recommended to ensure that projects work in the WebAssembly environment used for such deployments properly and make their maintenance easier. We recommend that both pure Python projects and projects with compiled extensions do this.
   </p>
 </div>
 
 <h5 id="11-how-to-assess-compatibility-with-webassembly">1.1. How to assess compatibility with WebAssembly<a class="headerlink" href="#11-how-to-assess-compatibility-with-webassembly" title="Link to this heading">#</a></h5>
 <p>First, we discuss assessing whether a project is compatible with WebAssembly.</p>
-<p>While we note that Core Projects will need to keep the below points in mind when aiming to establish compatibility with WebAssembly, <a href="https://pyodide.org/en/stable/usage/packages-in-pyodide.html">most of them are already available in the Pyodide distribution</a>, thanks to the pioneering work collectively done by the Pyodide maintainers, the emscripten-forge team, and several external collaborators, which we describe later in this document.</p>
+<p>While we note that Core Projects will need to keep the below points in mind when aiming to establish compatibility with WebAssembly, <a href="https://pyodide.org/en/stable/usage/packages-in-pyodide.html">most of them are already available in the Pyodide distribution</a>, thanks to the pioneering work collectively done by the Pyodide maintainers, the emscripten-forge team, and several external collaborators.</p>
 <p>There are two major projects currently providing ports of CPython to a WebAssembly runtime through the Emscripten compiler toolchain: Pyodide and emscripten-forge. They are largely compatible with CPython akin to how it runs on a standard Linux machine, albeit with a few differences, limitations, and exceptions:</p>
 <ul>
 <li>The bitness is 32-bit, with 64-bit memory indices left for future iterations of the WebAssembly specification</li>
@@ -261,14 +261,18 @@ intended use-cases, and pseudo-code illustrating its use.
 <p>For more details, refer to <a href="https://pyodide.org/en/stable/usage/wasm-constraints.html">the Pyodide documentation on &ldquo;Pyodide Python compatibility&rdquo;</a>.</p>
 <h5 id="12-what-does-adding-support-for-webassembly-look-like">1.2. What does adding support for WebAssembly look like?<a class="headerlink" href="#12-what-does-adding-support-for-webassembly-look-like" title="Link to this heading">#</a></h5>
 <p>First, Core Projects should check if this criterion is satisfied already, as <a href="https://github.com/Quansight-Labs/czi-scientific-python-mgmt/issues/18">many Scientific Python projects are now well-tested for usage and interoperability in a WebAssembly runtime provided by Pyodide and emscripten-forge</a>. This goal&rsquo;s accomplishment amplifies the notion of Scientific Python being runnable in browser-based runtimes.</p>
-<p>Compatibility can be established by implementing a CI job that builds WASM-tagged wheels and runs the test suite with them in a WebAssembly environment provided by the Pyodide distribution: <a href="https://pyodide.org/en/stable/development/building-and-testing-packages.html">https://pyodide.org/en/stable/development/building-and-testing-packages.html</a></p>
+<p>Compatibility can be established by implementing a CI job that builds wheels for a project and runs the test suite with them in a WebAssembly environment provided by the Pyodide distribution: <a href="https://pyodide.org/en/stable/development/building-and-testing-packages.html">https://pyodide.org/en/stable/development/building-and-testing-packages.html</a></p>
 <p>We consider a project well-tested if there exists a CI job, which:</p>
 <ul>
 <li>
-<p>builds the source code for the project using the Emscripten compiler toolchain for the <code>wasm32-unknown-emscripten</code> target into Pyodide-tagged wheels, and</p>
+<p>builds the source code for the project:</p>
+<ul>
+<li>for projects with compiled extensions: using the Emscripten compiler toolchain for the <code>wasm32-unknown-emscripten</code> target into Pyodide-tagged wheels,</li>
+<li>for pure Python projects: building wheels through existing build frontends such as <code>pip</code> or <code>pypa/build</code></li>
+</ul>
 </li>
 <li>
-<p>subsequently, runs the entire test suite or applicable portions with these wheels</p>
+<p>subsequently, runs the entire test suite or applicable portions with these wheels installed into a Pyodide virtual environment provided with <code>pyodide venv</code></p>
 </li>
 <li>
 <p>Additionally, this SPEC recommends that <a href="https://github.com/pyodide/pyodide/issues/4506">project contacts</a> volunteer as recipe maintainers for the packages they maintain, so that they can provide help with builds or testing issues that may arise when the Pyodide or emscripten-forge maintainers try to upgrade packages, or with usage issues that may arise when users try to use Pyodide or emscripten-forge.</p>
