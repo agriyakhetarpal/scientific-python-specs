@@ -308,10 +308,10 @@ While this SPEC provides recommendations on integration with Sphinx; we also off
 
 ## Acknowledgements
 
-We express our gratitude towards the grant [CZI 2022-316713](czi-scientific-python-grant-2022)
-awarded to the Scientific Python organization by the Chan Zuckerberg Institute, and towards the Pyodide, emscripten-forge, and the JupyterLite projects.
+Work on investigating best practices for interactive documentation for Scientific Python projects, improving tooling for interactive documentation, and developing and documenting workflows was supported by the [CZI grant 2022-316713](czi-scientific-python-grant-2022).
 
 [czi-scientific-python-grant-2022]: https://blog.scientific-python.org/scientific-python/2022-czi-grant/
+
 
 ## Notes
 
