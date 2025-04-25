@@ -165,7 +165,7 @@ Therefore, if a project and its dependencies are compatible with WebAssembly as 
 
 Once WebAssembly binaries for a project and its dependencies are available through Pyodide and/or emscripten-forge, the project may start using them as a part of interactive documentation deployments.
 
-Our recommended tool of choice for interactive documentation deployments for Sphinx-based websites is [the JupyterLite project](https://jupyterlite.readthedocs.io/en/stable/). The rationale behind this recommendation is that it provides multiple features and surrounding tooling to ease such deployments.
+We recommend [the JupyterLite project](https://jupyterlite.readthedocs.io/en/stable/) for this. The rationale behind this recommendation is that it provides multiple features and surrounding tooling to ease such deployments
 
 JupyterLite is a serverless variant of the JupyterLab project that runs completely in the browser on the client side via WebAssembly. JupyterLite sites are distributed as static assets, and can be built using the `jupyter lite` CLI. It provides support for various JupyterLab extensions, plugins, kernels, and surrounding projects for browser-based use cases. Particularly, the project provides the following:
 
