@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" data-colorscheme="auto" >
   <head>
-    <!-- Generated 2025-04-22 17:26:37 UTC -->
+    <!-- Generated 2025-04-25 23:08:49 UTC -->
     <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -294,7 +294,7 @@ intended use-cases, and pseudo-code illustrating its use.
 </ol>
 <h4 id="3-enabling-interactive-documentation-deployments">3. Enabling interactive documentation deployments<a class="headerlink" href="#3-enabling-interactive-documentation-deployments" title="Link to this heading">#</a></h4>
 <p>Once WebAssembly binaries for a project and its dependencies are available through Pyodide and/or emscripten-forge, the project may start using them as a part of interactive documentation deployments.</p>
-<p>Our recommended tool of choice for interactive documentation deployments for Sphinx-based websites is <a href="https://jupyterlite.readthedocs.io/en/stable/">the JupyterLite project</a>. The rationale behind this recommendation is that it provides multiple features and surrounding tooling to ease such deployments.</p>
+<p>We recommend <a href="https://jupyterlite.readthedocs.io/en/stable/">the JupyterLite project</a> for this. The rationale behind this recommendation is that it provides multiple features and surrounding tooling to ease such deployments</p>
 <p>JupyterLite is a serverless variant of the JupyterLab project that runs completely in the browser on the client side via WebAssembly. JupyterLite sites are distributed as static assets, and can be built using the <code>jupyter lite</code> CLI. It provides support for various JupyterLab extensions, plugins, kernels, and surrounding projects for browser-based use cases. Particularly, the project provides the following:</p>
 <ul>
 <li><a href="https://jupyterlite-sphinx.readthedocs.io/en/stable/"><code>jupyterlite-sphinx</code></a>: a Sphinx extension that provides mechanisms to embed a JupyterLite site within Sphinx documentation, and offers documentation-focused abstractions to customise them via a Pythonic interface.</li>
@@ -308,7 +308,7 @@ intended use-cases, and pseudo-code illustrating its use.
 <li>API reference documentation, and</li>
 <li>narrative long-form content</li>
 </ul>
-<p>For both of these, we have different approaches to enable interactivity:</p>
+<p>For both of these, we recommend different approaches to enable interactivity:</p>
 <h6 id="api-documentation">API documentation<a class="headerlink" href="#api-documentation" title="Link to this heading">#</a></h6>
 <p><code>jupyterlite-sphinx</code> offers the <a href="https://jupyterlite-sphinx.readthedocs.io/en/stable/directives/try_examples.html"><code>try_examples</code> directive</a>, which can make &ldquo;Examples&rdquo; sections within API documentation interactive, adding buttons which swap the rendered code snippets in-place with an interactive mini-notebook. There is an option to have the directives inserted into &ldquo;Examples&rdquo; sections automatically for documentation that uses <a href="https://numpydoc.readthedocs.io/">Numpydoc</a>, and with <a href="https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html"><code>sphinx.ext.napoleon</code></a> supported on a best-effort basis. The look, shape, feel, text, and inclusion of these buttons across the documentation can be configured through user-defined options.</p>
 <h6 id="narrative-documentation-and-tutorials-long-form-content">Narrative documentation and tutorials (long-form content)<a class="headerlink" href="#narrative-documentation-and-tutorials-long-form-content" title="Link to this heading">#</a></h6>
@@ -397,8 +397,7 @@ intended use-cases, and pseudo-code illustrating its use.
 <li><a href="https://js.mystmd.org/">The MyST-JS project</a> also provides configuration to integrate with Pyodide and JupyterLite: <a href="https://mystmd.org/guide/integrating-jupyter#id-case-using-pyodide-jupyterlite">https://mystmd.org/guide/integrating-jupyter#id-case-using-pyodide-jupyterlite</a></li>
 </ol>
 <h2 id="acknowledgements">Acknowledgements<a class="headerlink" href="#acknowledgements" title="Link to this heading">#</a></h2>
-<p>We express our gratitude towards the grant <a href="czi-scientific-python-grant-2022">CZI 2022-316713</a>
-awarded to the Scientific Python organization by the Chan Zuckerberg Institute, and towards the Pyodide, emscripten-forge, and the JupyterLite projects.</p>
+<p>Work on investigating best practices for interactive documentation for Scientific Python projects, improving tooling for interactive documentation, and developing and documenting workflows was supported by the <a href="czi-scientific-python-grant-2022">CZI grant 2022-316713</a>.</p>
 <h2 id="notes">Notes<a class="headerlink" href="#notes" title="Link to this heading">#</a></h2>
 <!--
 Include a bulleted list of annotated links, comments,
