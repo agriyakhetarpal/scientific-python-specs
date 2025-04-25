@@ -183,7 +183,7 @@ We have observed that documentation for Scientific Python projects typically com
 - API reference documentation, and
 - narrative long-form content
 
-For both of these, we have different approaches to enable interactivity:
+For both of these, we recommend different approaches to enable interactivity:
 
 ###### API documentation
 
