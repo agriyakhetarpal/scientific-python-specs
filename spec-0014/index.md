@@ -42,8 +42,8 @@ A comon barrier for beginners trying to get started with Scientific Python proje
 In-browser interactive documentation offers users a chance to try out and explore projects without taking effort to install them locally. Even when users are able to install projects, interactive documentation provides a smoother experience than copying and pasting code snippets into a local REPL, IDE/editor or Notebook. It can thus offer benefits for beginners and more experienced programmers alike.
 
 The [JupyterLite](https://jupyterlite.readthedocs.io/en/stable/) project coupled with either the [Pyodide](https://pyodide.org/en/stable/) or the [emscripten-forge](https://emscripten-forge.org/) distributions enables running Python code execution in the browser via [WebAssembly](https://webassembly.org/), such as code snippets in API examples, and/or narrative (long-form) documentation such as notebooks, tutorials, and how-to guides.
+This SPEC offers a primer on how Core Projects in the Scientific Python ecosystem can make their documentation interactive through these projects. It primarily focuses on Sphinx-based, HTML documentation workflows for projects with a Python API; however, brief recommendations are also made for other forms of documentation tooling.
 
-This SPEC offers a primer on how Core Projects in the Scientific Python ecosystem can make their documentation interactive through these projects. It primarily focuses on Sphinx-based, HTML documentation workflows for projects with a Python API; however, recommendations are also made for other forms of documentation tooling.
 
 ### Core Project Endorsement
 
