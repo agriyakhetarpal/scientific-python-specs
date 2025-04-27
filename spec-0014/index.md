@@ -174,7 +174,7 @@ JupyterLite is a serverless variant of the JupyterLab project that runs complete
 
 We recommend installing and configuring [the `jupyterlite-sphinx` project](https://jupyterlite-sphinx.readthedocs.io/en/stable/) and one of the two kernels within Core Projects’ Sphinx-based documentation workflows in order to build a JupyterLite deployment and interact with it through Sphinx.
 
-##### 3.1 Configuration
+##### 3.1. Configuration
 
 Next, we discuss how to configure JupyterLite, jupyterlite-sphinx, and the installed kernel(s) of choice together.
 
@@ -199,6 +199,8 @@ For longer-form narrative content such as tutorials, how-to guides, and explanat
 ---
 
 Once interactive documentation has been configured and deployed, the ["Updating package and kernel versions for Pyodide-powered or emscripten-forge-powered websites"](#Updating-package-and-kernel-versions-for-Pyodide-powered-or-emscripten-forge-powered-websites) section contains information on how to increment the versions of the packages and the distribution/kernel used.
+
+An end-to-end example of the above steps is also available; see [the `jupyterlite-sphinx-demo` project](#an-end-to-end-example).
 
 #### What distribution should projects choose: Pyodide or emscripten-forge?
 
@@ -322,7 +324,7 @@ and other ancillary information as needed.
 
 ### An end-to-end example
 
-<!-- When a jupyterlite/sphinx-demo is ready, I'll add it here and leave a link to it in Section 3 -->
+For end-to-end example on how to set up interactive documentation with JupyterLite, see [the `jupyterlite/sphinx-demo` repository](https://github.com/jupyterlite/sphinx-demo).
 
 ### Interactive documentation efforts
 
