@@ -26,7 +26,7 @@ BEGIN:VEVENT
 DTSTART;TZID=/ics.py/2020.1/America/Los_Angeles:20230816T070000
 DTEND;TZID=/ics.py/2020.1/America/Los_Angeles:20230816T080000
 SUMMARY:Python-graphblas Community Call
-UID:a7489d31-2603-4652-a5e1-37a9d6b1a204@a748.org
+UID:83c7c2d0-f9d4-468c-924c-52eca56b4422@83c7.org
 DESCRIPTION:The weekly GraphBLAS community call to discuss everything 
  related to\npython-graphblas\, graphblas-algorithms\, GraphBLAS\, 
  etc.\n\nAll are welcome. New attendees are given priority.\n\nMeeting 
@@ -37,14 +37,14 @@ DESCRIPTION:The weekly GraphBLAS community call to discuss everything
  passcode: 584468
 URL:https://anaconda.zoom.us/j/97267234756?pwd=Q00wSjE2dDV6NmF3eFBZSFBtVDFS
  QT09
-DTSTAMP:20250425T230848Z
+DTSTAMP:20250427T223526Z
 RRULE:FREQ=DAILY;INTERVAL=7;UNTIL=20251231T000000
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;TZID=/ics.py/2020.1/America/Los_Angeles:20230908T090000
 DTEND;TZID=/ics.py/2020.1/America/Los_Angeles:20230908T100000
 SUMMARY:GraphBLAS Monthly Community Call
-UID:253c4542-88d5-40d5-9497-d9d242950c0a@253c.org
+UID:9c7079ac-6407-41ef-a4ea-1278917de75d@9c70.org
 DESCRIPTION:The monthly GraphBLAS call where the broader GraphBLAS 
  community\ndiscusses specs\, implementations\, applications\, 
  conferences\, etc.\n\nMeeting link: https://mitll.zoomgov.com/j/1606277061
@@ -52,7 +52,7 @@ DESCRIPTION:The monthly GraphBLAS call where the broader GraphBLAS
   meeting passcode: 677995
 URL:https://mitll.zoomgov.com/j/1606277061?pwd=YUdEZGlkV1lCbUlITEhaak9MdTJv
  UT09
-DTSTAMP:20250425T230848Z
+DTSTAMP:20250427T223526Z
 RRULE:FREQ=MONTHLY;BYDAY=2FR
 END:VEVENT
 NAME:GraphBLAS Community Calendar
