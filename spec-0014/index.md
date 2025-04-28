@@ -210,7 +210,7 @@ For both of these, we recommend different approaches to enable interactivity:
 
 ###### API documentation
 
-`jupyterlite-sphinx` offers the [`try_examples` directive](https://jupyterlite-sphinx.readthedocs.io/en/stable/directives/try_examples.html), which can make "Examples" sections within API documentation interactive, adding buttons which swap the rendered code snippets in-place with an interactive mini-notebook. There is an option to have the directives inserted into "Examples" sections automatically for documentation that uses [Numpydoc](https://numpydoc.readthedocs.io/), and with [`sphinx.ext.napoleon`](https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html) supported on a best-effort basis. The look, shape, feel, text, and inclusion of these buttons across the documentation can be configured through user-defined options.
+`jupyterlite-sphinx` offers the [`try_examples` directive](https://jupyterlite-sphinx.readthedocs.io/en/stable/directives/try_examples.html), which can make "Examples" sections within API documentation interactive. This directive adds buttons which swap the rendered code snippets in-place with an interactive mini-notebook that can be executed without leaving the page. There is an option to have the directives inserted into "Examples" sections automatically for documentation that uses [numpydoc](https://numpydoc.readthedocs.io/), and with [`sphinx.ext.napoleon`](https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html) supported on a best-effort basis. The look, shape, feel, text, and inclusion of these buttons across the documentation can be configured through user-defined options.
 
 ###### Narrative documentation and tutorials (long-form content)
 
