@@ -43,7 +43,7 @@ In-browser interactive documentation offers users a chance to try out and explor
 
 The [JupyterLite](https://jupyterlite.readthedocs.io/en/stable/) project enables running Python code in the browser via [WebAssembly](https://webassembly.org/), such as code snippets in API examples, and/or narrative (long-form) documentation such as notebooks, tutorials, and how-to guides.
 
-This SPEC offers a primer on how Core Projects in the Scientific Python ecosystem can make their documentation interactive through JupyterLite together with a WebAssembly-based Python runtime provided by the [Pyodide](https://pyodide.org/en/stable/) or the [emscripten-forge](https://emscripten-forge.org/) distributions. It primarily focuses on Sphinx-based, HTML documentation workflows for projects with a Python API; however, brief recommendations are also made for other ways of documentation tooling, such as MkDocs and MyST-JS.
+This SPEC offers a primer on how Core Projects in the Scientific Python ecosystem can make their documentation interactive through JupyterLite together with a WebAssembly-based Python runtime provided by the [Pyodide](https://pyodide.org/en/stable/) or the [emscripten-forge](https://emscripten-forge.org/) distributions. It primarily focuses on Sphinx-based, HTML documentation workflows for projects with a Python API; however, brief recommendations are also made for other ways of documentation tooling, such as MkDocs, MyST-JS, and Quarto.
 
 ---
 
@@ -337,6 +337,7 @@ While this SPEC provides recommendations on integration with Sphinx; we also off
    - Projects like https://github.com/samuelcolvin/mkdocs-run-code and https://github.com/JeffersGlass/mkdocs-pyscript provide integrations to embed interactive components.
    - As a JupyterLite site contains static assets and HTML files, it can be bundled and served alongside an MkDocs-based documentation website, with both separate from each other.
 2. [The MyST-JS project](https://js.mystmd.org/) also provides configuration to integrate with Pyodide and JupyterLite: https://mystmd.org/guide/integrating-jupyter#id-case-using-pyodide-jupyterlite
+3. [The Quarto technical publishing system](https://quarto.org/) provides [Quarto Live](https://r-wasm.github.io/quarto-live/), which enables interactive code blocks for Quarto documents via the webR and Pyodide runtimes to run R and Python code in the browser.
 
 ## Acknowledgements
 
