@@ -5,7 +5,7 @@ BEGIN:VEVENT
 DTSTART:20250107T170000Z
 DTEND:20250107T180000Z
 SUMMARY:Make Your Own JupyterLab Extension
-UID:356b2762-3094-44d2-ab7a-adc736604e31@356b.org
+UID:4216055a-0977-417e-bde4-d34b79d9980d@4216.org
 DESCRIPTION:Make your own JupyterLab extension in this tutorial. JupyterLab
   is a free and open source\, browser based integrated development 
  environment (IDE) that is the successor to Jupyter Notebook. Designed from
@@ -17,13 +17,13 @@ DESCRIPTION:Make your own JupyterLab extension in this tutorial. JupyterLab
  https://www.bigmarker.com/neo4j/Data-Umbrella-Webinar\nVideo: 
  https://www.youtube.com/@DataUmbrella
 URL:https://www.bigmarker.com/neo4j/Data-Umbrella-Webinar
-DTSTAMP:20250428T213151Z
+DTSTAMP:20250428T213601Z
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20241210T170000Z
 DTEND:20241210T180000Z
 SUMMARY:Introduction to Git
-UID:7ae90df8-ce5d-4610-8b0d-cce09f327ea9@7ae9.org
+UID:e22e10ff-4908-4c3d-b469-daaced9a0e79@e22e.org
 DESCRIPTION:Join us for an introductory session on Git. Discover 
  some\nfundamental concepts\, explore its practical applications\, 
  and\nlearn how to efficiently use both the command line and the 
@@ -32,14 +32,14 @@ DESCRIPTION:Join us for an introductory session on Git. Discover
  https://www.bigmarker.com/neo4j/Data-Umbrella-Webinar\nVideo: 
  https://youtu.be/edCiPBn_dj8?feature=shared
 URL:https://www.bigmarker.com/neo4j/Data-Umbrella-Webinar
-DTSTAMP:20250428T213151Z
+DTSTAMP:20250428T213601Z
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20241119T170000Z
 DTEND:20241119T180000Z
 SUMMARY:Polars & Narwhals - Understanding Expressions When You're Used to 
  pandas
-UID:e2889a08-ffe9-433c-9ae8-f40e1ee7573f@e288.org
+UID:3de9beab-68e8-447e-8c59-abed7878bba1@3de9.org
 DESCRIPTION:When it comes to dataframes\, pandas is the go-to library 
  for\nmany people. Yet Polars is taking the world by storm\, and so\nmany 
  data practitioners are curious about trying it out. There\nis a learning 
@@ -51,7 +51,7 @@ DESCRIPTION:When it comes to dataframes\, pandas is the go-to library
  https://www.bigmarker.com/neo4j/Data-Umbrella-Webinar\nVideo: 
  https://youtu.be/kPtUPe5Egak
 URL:https://www.bigmarker.com/neo4j/Data-Umbrella-Webinar
-DTSTAMP:20250428T213151Z
+DTSTAMP:20250428T213601Z
 END:VEVENT
 NAME:Data Umbrella Events Calendar
 X-WR-CALNAME:Data Umbrella Events Calendar
