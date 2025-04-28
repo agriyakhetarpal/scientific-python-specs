@@ -195,7 +195,7 @@ JupyterLite is a serverless variant of the JupyterLab project that runs entirely
 - [`jupyterlite-sphinx`](https://jupyterlite-sphinx.readthedocs.io/en/stable/): a Sphinx extension that provides mechanisms to embed a JupyterLite site within Sphinx documentation, and offers documentation-focused abstractions to customise them via a Pythonic interface.
 - Two browser-based Python kernels, `jupyterlite-pyodide-kernel` and `jupyterlite-xeus`: these ship with support for the Pyodide and the emscripten-forge distributions, respectively, and need to be installed alongside `jupyterlite-sphinx`. Documentation website owners may choose between the two kernels, with the differences between them noted as a part of the JupyterLite documentation: https://jupyterlite.readthedocs.io/en/stable/howto/configure/kernels.html#adding-a-python-kernel
 
-We recommend installing and configuring [the `jupyterlite-sphinx` project](https://jupyterlite-sphinx.readthedocs.io/en/stable/) and one of the two kernels within Core Projects’ Sphinx-based documentation workflows in order to build a JupyterLite deployment and interact with it through Sphinx.
+We recommend installing and configuring `jupyterlite-sphinx` and one of the two kernels within Core Projects’ Sphinx-based documentation workflows in order to build a JupyterLite deployment and interact with it through Sphinx.
 
 ##### 3.1. Configuration
 
