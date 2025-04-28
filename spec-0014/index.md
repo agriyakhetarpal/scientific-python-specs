@@ -81,7 +81,6 @@ Core projects endorsing this SPEC would mean that they:
 1. enable interactivity within applicable sections of their documentation websites, such as
     - the API reference sections (e.g., for "Examples" sections for public API methods and classes)
     - narrative long-form content (tutorials, how-to guides, etc., that are usually written in the form of notebooks)
-    - and so on
 2. further encourage other Scientific Python projects to adopt similar interfaces to make their documentation websites interactive, and
 3. take interactive documentation deployments into account when making decisions about the future of their documentation, and
 4. consider the suggestions made in this SPEC when doing so, wholly or in part.
