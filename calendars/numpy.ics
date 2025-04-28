@@ -5,7 +5,7 @@ BEGIN:VEVENT
 DTSTART:20250409T170000Z
 DTEND:20250409T180000Z
 SUMMARY:NumPy Community Call
-UID:f2f5538c-79af-48fe-9cba-bf05e25da38b@f2f5.org
+UID:926b5044-a2c6-4a7d-b872-fdea6ea51ce0@926b.org
 DESCRIPTION:A fortnightly meeting to share updates on everything\nthat is 
  happening in the NumPy community. Everyone is welcome\nto attend and 
  contribute to a conversation.\n\nTo add to the meeting agenda the topics 
@@ -15,14 +15,14 @@ DESCRIPTION:A fortnightly meeting to share updates on everything\nthat is
  org.zoom.us/j/83278611437?pwd=ekhoLzlHRjdWc0NOY2FQM0NPemdkZz09
 URL:https://numfocus-
  org.zoom.us/j/83278611437?pwd=ekhoLzlHRjdWc0NOY2FQM0NPemdkZz09
-DTSTAMP:20250428T133931Z
+DTSTAMP:20250428T134922Z
 RRULE:FREQ=DAILY;INTERVAL=14;UNTIL=20260101T000000
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20250402T170000Z
 DTEND:20250402T180000Z
 SUMMARY:NumPy Triage Call
-UID:b823ee56-99d3-4a52-b4b7-145cfb748bc3@b823.org
+UID:372a31d7-56f1-4f69-80ec-3edfbc76bb03@372a.org
 DESCRIPTION:A fortnightly meeting to synchronously triage prioritized PRs 
  and issues.\nEveryone is welcome to attend and contribute to a 
  conversation.\n\nPlease notify us of an issue or PR that you’d like to 
@@ -32,14 +32,14 @@ DESCRIPTION:A fortnightly meeting to synchronously triage prioritized PRs
  org.zoom.us/j/82096749952?pwd=MW9oUmtKQ1c3a2gydGk1RTdYUUVXZz09
 URL:https://numfocus-
  org.zoom.us/j/82096749952?pwd=MW9oUmtKQ1c3a2gydGk1RTdYUUVXZz09
-DTSTAMP:20250428T133931Z
+DTSTAMP:20250428T134922Z
 RRULE:FREQ=DAILY;INTERVAL=14;UNTIL=20260101T000000
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20250113T190000Z
 DTEND:20250113T200000Z
 SUMMARY:NumPy Documentation Team meeting
-UID:88c6bd55-5040-4d34-a2a9-6e9f65718c31@88c6.org
+UID:16f9b966-2d8c-4c35-9e12-72f72bf5123f@16f9.org
 DESCRIPTION:A fortnightly meeting to discuss everything related\nto the 
  official NumPy documentation. Everyone is welcome to attend\nand 
  contribute to a conversation.\n\nTo add to the meeting agenda the topics 
@@ -49,14 +49,14 @@ DESCRIPTION:A fortnightly meeting to discuss everything related\nto the
  org.zoom.us/j/85016474448?pwd=TWEvaWJ1SklyVEpwNXUrcHV1YmFJQT09
 URL:https://numfocus-
  org.zoom.us/j/85016474448?pwd=TWEvaWJ1SklyVEpwNXUrcHV1YmFJQT09
-DTSTAMP:20250428T133931Z
+DTSTAMP:20250428T134922Z
 RRULE:FREQ=DAILY;INTERVAL=14;UNTIL=20260101T000000
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20250120T170000Z
 DTEND:20250120T180000Z
 SUMMARY:NumPy Optimization Team meeting
-UID:fde9f2cd-3717-4e4f-9d68-ad95d55e878d@fde9.org
+UID:5dfdc6fa-ec42-46d3-bc44-4bb4762f78a6@5dfd.org
 DESCRIPTION:A meeting to discuss everything related\nto NumPy optimization.
   Everyone is welcome to attend\nand contribute to a conversation.\n\nTo 
  add to the meeting agenda the topics you'd like to discuss\,\nfollow the 
@@ -65,14 +65,14 @@ DESCRIPTION:A meeting to discuss everything related\nto NumPy optimization.
  org.zoom.us/j/81261288210?pwd=iwV99tGSjR61RTGEERKM4QKxe46g1n.1
 URL:https://numfocus-
  org.zoom.us/j/88162122074?pwd=a3h0cTZubzlLcTZzMVhCL1AxUVFMdz09
-DTSTAMP:20250428T133931Z
+DTSTAMP:20250428T134922Z
 RRULE:FREQ=DAILY;INTERVAL=21;UNTIL=20260101T000000
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20250109T220000Z
 DTEND:20250109T230000Z
 SUMMARY:NumPy New Contributors' Hour
-UID:a398b621-dc7b-4422-b216-bdb46d0be132@a398.org
+UID:edf0ee29-697b-43b6-a466-b2bd724904d2@edf0.org
 DESCRIPTION:A monthly meeting for new NumPy contributors.\n\nTo add to the 
  meeting agenda the topics you’d like to discuss\,\nfollow the link: 
  https://hackmd.io/3f3otyyuTte3FU9y3QzsLg\n\nJoin us via Zoom: 
@@ -80,7 +80,7 @@ DESCRIPTION:A monthly meeting for new NumPy contributors.\n\nTo add to the
  org.zoom.us/j/82563808729?pwd=ZFU3Z2dMcXBGb05YemRsaGE1OW5nQT09
 URL:https://numfocus-
  org.zoom.us/j/82563808729?pwd=ZFU3Z2dMcXBGb05YemRsaGE1OW5nQT09
-DTSTAMP:20250428T133931Z
+DTSTAMP:20250428T134922Z
 RRULE:FREQ=DAILY;INTERVAL=28;UNTIL=20260101T000000
 END:VEVENT
 NAME:NumPy Community Calendar

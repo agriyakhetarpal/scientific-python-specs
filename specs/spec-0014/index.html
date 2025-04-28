@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" data-colorscheme="auto" >
   <head>
-    <!-- Generated 2025-04-28 13:39:32 UTC -->
+    <!-- Generated 2025-04-28 13:49:23 UTC -->
     <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -158,7 +158,7 @@ Briefly and clearly describe the recommendation.
 <p>A comon barrier for beginners trying to get started with Scientific Python projects is difficulty of installation. Even for experienced Python programmers, it can take a nontrivial amount of time to correctly install an unfamiliar package.</p>
 <p>In-browser interactive documentation offers users a chance to try out and explore projects without taking effort to install them locally. Even when users are able to install projects, interactive documentation provides a smoother experience than copying and pasting code snippets into a local REPL, IDE/editor or Notebook. It can thus offer benefits for beginners and more experienced programmers alike.</p>
 <p>The <a href="https://jupyterlite.readthedocs.io/en/stable/">JupyterLite</a> project enables running Python code in the browser via <a href="https://webassembly.org/">WebAssembly</a>, such as code snippets in API examples, and/or narrative (long-form) documentation such as notebooks, tutorials, and how-to guides.</p>
-<p>This SPEC offers a primer on how Core Projects in the Scientific Python ecosystem can make their documentation interactive through JupyterLite. It primarily focuses on Sphinx-based, HTML documentation workflows for projects with a Python API; however, brief recommendations are also made for other ways of documentation tooling, such as MkDocs and MyST-JS.</p>
+<p>This SPEC offers a primer on how Core Projects in the Scientific Python ecosystem can make their documentation interactive through JupyterLite together with a WebAssembly-based Python runtime provided by the <a href="https://pyodide.org/en/stable/">Pyodide</a> or the <a href="https://emscripten-forge.org/">emscripten-forge</a> distributions. It primarily focuses on Sphinx-based, HTML documentation workflows for projects with a Python API; however, brief recommendations are also made for other ways of documentation tooling, such as MkDocs, MyST-JS, and Quarto.</p>
 <hr>
 <figure class="align-default" id="id000"><img src="./NumPy-interactive-example.png" alt="The image shows the NumPy documentation page for the numpy.hsplit function. At the top is the NumPy logo and navigation bar with links to User Guide, API reference, and other documentation sections. The left sidebar contains a list of related NumPy array manipulation functions. The main content focuses on the numpy.hsplit function, which splits an array into multiple sub-arrays horizontally (column-wise). The function signature shows numpy.hsplit(ary, indices_or_sections). The documentation explains that hsplit is equivalent to split with axis=1, and for 1-D arrays, it splits at axis=0. Prominently featured here is a detailed interactive example showing how to use numpy.hsplit in a numpydoc-based Examples secttion. There&#39;s a blue &#39;Try it in your browser!&#39; button that allows users to run the code in a JupyterLite kernel directly within the documentation page without leaving the site. The example demonstrates splitting a 4x4 array into two parts and also shows how to use hsplit with specific indices." class="align-center">
 
@@ -424,6 +424,7 @@ intended use-cases, and pseudo-code illustrating its use.
 </ul>
 </li>
 <li><a href="https://js.mystmd.org/">The MyST-JS project</a> also provides configuration to integrate with Pyodide and JupyterLite: <a href="https://mystmd.org/guide/integrating-jupyter#id-case-using-pyodide-jupyterlite">https://mystmd.org/guide/integrating-jupyter#id-case-using-pyodide-jupyterlite</a></li>
+<li><a href="https://quarto.org/">The Quarto technical publishing system</a> provides <a href="https://r-wasm.github.io/quarto-live/">Quarto Live</a>, which enables interactive code blocks for Quarto documents via the webR and Pyodide runtimes to run R and Python code in the browser.</li>
 </ol>
 <h2 id="acknowledgements">Acknowledgements<a class="headerlink" href="#acknowledgements" title="Link to this heading">#</a></h2>
 <p>Work on investigating best practices for interactive documentation for Scientific Python projects, improving tooling for interactive documentation, and developing and documenting workflows was supported by the <a href="czi-scientific-python-grant-2022">CZI grant 2022-316713</a>.</p>
