@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" data-colorscheme="auto" >
   <head>
-    <!-- Generated 2025-04-28 21:36:20 UTC -->
+    <!-- Generated 2025-04-28 21:36:41 UTC -->
     <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -253,7 +253,6 @@ intended use-cases, and pseudo-code illustrating its use.
 </ul>
 </li>
 </ul>
-<hr>
 <p>we make recommendations for setting up and deploying interactive HTML documentation.</p>
 <h3 id="recommendations">Recommendations<a class="headerlink" href="#recommendations" title="Link to this heading">#</a></h3>
 <p>This SPEC document makes the following recommendations:</p>
@@ -306,7 +305,7 @@ intended use-cases, and pseudo-code illustrating its use.
 </li>
 </ul>
 <h4 id="2-enabling-wasm-builds-for-use-in-interactive-documentation">2. Enabling WASM builds for use in interactive documentation<a class="headerlink" href="#2-enabling-wasm-builds-for-use-in-interactive-documentation" title="Link to this heading">#</a></h4>
-<p>The next step is to use the added compatibility with WebAssembly by making binaries available through the appropriate pathways; i.e., through the Pyodide distribution or the emscripten-forge channel.</p>
+<p>The next step after establishing WebAssembly compatibility is to make binaries available through the appropriate pathways; i.e., through the Pyodide distribution or the emscripten-forge channel.</p>
 <p>Pyodide provides an entire distribution of packages along with its runtime through the jsDelivr CDN as its package index. Packages are bundled as WebAssembly-tagged wheels, which can be installed with <a href="https://github.com/pyodide/micropip/"><code>micropip</code></a>, Pyodide&rsquo;s in-browser package manager.</p>
 <p><a href="https://emscripten-forge.org/">The <code>emscripten-forge</code> channel</a> also has a growing collection of packages that support the <code>wasm32-unknown-emscripten</code> target, often mirroring Pyodide in terms of the versions of packages available, though it differs in usage:</p>
 <ul>
