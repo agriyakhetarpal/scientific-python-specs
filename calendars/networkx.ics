@@ -26,19 +26,19 @@ BEGIN:VEVENT
 DTSTART;TZID=/ics.py/2020.1/America/New_York:20250228T110000
 DURATION:PT1H
 SUMMARY:NetworkX Community Call
-UID:3319d06d-bccb-4e16-a205-f8325a35b7ee@3319.org
+UID:6a24eb0e-0efb-4a6d-a9ca-01de47e742ae@6a24.org
 DESCRIPTION:The NetworkX Community Call.\n\nMeeting link: 
  https://colgate.zoom.us/j/92619161786\nMeeting notes: 
  https://hackmd.io/ea2IhUuqSrG4kM9tokXuEw
 URL:https://colgate.zoom.us/j/92619161786
-DTSTAMP:20250427T223527Z
+DTSTAMP:20250428T132025Z
 RRULE:FREQ=DAILY;INTERVAL=7;UNTIL=20261231T000000
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;TZID=/ics.py/2020.1/America/New_York:20250225T113000
 DURATION:PT1H
 SUMMARY:NetworkX Dispatching Call
-UID:ccb4a942-fa41-4d43-b10a-7c91fd3b0e3a@ccb4.org
+UID:aab9cd1a-1460-408e-b6fa-32fcebb1bb34@aab9.org
 DESCRIPTION:Discuss NetworkX dispatching development and backends such as 
  GraphBLAS\, cugraph\, and nx-parallel.\n\nMeeting link: 
  https://colgate.zoom.us/j/92619161786\nMeeting notes: 
@@ -46,20 +46,20 @@ DESCRIPTION:Discuss NetworkX dispatching development and backends such as
  4965\nZoom meeting passcode: 572126
 URL:https://anaconda.zoom.us/j/94192874965?pwd=K0wvcmhXem41ZlVSQ2l4TXlUaDgx
  dz09
-DTSTAMP:20250427T223527Z
+DTSTAMP:20250428T132025Z
 RRULE:FREQ=MONTHLY;BYDAY=1TU;INTERVAL=1
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20250214T153000Z
 DURATION:PT1H
 SUMMARY:NetworkX's nx-parallel backend call
-UID:b0f2da7e-b15b-4f4a-b249-62ba87200965@b0f2.org
+UID:992f3c84-aca9-49f2-9cd9-9bb837bfbb38@992f.org
 DESCRIPTION:Discussing the future of the nx-parallel backend 
  (https://github.com/networkx/nx-parallel).\n\nMeeting link: 
  https://colgate.zoom.us/j/281534728\nMeeting notes: 
  https://hackmd.io/BkTLclPh0
 URL:https://colgate.zoom.us/j/281534728
-DTSTAMP:20250427T223527Z
+DTSTAMP:20250428T132025Z
 RRULE:FREQ=DAILY;INTERVAL=7;UNTIL=20261231T000000
 END:VEVENT
 NAME:NetworkX Community Calendar

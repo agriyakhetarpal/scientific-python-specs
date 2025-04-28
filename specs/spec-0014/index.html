@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" data-colorscheme="auto" >
   <head>
-    <!-- Generated 2025-04-27 22:35:28 UTC -->
+    <!-- Generated 2025-04-28 13:20:26 UTC -->
     <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -157,16 +157,42 @@ Briefly and clearly describe the recommendation.
 -->
 <p>A comon barrier for beginners trying to get started with Scientific Python projects is difficulty of installation. Even for experienced Python programmers, it can take a nontrivial amount of time to correctly install an unfamiliar package.</p>
 <p>In-browser interactive documentation offers users a chance to try out and explore projects without taking effort to install them locally. Even when users are able to install projects, interactive documentation provides a smoother experience than copying and pasting code snippets into a local REPL, IDE/editor or Notebook. It can thus offer benefits for beginners and more experienced programmers alike.</p>
-<p>The <a href="https://jupyterlite.readthedocs.io/en/stable/">JupyterLite</a> project coupled with either the <a href="https://pyodide.org/en/stable/">Pyodide</a> or the <a href="https://emscripten-forge.org/">emscripten-forge</a> distributions enables running Python code execution in the browser via <a href="https://webassembly.org/">WebAssembly</a>, such as code snippets in API examples, and/or narrative (long-form) documentation such as notebooks, tutorials, and how-to guides.
-This SPEC offers a primer on how Core Projects in the Scientific Python ecosystem can make their documentation interactive through these projects. It primarily focuses on Sphinx-based, HTML documentation workflows for projects with a Python API; however, brief recommendations are also made for other forms of documentation tooling.</p>
+<p>The <a href="https://jupyterlite.readthedocs.io/en/stable/">JupyterLite</a> project enables running Python code in the browser via <a href="https://webassembly.org/">WebAssembly</a>, such as code snippets in API examples, and/or narrative (long-form) documentation such as notebooks, tutorials, and how-to guides.</p>
+<p>This SPEC offers a primer on how Core Projects in the Scientific Python ecosystem can make their documentation interactive through these projects. It primarily focuses on Sphinx-based, HTML documentation workflows for projects with a Python API; however, brief recommendations are also made for other ways of documentation tooling, such as MkDocs and MyST-JS.</p>
+<hr>
+<figure class="align-default" id="id000"><img src="./NumPy-interactive-example.png" alt="The image shows the NumPy documentation page for the numpy.hsplit function. At the top is the NumPy logo and navigation bar with links to User Guide, API reference, and other documentation sections. The left sidebar contains a list of related NumPy array manipulation functions. The main content focuses on the numpy.hsplit function, which splits an array into multiple sub-arrays horizontally (column-wise). The function signature shows numpy.hsplit(ary, indices_or_sections). The documentation explains that hsplit is equivalent to split with axis=1, and for 1-D arrays, it splits at axis=0. Prominently featured here is a detailed interactive example showing how to use numpy.hsplit in a numpydoc-based Examples secttion. There&#39;s a blue &#39;Try it in your browser!&#39; button that allows users to run the code in a JupyterLite kernel directly within the documentation page without leaving the site. The example demonstrates splitting a 4x4 array into two parts and also shows how to use hsplit with specific indices." class="align-center">
+
+
+
+<figcaption><strong class="caption-title">NumPy interactive example for the `hsplit` function</strong><a class="headerlink" href="#id000" title="Link to this image">#</a><br>
+<p><span class="caption-text">A screenshot of an interactive example in the NumPy documentation. The blue button allows users to run the code in a JupyterLite kernel directly within the documentation page without leaving the site.</span>
+</figcaption>
+</figure>
+
+<hr>
+<figure class="align-default" id="id001"><img src="./NumPy-interactive-example-opened.png" alt="This image shows the interactive JupyterLite notebook that has been opened and executed after clicking the &#39;Try it in your browser!&#39; button from the NumPy hsplit documentation. The notebook is running directly within the same documentation page in an iframe, allowing users to experiment with the function without leaving the documentation. The JupyterLite UI is visible with standard notebook controls (File, Edit, View, Run, Kernel, Settings, Help) at the top. Below that is a warning message in an orange box stating that &#39;NumPy&#39;s interactive examples are experimental and may not always work as expected, with high load times especially on low-resource platforms, and the version of NumPy might not be in sync with the one you are browsing the documentation for. The notebook shows three code cells that have been executed, demonstrating how numpy.hsplit works with different parameters. The first cell imports NumPy and creates a 4x4 array, the second cell applies hsplit(x, 2) to split the array into two equal parts, and the third cell shows hsplit(x, np.array([3, 6])) to split the array at specific column indices." class="align-center">
+
+
+
+<figcaption><strong class="caption-title">NumPy interactive example, opened</strong><a class="headerlink" href="#id001" title="Link to this image">#</a><br>
+<p><span class="caption-text">The interactive JupyterLite notebook that has been opened and executed after clicking the &lsquo;Try it in your browser!&rsquo; button from the NumPy hsplit documentation. The notebook is running directly within the same documentation page in an iframe, allowing users to experiment with the function without leaving the documentation.</span>
+</figcaption>
+</figure>
+
 <h3 id="core-project-endorsement">Core Project Endorsement<a class="headerlink" href="#core-project-endorsement" title="Link to this heading">#</a></h3>
 <!--
 Discuss what it means for a core project to endorse this SPEC.
 -->
 <p>Core projects endorsing this SPEC would mean that they:</p>
 <ul>
-<li>enable interactivity within applicable sections of their documentation websites through interfaces described in this document; and</li>
-<li>further encourage other Scientific Python projects to adopt similar interfaces to make their documentation interactive.</li>
+<li>enable interactivity within applicable sections of their documentation websites through the interfaces described in this document, such as
+<ul>
+<li>the API reference sections (e.g., for &ldquo;Examples&rdquo; sections for public API methods and classes)</li>
+<li>narrative long-form content (tutorials, how-to guides, etc. that are written in the form of notebooks)</li>
+<li>and so on</li>
+</ul>
+</li>
+<li>further encourage other Scientific Python projects to adopt similar interfaces to make their documentation websites interactive.</li>
 </ul>
 <h3 id="ecosystem-adoption">Ecosystem Adoption<a class="headerlink" href="#ecosystem-adoption" title="Link to this heading">#</a></h3>
 <!--

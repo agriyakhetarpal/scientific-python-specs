@@ -26,13 +26,13 @@ BEGIN:VEVENT
 DTSTART;TZID=/ics.py/2020.1/America/Los_Angeles:20230905T090000
 DTEND;TZID=/ics.py/2020.1/America/Los_Angeles:20230905T100000
 SUMMARY:SPEC Planning Meeting
-UID:9404057c-7b1f-4c44-8485-be9ce2c76052@9404.org
+UID:121110ea-1d2a-43fb-b4c0-87d26dbab283@1211.org
 DESCRIPTION:This is the monthly meeting for the SPECs Steering 
  Committee.\n\nMeeting Link:  https://ucsc.zoom.us/j/98441337155?pwd=Mjl6Tj
  dRTTNBc3ZGQzE3MTQyRVkyZz09\nMeeting notes: 
  https://hackmd.io/WPTkRnNtSOeF7OhUTRHDwA
 URL:https://ucsc.zoom.us/j/98441337155?pwd=Mjl6TjdRTTNBc3ZGQzE3MTQyRVkyZz09
-DTSTAMP:20250427T223528Z
+DTSTAMP:20250428T132025Z
 RRULE:FREQ=MONTHLY;BYDAY=1TU;INTERVAL=1
 END:VEVENT
 NAME:SPEC Steering Committee
