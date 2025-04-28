@@ -41,9 +41,34 @@ A comon barrier for beginners trying to get started with Scientific Python proje
 
 In-browser interactive documentation offers users a chance to try out and explore projects without taking effort to install them locally. Even when users are able to install projects, interactive documentation provides a smoother experience than copying and pasting code snippets into a local REPL, IDE/editor or Notebook. It can thus offer benefits for beginners and more experienced programmers alike.
 
-The [JupyterLite](https://jupyterlite.readthedocs.io/en/stable/) project coupled with either the [Pyodide](https://pyodide.org/en/stable/) or the [emscripten-forge](https://emscripten-forge.org/) distributions enables running Python code execution in the browser via [WebAssembly](https://webassembly.org/), such as code snippets in API examples, and/or narrative (long-form) documentation such as notebooks, tutorials, and how-to guides.
-This SPEC offers a primer on how Core Projects in the Scientific Python ecosystem can make their documentation interactive through these projects. It primarily focuses on Sphinx-based, HTML documentation workflows for projects with a Python API; however, brief recommendations are also made for other forms of documentation tooling.
+The [JupyterLite](https://jupyterlite.readthedocs.io/en/stable/) project enables running Python code in the browser via [WebAssembly](https://webassembly.org/), such as code snippets in API examples, and/or narrative (long-form) documentation such as notebooks, tutorials, and how-to guides.
 
+This SPEC offers a primer on how Core Projects in the Scientific Python ecosystem can make their documentation interactive through these projects. It primarily focuses on Sphinx-based, HTML documentation workflows for projects with a Python API; however, brief recommendations are also made for other ways of documentation tooling, such as MkDocs and MyST-JS.
+
+---
+
+{{< figure >}}
+
+src = "./NumPy-interactive-example.png"
+alt = "The image shows the NumPy documentation page for the numpy.hsplit function. At the top is the NumPy logo and navigation bar with links to User Guide, API reference, and other documentation sections. The left sidebar contains a list of related NumPy array manipulation functions. The main content focuses on the numpy.hsplit function, which splits an array into multiple sub-arrays horizontally (column-wise). The function signature shows numpy.hsplit(ary, indices_or_sections). The documentation explains that hsplit is equivalent to split with axis=1, and for 1-D arrays, it splits at axis=0. Prominently featured here is a detailed interactive example showing how to use numpy.hsplit in a numpydoc-based Examples secttion. There's a blue 'Try it in your browser!' button that allows users to run the code in a JupyterLite kernel directly within the documentation page without leaving the site. The example demonstrates splitting a 4x4 array into two parts and also shows how to use hsplit with specific indices."
+
+caption = "A screenshot of an interactive example in the NumPy documentation. The blue button allows users to run the code in a JupyterLite kernel directly within the documentation page without leaving the site."
+
+title = "NumPy interactive example for the `hsplit` function"
+
+{{< /figure >}}
+
+---
+
+{{< figure >}}
+
+src = "./NumPy-interactive-example-opened.png"
+alt = "This image shows the interactive JupyterLite notebook that has been opened and executed after clicking the 'Try it in your browser!' button from the NumPy hsplit documentation. The notebook is running directly within the same documentation page in an iframe, allowing users to experiment with the function without leaving the documentation. The JupyterLite UI is visible with standard notebook controls (File, Edit, View, Run, Kernel, Settings, Help) at the top. Below that is a warning message in an orange box stating that 'NumPy's interactive examples are experimental and may not always work as expected, with high load times especially on low-resource platforms, and the version of NumPy might not be in sync with the one you are browsing the documentation for. The notebook shows three code cells that have been executed, demonstrating how numpy.hsplit works with different parameters. The first cell imports NumPy and creates a 4x4 array, the second cell applies hsplit(x, 2) to split the array into two equal parts, and the third cell shows hsplit(x, np.array([3, 6])) to split the array at specific column indices."
+
+caption = "The interactive JupyterLite notebook that has been opened and executed after clicking the 'Try it in your browser!' button from the NumPy hsplit documentation. The notebook is running directly within the same documentation page in an iframe, allowing users to experiment with the function without leaving the documentation."
+title = "NumPy interactive example, opened"
+
+{{< /figure >}}
 
 ### Core Project Endorsement
 
@@ -53,8 +78,11 @@ Discuss what it means for a core project to endorse this SPEC.
 
 Core projects endorsing this SPEC would mean that they:
 
-- enable interactivity within applicable sections of their documentation websites through interfaces described in this document; and
-- further encourage other Scientific Python projects to adopt similar interfaces to make their documentation interactive.
+- enable interactivity within applicable sections of their documentation websites through the interfaces described in this document, such as
+  - the API reference sections (e.g., for "Examples" sections for public API methods and classes)
+  - narrative long-form content (tutorials, how-to guides, etc. that are written in the form of notebooks)
+  - and so on
+- further encourage other Scientific Python projects to adopt similar interfaces to make their documentation websites interactive.
 
 ### Ecosystem Adoption
 
