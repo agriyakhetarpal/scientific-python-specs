@@ -5,11 +5,11 @@ BEGIN:VEVENT
 DTSTART:20220720T160000Z
 DTEND:20220720T170000Z
 SUMMARY:Weekly SunPy Community Call
-UID:a752c5ef-c109-4d8f-aafa-4ff070e4f24b@a752.org
+UID:a624121a-853a-4ffe-a53e-4c56ed32c110@a624.org
 DESCRIPTION:The weekly call for the SunPy community.\nAgenda: 
  https://sunpy.org/community_meeting_agenda
 URL:https://sunpy.org/jitsi
-DTSTAMP:20250428T134923Z
+DTSTAMP:20250428T135730Z
 RRULE:FREQ=DAILY;INTERVAL=7;UNTIL=20250101T000000
 END:VEVENT
 NAME:SunPy Community Calendar

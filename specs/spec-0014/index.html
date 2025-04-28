@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" data-colorscheme="auto" >
   <head>
-    <!-- Generated 2025-04-28 13:49:23 UTC -->
+    <!-- Generated 2025-04-28 13:57:30 UTC -->
     <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -351,7 +351,7 @@ intended use-cases, and pseudo-code illustrating its use.
 <h4 id="what-distribution-should-projects-choose-pyodide-or-emscripten-forge">What distribution should projects choose: Pyodide or emscripten-forge?<a class="headerlink" href="#what-distribution-should-projects-choose-pyodide-or-emscripten-forge" title="Link to this heading">#</a></h4>
 <!-- I have not had a better answer to this beyond "it depends" so I don't know how to end this section even though I have known to start it -->
 <p>The Pyodide and emscripten-forge ecosystems are both great choices. Pyodide must be used with the <code>jupyterlite-pyodide-kernel</code> project, and the emscripten-forge distribution is available through the Xeus kernel.</p>
-<p>While we have noted the difference between both kernels, the key difference is that the Pyodide kernel, at the moment, allows one to dynamically install packages with a <code>%pip install</code> magic through <a href="https://jupyterlite.readthedocs.io/en/stable/howto/pyodide/packages.html#installing-packages-at-runtime"><code>piplite</code></a>, a package that provides abstractions over <code>micropip</code>, while the Xeus kernel does not as it lacks an in-browser package manager (<a href="https://github.com/mamba-org/picomamba"><code>picomamba</code></a> may soon address this). An environment file has to be used with the Xeus kernel, which pre-installs packages at the time of building the documentation.</p>
+<p>The key difference between both kernels is that the Pyodide kernel allows one to dynamically install packages with a <code>%pip install</code> magic through <a href="https://jupyterlite.readthedocs.io/en/stable/howto/pyodide/packages.html#installing-packages-at-runtime"><code>piplite</code></a>, a package that provides abstractions over <code>micropip</code>, while the Xeus kernel does not, at the moment, as it lacks an in-browser package manager (<a href="https://github.com/mamba-org/picomamba"><code>picomamba</code></a> may soon address this). An environment file has to be used with the Xeus kernel, which pre-installs WASM packages at the time of building the documentation.</p>
 <p>See <a href="https://jupyterlite.readthedocs.io/en/stable/howto/configure/kernels.html#adding-a-python-kernel">the JupyterLite documentation on &ldquo;Adding a Python kernel&rdquo;</a> for more.</p>
 <h3 id="runtime-considerations">Runtime considerations<a class="headerlink" href="#runtime-considerations" title="Link to this heading">#</a></h3>
 <p>During the process, it is necessary for us to discuss common aspects and scenarios that should be kept in mind when enabling interactive documentation deployments.</p>
