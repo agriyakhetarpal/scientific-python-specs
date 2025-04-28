@@ -175,7 +175,7 @@ We consider a project well-tested if there exists a CI job, which:
 
 #### 2. Enabling WASM builds for use in interactive documentation
 
-The next step is to use the added compatibility with WebAssembly by making binaries available through the appropriate pathways; i.e., through the Pyodide distribution or the emscripten-forge channel.
+The next step after establishing WebAssembly compatibility is to make binaries available through the appropriate pathways; i.e., through the Pyodide distribution or the emscripten-forge channel.
 
 Pyodide provides an entire distribution of packages along with its runtime through the jsDelivr CDN as its package index. Packages are bundled as WebAssembly-tagged wheels, which can be installed with [`micropip`](https://github.com/pyodide/micropip/), Pyodide's in-browser package manager.
 
