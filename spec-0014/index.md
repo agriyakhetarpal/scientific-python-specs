@@ -43,7 +43,7 @@ In-browser interactive documentation offers users a chance to try out and explor
 
 The [JupyterLite](https://jupyterlite.readthedocs.io/en/stable/) project enables running Python code in the browser via [WebAssembly](https://webassembly.org/), such as code snippets in API examples, and/or narrative (long-form) documentation such as notebooks, tutorials, and how-to guides.
 
-This SPEC offers a primer on how Core Projects in the Scientific Python ecosystem can make their documentation interactive through these projects. It primarily focuses on Sphinx-based, HTML documentation workflows for projects with a Python API; however, brief recommendations are also made for other ways of documentation tooling, such as MkDocs and MyST-JS.
+This SPEC offers a primer on how Core Projects in the Scientific Python ecosystem can make their documentation interactive through JupyterLite. It primarily focuses on Sphinx-based, HTML documentation workflows for projects with a Python API; however, brief recommendations are also made for other ways of documentation tooling, such as MkDocs and MyST-JS.
 
 ---
 
@@ -78,11 +78,13 @@ Discuss what it means for a core project to endorse this SPEC.
 
 Core projects endorsing this SPEC would mean that they:
 
-- enable interactivity within applicable sections of their documentation websites through the interfaces described in this document, such as
-  - the API reference sections (e.g., for "Examples" sections for public API methods and classes)
-  - narrative long-form content (tutorials, how-to guides, etc. that are written in the form of notebooks)
-  - and so on
-- further encourage other Scientific Python projects to adopt similar interfaces to make their documentation websites interactive.
+1. enable interactivity within applicable sections of their documentation websites, such as
+    - the API reference sections (e.g., for "Examples" sections for public API methods and classes)
+    - narrative long-form content (tutorials, how-to guides, etc. that are written in the form of notebooks)
+    - and so on
+2. further encourage other Scientific Python projects to adopt similar interfaces to make their documentation websites interactive, and
+3. take interactive documentation deployments into account when making decisions about the future of their documentation, and
+4. consider the suggestions made in this SPEC when doing so, wholly or in part.
 
 ### Ecosystem Adoption
 
