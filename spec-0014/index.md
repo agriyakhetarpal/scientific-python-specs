@@ -121,7 +121,7 @@ Assuming that:
 
 <hr>
 
-With these assumptions in mind, we can now make recommendations for setting up and deploying interactive HTML documentation.
+we make recommendations for setting up and deploying interactive HTML documentation.
 
 ### Recommendations
 
