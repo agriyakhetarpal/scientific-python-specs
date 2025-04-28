@@ -238,7 +238,7 @@ An end-to-end example of the above steps is also available; see [the `jupyterlit
 
 The Pyodide and emscripten-forge ecosystems are both great choices. Pyodide must be used with the `jupyterlite-pyodide-kernel` project, and the emscripten-forge distribution is available through the Xeus kernel.
 
-While we have noted the difference between both kernels, the key difference is that the Pyodide kernel, at the moment, allows one to dynamically install packages with a `%pip install` magic through [`piplite`](https://jupyterlite.readthedocs.io/en/stable/howto/pyodide/packages.html#installing-packages-at-runtime), a package that provides abstractions over `micropip`, while the Xeus kernel does not as it lacks an in-browser package manager ([`picomamba`](https://github.com/mamba-org/picomamba) may soon address this). An environment file has to be used with the Xeus kernel, which pre-installs packages at the time of building the documentation.
+The key difference between both kernels is that the Pyodide kernel allows one to dynamically install packages with a `%pip install` magic through [`piplite`](https://jupyterlite.readthedocs.io/en/stable/howto/pyodide/packages.html#installing-packages-at-runtime), a package that provides abstractions over `micropip`, while the Xeus kernel does not, at the moment, as it lacks an in-browser package manager ([`picomamba`](https://github.com/mamba-org/picomamba) may soon address this). An environment file has to be used with the Xeus kernel, which pre-installs WASM packages at the time of building the documentation.
 
 See [the JupyterLite documentation on "Adding a Python kernel"](https://jupyterlite.readthedocs.io/en/stable/howto/configure/kernels.html#adding-a-python-kernel) for more.
 
