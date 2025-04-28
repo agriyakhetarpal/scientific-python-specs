@@ -173,9 +173,9 @@ We consider a project well-tested if there exists a CI job, which:
 
 The next step after establishing WebAssembly compatibility is to make binaries available through the appropriate pathways; i.e., through the Pyodide distribution or the emscripten-forge channel.
 
-Pyodide provides an entire distribution of packages along with its runtime through the jsDelivr CDN as its package index. Packages are bundled as WebAssembly-tagged wheels, which can be installed with [`micropip`](https://github.com/pyodide/micropip/), Pyodide's in-browser package manager. Similarly, [the `emscripten-forge` channel](https://emscripten-forge.org/) also has a growing collection of packages that support the `wasm32-unknown-emscripten` target, often mirroring Pyodide in terms of the collection of the packages available and their versions.
+Pyodide provides an entire distribution of packages along with its runtime through the jsDelivr CDN as its package index. Packages are bundled as WebAssembly-tagged wheels, which can be installed with [`micropip`](https://github.com/pyodide/micropip/), Pyodide's in-browser package manager. Similarly, [the `emscripten-forge` channel](https://emscripten-forge.org/) also has a growing collection of packages that support the `wasm32-unknown-emscripten` target, often mirroring Pyodide in terms of the collection of the packages available and their versions. The distinction is that emscripten-forge uses `conda`-based packaging standards and file formats, while Pyodide builds on those for PyPI (designed around Python wheels).
 
-We will discuss the differences between the Pyodide and `emscripten-forge` distributions further along when giving suggestions on how to choose between either later in this document.
+We will discuss more differences between the Pyodide and `emscripten-forge` distributions further along when giving suggestions on how to choose between them later in this document.
 
 Once a project and its dependencies are compatible with WebAssembly as noted above, but may not yet be available via Pyodide or emscripten-forge, it is possible to add them to these distributions. This process is described in their respective documentation websites:
 
@@ -229,17 +229,16 @@ An end-to-end example of the above steps is also available; see [the `jupyterlit
 
 <!-- I have not had a better answer to this beyond "it depends" so I don't know how to end this section even though I have known to start it -->
 
-There are a few differences between the two distributions, which are worth noting:
+There are a few differences between the two distributions in terms of runtimes and packaging, and the kernels, which are worth noting:
 
-- It is possible to use the emscripten-forge distribution only through the JupyterLite project, unlike Pyodide, which also supports Node.js
-- The versions of Emscripten used across both are different, and therefore the ABI is, too
-- emscripten-forge uses `conda`-based packaging standards and file formats, rather than those for PyPI that Pyodide uses (Python wheels).
-
-The Pyodide and emscripten-forge ecosystems are both great choices. Pyodide must be used with the `jupyterlite-pyodide-kernel` project, and the emscripten-forge distribution is available through the Xeus kernel.
-
-The key difference between both kernels, besides the distribution they work with, is that the Pyodide kernel allows one to dynamically install packages with a `%pip install` magic through [`piplite`](https://jupyterlite.readthedocs.io/en/stable/howto/pyodide/packages.html#installing-packages-at-runtime), a package that provides abstractions over `micropip`, while the Xeus kernel does not, at the moment, as it lacks an in-browser package manager ([`picomamba`](https://github.com/mamba-org/picomamba) may soon address this). An environment file has to be used with the Xeus kernel, which pre-installs WASM packages when building the documentation.
+- Available runtimes: It is possible to use the emscripten-forge distribution only through the JupyterLite project, unlike Pyodide, which also supports Node.js and native browser-based JavaScript runtimes.
+- ABI differences: the versions of Emscripten used across both projects are different, and therefore the ABI is, too
+- Kernels: Pyodide must be used with the `jupyterlite-pyodide-kernel` project, while the emscripten-forge distribution is available through the Xeus kernel, with both being maintained by the JupyterLite contributors.
+    - The key difference between both kernels is that the Pyodide kernel allows one to dynamically install packages with a `%pip install` magic through [`piplite`](https://jupyterlite.readthedocs.io/en/stable/howto/pyodide/packages.html#installing-packages-at-runtime) (a package that provides abstractions over `micropip`). Whereas, the Xeus kernel does not allow this at the moment as it lacks an in-browser package manager ([`picomamba`](https://github.com/mamba-org/picomamba) may soon address this). An environment file has to be used with the Xeus kernel, which pre-installs WASM packages when building the documentation.
 
 See [the JupyterLite documentation on "Adding a Python kernel"](https://jupyterlite.readthedocs.io/en/stable/howto/configure/kernels.html#adding-a-python-kernel) for more.
+
+Therefore, the choice of distribution depends on the project and its needs coming as a part of implementing its interactive documentation deployments. For example, if a project is already available in Pyodide, it may be easier to use that distribution and its kernel. However, if it is required to pre-install packages or use kernels for other languages beyond Python, the emscripten-forge distribution and the Xeus kernel loader would be a better choice.
 
 ### Runtime considerations
 
