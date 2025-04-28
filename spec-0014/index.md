@@ -169,8 +169,6 @@ We consider a project well-tested if there exists a CI job, which:
     - for pure Python projects: building wheels through existing build frontends such as `pip` or `pypa/build`
 - subsequently, runs the entire test suite or applicable portions with these wheels installed into a Pyodide virtual environment provided with `pyodide venv`
 
-- Additionally, this SPEC recommends that [project contacts](https://github.com/pyodide/pyodide/issues/4506) volunteer as recipe maintainers for the packages they maintain so that they can help with builds or testing issues that may occur when the Pyodide or emscripten-forge maintainers try to upgrade packages, or with usage issues that may arise when users try to use Pyodide or emscripten-forge.
-
 #### 2. Enabling WASM builds for use in interactive documentation
 
 The next step after establishing WebAssembly compatibility is to make binaries available through the appropriate pathways; i.e., through the Pyodide distribution or the emscripten-forge channel.
@@ -183,6 +181,8 @@ Therefore, if a project and its dependencies are compatible with WebAssembly as 
 
 1. https://pyodide.org/en/stable/development/new-packages.html
 2. https://emscripten-forge.org/development/adding_packages/
+
+Additionally, during this process, this SPEC recommends that [project contacts](https://github.com/pyodide/pyodide/issues/4506) volunteer as recipe maintainers for the packages they are core developers and/or maintainers of, so that they can help with builds or testing issues that may occur when the Pyodide or emscripten-forge maintainers try to upgrade packages, or with usage issues that may arise when users try to use Pyodide or emscripten-forge.
 
 #### 3. Enabling interactive documentation deployments
 
