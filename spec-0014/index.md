@@ -173,11 +173,11 @@ We consider a project well-tested if there exists a CI job, which:
 
 The next step after establishing WebAssembly compatibility is to make binaries available through the appropriate pathways; i.e., through the Pyodide distribution or the emscripten-forge channel.
 
-Pyodide provides an entire distribution of packages along with its runtime through the jsDelivr CDN as its package index. Packages are bundled as WebAssembly-tagged wheels, which can be installed with [`micropip`](https://github.com/pyodide/micropip/), Pyodide's in-browser package manager.
+Pyodide provides an entire distribution of packages along with its runtime through the jsDelivr CDN as its package index. Packages are bundled as WebAssembly-tagged wheels, which can be installed with [`micropip`](https://github.com/pyodide/micropip/), Pyodide's in-browser package manager. Similarly, [the `emscripten-forge` channel](https://emscripten-forge.org/) also has a growing collection of packages that support the `wasm32-unknown-emscripten` target, often mirroring Pyodide in terms of the collection of the packages available and their versions.
 
-[The `emscripten-forge` channel](https://emscripten-forge.org/) also has a growing collection of packages that support the `wasm32-unknown-emscripten` target, often mirroring Pyodide in terms of the versions of packages available. There are key differences between Pyodide and `emscripten-forge` which we will discuss further along when giving suggestions on how to choose a distribution.
+We will discuss the differences between the Pyodide and `emscripten-forge` distributions further along when giving suggestions on how to choose between either later in this document.
 
-Therefore, if a project and its dependencies are compatible with WebAssembly as noted above, but may not yet be available via Pyodide or emscripten-forge, it is possible to add them to these distributions. This process is described in their respective documentation websites:
+Once a project and its dependencies are compatible with WebAssembly as noted above, but may not yet be available via Pyodide or emscripten-forge, it is possible to add them to these distributions. This process is described in their respective documentation websites:
 
 1. https://pyodide.org/en/stable/development/new-packages.html
 2. https://emscripten-forge.org/development/adding_packages/
@@ -229,9 +229,15 @@ An end-to-end example of the above steps is also available; see [the `jupyterlit
 
 <!-- I have not had a better answer to this beyond "it depends" so I don't know how to end this section even though I have known to start it -->
 
+There are a few differences between the two distributions, which are worth noting:
+
+- It is possible to use the emscripten-forge distribution only through the JupyterLite project, unlike Pyodide, which also supports Node.js
+- The versions of Emscripten used across both are different, and therefore the ABI is, too
+- emscripten-forge uses `conda`-based packaging standards and file formats, rather than those for PyPI that Pyodide uses (Python wheels).
+
 The Pyodide and emscripten-forge ecosystems are both great choices. Pyodide must be used with the `jupyterlite-pyodide-kernel` project, and the emscripten-forge distribution is available through the Xeus kernel.
 
-The key difference between both kernels is that the Pyodide kernel allows one to dynamically install packages with a `%pip install` magic through [`piplite`](https://jupyterlite.readthedocs.io/en/stable/howto/pyodide/packages.html#installing-packages-at-runtime), a package that provides abstractions over `micropip`, while the Xeus kernel does not, at the moment, as it lacks an in-browser package manager ([`picomamba`](https://github.com/mamba-org/picomamba) may soon address this). An environment file has to be used with the Xeus kernel, which pre-installs WASM packages when building the documentation.
+The key difference between both kernels, besides the distribution they work with, is that the Pyodide kernel allows one to dynamically install packages with a `%pip install` magic through [`piplite`](https://jupyterlite.readthedocs.io/en/stable/howto/pyodide/packages.html#installing-packages-at-runtime), a package that provides abstractions over `micropip`, while the Xeus kernel does not, at the moment, as it lacks an in-browser package manager ([`picomamba`](https://github.com/mamba-org/picomamba) may soon address this). An environment file has to be used with the Xeus kernel, which pre-installs WASM packages when building the documentation.
 
 See [the JupyterLite documentation on "Adding a Python kernel"](https://jupyterlite.readthedocs.io/en/stable/howto/configure/kernels.html#adding-a-python-kernel) for more.
 
