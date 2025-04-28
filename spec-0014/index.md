@@ -177,11 +177,7 @@ The next step after establishing WebAssembly compatibility is to make binaries a
 
 Pyodide provides an entire distribution of packages along with its runtime through the jsDelivr CDN as its package index. Packages are bundled as WebAssembly-tagged wheels, which can be installed with [`micropip`](https://github.com/pyodide/micropip/), Pyodide's in-browser package manager.
 
-[The `emscripten-forge` channel](https://emscripten-forge.org/) also has a growing collection of packages that support the `wasm32-unknown-emscripten` target, often mirroring Pyodide in terms of the versions of packages available, though it differs in usage:
-
-- It is possible to use the distribution only through the JupyterLite project, unlike Pyodide, which also supports Node.js
-- The versions of Emscripten used across both are different, and therefore the ABI is, too
-- It uses `conda`-based packaging standards and file formats, rather than those for PyPI that Pyodide uses (wheels).
+[The `emscripten-forge` channel](https://emscripten-forge.org/) also has a growing collection of packages that support the `wasm32-unknown-emscripten` target, often mirroring Pyodide in terms of the versions of packages available. There are key differences between Pyodide and `emscripten-forge` which we will discuss further along when giving suggestions on how to choose a distribution.
 
 Therefore, if a project and its dependencies are compatible with WebAssembly as noted above, but may not yet be available via Pyodide or emscripten-forge, it is possible to add them to these distributions. This process is described in their respective documentation websites:
 
