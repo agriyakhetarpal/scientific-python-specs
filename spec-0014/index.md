@@ -112,7 +112,7 @@ intended use-cases, and pseudo-code illustrating its use.
 
 ### Assumptions
 
-We assume that:
+Assuming that:
 
 - The target project has a hosted documentation website served over static HTML, built with the Sphinx documentation framework.
 - Compatibility:
