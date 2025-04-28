@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" data-colorscheme="auto" >
   <head>
-    <!-- Generated 2025-04-28 21:36:52 UTC -->
+    <!-- Generated 2025-04-28 21:38:00 UTC -->
     <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -307,12 +307,7 @@ intended use-cases, and pseudo-code illustrating its use.
 <h4 id="2-enabling-wasm-builds-for-use-in-interactive-documentation">2. Enabling WASM builds for use in interactive documentation<a class="headerlink" href="#2-enabling-wasm-builds-for-use-in-interactive-documentation" title="Link to this heading">#</a></h4>
 <p>The next step after establishing WebAssembly compatibility is to make binaries available through the appropriate pathways; i.e., through the Pyodide distribution or the emscripten-forge channel.</p>
 <p>Pyodide provides an entire distribution of packages along with its runtime through the jsDelivr CDN as its package index. Packages are bundled as WebAssembly-tagged wheels, which can be installed with <a href="https://github.com/pyodide/micropip/"><code>micropip</code></a>, Pyodide&rsquo;s in-browser package manager.</p>
-<p><a href="https://emscripten-forge.org/">The <code>emscripten-forge</code> channel</a> also has a growing collection of packages that support the <code>wasm32-unknown-emscripten</code> target, often mirroring Pyodide in terms of the versions of packages available, though it differs in usage:</p>
-<ul>
-<li>It is possible to use the distribution only through the JupyterLite project, unlike Pyodide, which also supports Node.js</li>
-<li>The versions of Emscripten used across both are different, and therefore the ABI is, too</li>
-<li>It uses <code>conda</code>-based packaging standards and file formats, rather than those for PyPI that Pyodide uses (wheels).</li>
-</ul>
+<p><a href="https://emscripten-forge.org/">The <code>emscripten-forge</code> channel</a> also has a growing collection of packages that support the <code>wasm32-unknown-emscripten</code> target, often mirroring Pyodide in terms of the versions of packages available. There are key differences between Pyodide and <code>emscripten-forge</code> which we will discuss further along when giving suggestions on how to choose a distribution.</p>
 <p>Therefore, if a project and its dependencies are compatible with WebAssembly as noted above, but may not yet be available via Pyodide or emscripten-forge, it is possible to add them to these distributions. This process is described in their respective documentation websites:</p>
 <ol>
 <li><a href="https://pyodide.org/en/stable/development/new-packages.html">https://pyodide.org/en/stable/development/new-packages.html</a></li>
