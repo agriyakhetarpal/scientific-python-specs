@@ -54,7 +54,7 @@ alt = "The image shows the NumPy documentation page for the numpy.hsplit functio
 
 caption = "A screenshot of an interactive example in the NumPy documentation. The blue button allows users to run the code in a JupyterLite kernel directly within the documentation page without leaving the site."
 
-title = "NumPy interactive example for the `hsplit` function"
+title = "An interactive example for the numpy.hsplit() function"
 
 {{< /figure >}}
 
@@ -66,7 +66,7 @@ src = "./NumPy-interactive-example-opened.png"
 alt = "This image shows the interactive JupyterLite notebook that has been opened and executed after clicking the 'Try it in your browser!' button from the NumPy hsplit documentation. The notebook is running directly within the same documentation page in an iframe, allowing users to experiment with the function without leaving the documentation. The JupyterLite UI is visible with standard notebook controls (File, Edit, View, Run, Kernel, Settings, Help) at the top. Below that is a warning message in an orange box stating that 'NumPy's interactive examples are experimental and may not always work as expected, with high load times especially on low-resource platforms, and the version of NumPy might not be in sync with the one you are browsing the documentation for. The notebook shows three code cells that have been executed, demonstrating how numpy.hsplit works with different parameters. The first cell imports NumPy and creates a 4x4 array, the second cell applies hsplit(x, 2) to split the array into two equal parts, and the third cell shows hsplit(x, np.array([3, 6])) to split the array at specific column indices."
 
 caption = "The interactive JupyterLite notebook that has been opened and executed after clicking the 'Try it in your browser!' button from the NumPy hsplit documentation. The notebook is running directly within the same documentation page in an iframe, allowing users to experiment with the function without leaving the documentation."
-title = "NumPy interactive example, opened"
+title = "Running the interactive example within the documentation page"
 
 {{< /figure >}}
 
