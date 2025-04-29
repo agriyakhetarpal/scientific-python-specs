@@ -5,26 +5,26 @@ BEGIN:VEVENT
 DTSTART:20220913T170000Z
 DURATION:PT1H
 SUMMARY:scikit-image Community Call (Europe/Africa)
-UID:56ce3656-ba5c-4943-b6dd-04baa4b025c5@56ce.org
+UID:b27b5394-bbce-41bd-bed3-eab5670384c6@b27b.org
 DESCRIPTION:The scikit-image Community Call. Timezone-friendly for 
  Europe/Africa.\n\nMeeting notes: https://hackmd.io/-HCxhoU4RSiC-
  RzVMyoweg\nArchive: https://github.com/scikit-image/skimage-
  archive/tree/main/meeting-notes
 URL:https://meet.evolix.org/skimage-meeting
-DTSTAMP:20250429T000540Z
+DTSTAMP:20250429T002243Z
 RRULE:FREQ=DAILY;INTERVAL=14;UNTIL=20251101T000000
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20251104T180000Z
 DURATION:PT1H
 SUMMARY:scikit-image Community Call (Europe/Africa)
-UID:6ddccd9b-2224-4cd5-85e1-b81ac5a4094f@6ddc.org
+UID:6ff86e1f-3cd0-4de5-b4a7-6a60c49a3970@6ff8.org
 DESCRIPTION:The scikit-image Community Call. Timezone-friendly for 
  Europe/Africa.\n\nMeeting notes: https://hackmd.io/-HCxhoU4RSiC-
  RzVMyoweg\nArchive: https://github.com/scikit-image/skimage-
  archive/tree/main/meeting-notes
 URL:https://meet.evolix.org/skimage-meeting
-DTSTAMP:20250429T000540Z
+DTSTAMP:20250429T002243Z
 RRULE:FREQ=DAILY;INTERVAL=14;UNTIL=20260307T000000
 END:VEVENT
 NAME:scikit-image Community Calendar
