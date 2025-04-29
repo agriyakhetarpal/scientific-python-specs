@@ -256,7 +256,7 @@ During the process, we must discuss common aspects and scenarios that should be 
 JupyterLite is also best supported on more conventional platforms and browser configurations:
 
 - For example, iOS's WASM runtime is not well supported upstream and unexpected problems may occur.
-- Firefox in incognito mode does not have proper support for accessing the Emscripten file system, because service workers, which JupyterLite uses, are not supported.
+- Earlier versions of Firefox (prior to version 138) in incognito mode does not have proper support for accessing the Emscripten file system, because service workers, which JupyterLite uses, are not supported.
 
 First-time visitors may experience a longer loading time, as large resources such as WASM wheels and other static assets are fetched. However, browsers will cache downloaded wheels, substantially reducing bandwidth requirements for JupyterLite and subsequent loading times for interactive examples.
 
