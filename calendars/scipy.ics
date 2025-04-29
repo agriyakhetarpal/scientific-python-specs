@@ -5,48 +5,48 @@ BEGIN:VEVENT
 DTSTART:20241113T140000Z
 DTEND:20241113T150000Z
 SUMMARY:SciPy Community Call (Europe/Asia)
-UID:41a55d5c-870b-44fa-8acd-ba2597b5b3c5@41a5.org
+UID:94da8a45-544e-4aa8-958f-676aa61c100b@94da.org
 DESCRIPTION:This is the Europe/Asia-friendly meeting.\n\nMeeting notes: 
  https://hackmd.io/pyhudrC5TgSwdJtpPldHgQ
 URL:https://us06web.zoom.us/j/6345425936
-DTSTAMP:20250429T002243Z
+DTSTAMP:20250429T122923Z
 RRULE:FREQ=DAILY;INTERVAL=56;UNTIL=20260101T000000
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20241211T200000Z
 DTEND:20241211T210000Z
 SUMMARY:SciPy Community Call (Americas)
-UID:03d18e30-d033-4aa3-b480-6e94d6cc8ef8@03d1.org
+UID:6e114eb0-c449-41e0-8fe7-cdc2c35cb72e@6e11.org
 DESCRIPTION:This is the Americas-friendly meeting.\n\nMeeting notes: 
  https://hackmd.io/pyhudrC5TgSwdJtpPldHgQ
 URL:https://us06web.zoom.us/j/6345425936
-DTSTAMP:20250429T002243Z
+DTSTAMP:20250429T122923Z
 RRULE:FREQ=DAILY;INTERVAL=56;UNTIL=20260101T000000
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20241018T120000Z
 DTEND:20241018T130000Z
 SUMMARY:Monthly SciPy New Contributor Meeting (Europe/Asia)
-UID:390076c9-2fb9-427a-808d-9772d8596af1@3900.org
+UID:12e54630-b0f7-4323-8ae3-2d01fbb97753@12e5.org
 DESCRIPTION:The monthly call for new contributors to SciPy 🎉\n\nThis is the
   Europe/Asia-friendly meeting.\n\nAll are welcome.\n\nMeeting notes: 
  https://hackmd.io/@melissawm/H15ahr5wq
 URL:https://us06web.zoom.us/j/89085469494?pwd=dVFwK3dVczRyRUowZWZkckFtTmloU
  T09
-DTSTAMP:20250429T002243Z
+DTSTAMP:20250429T122923Z
 RRULE:FREQ=DAILY;INTERVAL=56;UNTIL=20260101T000000
 END:VEVENT
 BEGIN:VEVENT
 DTSTART:20230303T200000Z
 DTEND:20230303T210000Z
 SUMMARY:Monthly SciPy New Contributor Meeting (Americas)
-UID:6ff0aaf8-196d-47bc-9270-57bff67f29f8@6ff0.org
+UID:daae2ff6-b32f-4e27-955f-925c472707df@daae.org
 DESCRIPTION:The monthly call for new contributors to SciPy 🎉\n\nThis is the
   Americas-friendly meeting.\n\nAll are welcome.\n\nMeeting notes: 
  https://hackmd.io/@melissawm/H15ahr5wq
 URL:https://us06web.zoom.us/j/89085469494?pwd=dVFwK3dVczRyRUowZWZkckFtTmloU
  T09
-DTSTAMP:20250429T002243Z
+DTSTAMP:20250429T122923Z
 RRULE:FREQ=DAILY;INTERVAL=56;UNTIL=20260101T000000
 END:VEVENT
 NAME:SciPy Community Calendar
