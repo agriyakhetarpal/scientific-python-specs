@@ -144,15 +144,15 @@ While this step is not required to enable interactive documentation deployments 
 
 ##### 1.1. How to assess compatibility with WebAssembly
 
-First, we discuss assessing whether a project is compatible with WebAssembly.
+Two major projects are currently providing ports of CPython to a WebAssembly runtime through the Emscripten compiler toolchain: Pyodide and emscripten-forge. They are largely compatible with CPython similar to how it runs on a standard Linux machine, albeit with a few differences, limitations, and exceptions.
 
-While we note that Core Projects will need to consider the below points when aiming to establish compatibility with WebAssembly, it is worth mentioning that [most Core Projects are already available in the Pyodide distribution](https://pyodide.org/en/stable/usage/packages-in-pyodide.html), thanks to the work collectively done by the Pyodide maintainers, the emscripten-forge team, and several external collaborators.
+[Most Core Projects are already available in the Pyodide distribution](https://pyodide.org/en/stable/usage/packages-in-pyodide.html), thanks to the work collectively done by the Pyodide maintainers, the emscripten-forge team, and several external collaborators.
 
-Two major projects are currently providing ports of CPython to a WebAssembly runtime through the Emscripten compiler toolchain: Pyodide and emscripten-forge. They are largely compatible with CPython similar to how it runs on a standard Linux machine, albeit with a few differences, limitations, and exceptions:
-
+Consider the following when assessing compatibility with WebAssembly:
 - The bitness is 32-bit, with 64-bit memory indices left for future iterations of the WebAssembly specification
 - CPython is directly compiled to WASM, specifically, the `wasm32-unknown-emscripten` target triplet, and the Python virtual machine that runs Python programs itself runs inside browsers' WebAssembly virtual machine implementations. While the Emscripten compiler toolchain provides JavaScript glue code that integrates with web-based elements in browsers, POSIX standard compliance—while generally high—is implemented differently due to browsers' file system and memory sandboxing features.
-- This means that specific modules from the Python standard library are unavailable and have been removed, and there is a lack of support for the `threading` and `multiprocessing` modules. Core Projects relying on parallel programming functionality, for example, using pthreads or OpenMP must adapt their code accordingly.
+
+This means that specific modules from the Python standard library are unavailable and have been removed, and there is a lack of support for the `threading` and `multiprocessing` modules. Projects relying on parallel programming functionality, for example, using pthreads or OpenMP must adapt their code accordingly.
 
 For more details, refer to [the Pyodide documentation on "Pyodide Python compatibility"](https://pyodide.org/en/stable/usage/wasm-constraints.html).
 
