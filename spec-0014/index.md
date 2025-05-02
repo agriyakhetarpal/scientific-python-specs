@@ -52,7 +52,7 @@ This SPEC offers a primer on how Core Projects in the Scientific Python ecosyste
 src = "./NumPy-interactive-example.png"
 alt = "The image shows the NumPy documentation page for the numpy.hsplit function. At the top is the NumPy logo and navigation bar with links to the User Guide, API reference, and other documentation sections. The left sidebar contains a list of related NumPy array manipulation functions. The main content focuses on the numpy.hsplit function, which splits an array into multiple sub-arrays horizontally (column-wise). The function signature shows numpy.hsplit(ary, indices_or_sections). The documentation explains that hsplit is equivalent to split with axis=1, and for 1-D arrays, it splits at axis=0. Prominently featured here is a detailed interactive example showing how to use numpy.hsplit in a numpydoc-based Examples section. A blue 'Try it in your browser!' button above the code snippet and below the Examples heading that allows users to run the code in a JupyterLite kernel directly within the documentation page without leaving the site. The example demonstrates splitting a 4x4 array into two parts and how to use hsplit with specific indices."
 
-caption = "A screenshot of an interactive example in the NumPy documentation. The blue button allows users to run the code in a JupyterLite kernel directly within the documentation page without leaving the site."
+caption = "A screenshot of an interactive example in the NumPy documentation. The blue button labeled 'Try it in your browser!' allows users to run the code in a JupyterLite kernel directly within the documentation page without leaving the site."
 
 title = "An interactive example for the numpy.hsplit() function"
 
