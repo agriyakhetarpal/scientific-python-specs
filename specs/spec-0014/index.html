@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" data-colorscheme="auto" >
   <head>
-    <!-- Generated 2025-05-02 13:19:47 UTC -->
+    <!-- Generated 2025-05-02 13:22:36 UTC -->
     <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -380,12 +380,11 @@ intended use-cases, and pseudo-code illustrating its use.
 <p>It is also possible to bundle a wheel as a part of the documentation build process in CI; see <a href="https://github.com/scikit-image/scikit-image/pull/7644">https://github.com/scikit-image/scikit-image/pull/7644</a> for an example which configures the Pyodide kernel to load an extra wheel and add it to a local index that is available for Pyodide to install.</p>
 <p>The emscripten-forge distribution does not have this limitation. Still, packages there need to be continually updated, supported, and patched in the same way they need to be for inclusion in Pyodide. This is planning to change with the upcoming <a href="https://github.com/pyodide/pyodide/issues/4918">Pyodide version 0.28</a>, which will allow the distribution of Pyodide’s packages outside of Pyodide&rsquo;s releases.</p>
 <h3 id="the-maintenance-of-interactive-documentation-utilities">The maintenance of interactive documentation utilities<a class="headerlink" href="#the-maintenance-of-interactive-documentation-utilities" title="Link to this heading">#</a></h3>
-<p>After interactive documentation deployments are rolled out, a question arises about their maintenance. Here, we provide the following recommendations:</p>
+<p>After interactive documentation deployments are rolled out, common maintenance patterns include:</p>
 <ul>
-<li>projects that use the Pyodide distribution host interactive documentation deployments on an experimental and best-effort basis, built for quick prototyping and pedagogical use cases for beginners and intermediate users, and</li>
-<li>issues concerning interactive documentation rollouts be handled only for the &ldquo;stable&rdquo; and &ldquo;development&rdquo; versions of the documentation.</li>
+<li>hosting them on an experimental and best-effort basis, built for quick prototyping and pedagogical use cases for beginners and intermediate users, and</li>
+<li>handling issues concerning these rollouts only for the &ldquo;stable&rdquo; and &ldquo;development&rdquo; versions of the documentation.</li>
 </ul>
-<!-- should we recommend that? -->
 <p>The maintenance of these deployments has a couple of aspects, which we cover below:</p>
 <h5 id="disabling-interactive-buttons-where-interactivity-isnt-useful-or-not-desired-or-where-the-code-is-not-compatible-with-webassembly">Disabling interactive buttons where interactivity isn&rsquo;t useful or not desired, or where the code is not compatible with WebAssembly<a class="headerlink" href="#disabling-interactive-buttons-where-interactivity-isnt-useful-or-not-desired-or-where-the-code-is-not-compatible-with-webassembly" title="Link to this heading">#</a></h5>
 <p>If there are areas in the public API documentation for a project for which interactive examples are not useful for inclusion (or are supposed to be hidden to end users as far as interactivity is concerned), they may be hidden at runtime using <a href="https://jupyterlite-sphinx.readthedocs.io/en/stable/directives/try_examples.html#try-examples-json-configuration-file">a <code>try_examples.json</code> configuration file</a>, which will exclude them from being rendered interactive using a regular expression pattern.</p>
