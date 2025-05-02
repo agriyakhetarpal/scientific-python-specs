@@ -26,12 +26,12 @@ BEGIN:VEVENT
 DTSTART;TZID=/ics.py/2020.1/America/Los_Angeles:20240510T110000
 DTEND;TZID=/ics.py/2020.1/America/Los_Angeles:20240510T120000
 SUMMARY:Another Open Source Podcast
-UID:93c47825-8044-4e22-a403-41c3e92650be@93c4.org
+UID:480f341a-b12e-4ed8-9094-7e92869c5c62@480f.org
 DESCRIPTION:A podcast about open source! Join us for discussions on open 
  source\nevents\, documentation\, developer testimonies\, mentorship 
  programs and more."
 URL:https://discord.gg/X3fpKzKf
-DTSTAMP:20250502T132654Z
+DTSTAMP:20250502T133347Z
 END:VEVENT
 NAME:Podcast Calendar
 X-WR-CALNAME:Podcast Calendar

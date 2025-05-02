@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" data-colorscheme="auto" >
   <head>
-    <!-- Generated 2025-05-02 13:26:55 UTC -->
+    <!-- Generated 2025-05-02 13:33:48 UTC -->
     <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -310,7 +310,7 @@ intended use-cases, and pseudo-code illustrating its use.
 <p>Additionally, during this process, this SPEC recommends that <a href="https://github.com/pyodide/pyodide/issues/4506">project contacts</a> volunteer as recipe maintainers for the packages they are core developers and/or maintainers of, so that they can help with builds or testing issues that may occur when the Pyodide or emscripten-forge maintainers try to upgrade packages, or with usage issues that may arise when users try to use Pyodide or emscripten-forge.</p>
 <h4 id="3-enabling-interactive-documentation-deployments">3. Enabling interactive documentation deployments<a class="headerlink" href="#3-enabling-interactive-documentation-deployments" title="Link to this heading">#</a></h4>
 <p>Once a project&rsquo;s Webassembly binaries and dependencies are available through Pyodide and/or emscripten-forge, the project may start using them in interactive documentation deployments.</p>
-<p>We recommend <a href="https://jupyterlite.readthedocs.io/en/stable/">the JupyterLite project</a> for this. The rationale behind this recommendation is that it provides multiple features and surrounding tooling to ease such deployments.</p>
+<p>We recommend <a href="https://jupyterlite.readthedocs.io/en/stable/">the JupyterLite project</a> due to its multiple features and surrounding tooling to ease such deployments.</p>
 <p>JupyterLite is a serverless variant of the JupyterLab project that runs entirely in the browser on the client side via WebAssembly. JupyterLite sites are distributed as static assets and can be built using the <code>jupyter lite</code> CLI. It supports various JupyterLab extensions, plugins, kernels, and surrounding projects for browser-based use cases. Particularly, the project provides the following:</p>
 <ul>
 <li><a href="https://jupyterlite-sphinx.readthedocs.io/en/stable/"><code>jupyterlite-sphinx</code></a>: a Sphinx extension that provides mechanisms to embed a JupyterLite site within Sphinx documentation, and offers documentation-focused abstractions to customise them via a Pythonic interface.</li>
