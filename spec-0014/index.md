@@ -158,7 +158,7 @@ For more details, refer to [the Pyodide documentation on "Pyodide Python compati
 
 ##### 1.2. What does adding support for WebAssembly look like?
 
-First, Core Projects should check if this criterion is satisfied already, as [many Scientific Python projects are now well-tested for usage and interoperability in a WebAssembly runtime provided by Pyodide and emscripten-forge](https://github.com/Quansight-Labs/czi-scientific-python-mgmt/issues/18). This goal's accomplishment amplifies the notion of Scientific Python being runnable in browser-based runtimes.
+First, Core Projects should check if they are already supported, as [many Scientific Python projects are now well-tested for usage and interoperability in a WebAssembly runtime provided by Pyodide and emscripten-forge](https://github.com/Quansight-Labs/czi-scientific-python-mgmt/issues/18).
 
 Compatibility can be established by implementing a CI job that builds wheels for a project and runs the test suite with them in a WebAssembly environment provided by the Pyodide distribution: https://pyodide.org/en/stable/development/building-and-testing-packages.html.
 
