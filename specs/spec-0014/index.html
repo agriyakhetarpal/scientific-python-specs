@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" data-colorscheme="auto" >
   <head>
-    <!-- Generated 2025-05-02 13:24:04 UTC -->
+    <!-- Generated 2025-05-02 13:26:55 UTC -->
     <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -330,7 +330,7 @@ intended use-cases, and pseudo-code illustrating its use.
 <h6 id="narrative-documentation-and-tutorials-long-form-content">Narrative documentation and tutorials (long-form content)<a class="headerlink" href="#narrative-documentation-and-tutorials-long-form-content" title="Link to this heading">#</a></h6>
 <p>For longer-form narrative content such as tutorials, how-to guides, and explanatory documentation:</p>
 <ul>
-<li><code>jupyterlite-sphinx</code> offers directives to render long-form content written in notebooks (the <a href="https://jupyterlite-sphinx.readthedocs.io/en/stable/directives/jupyterlite.html"><code>jupyterlite</code> directive</a>, the <a href="https://jupyterlite-sphinx.readthedocs.io/en/stable/directives/notebooklite.html"><code>notebooklite</code> directive</a>, and so on), which can be configured to open notebooks in new tabs or iframes within the same tab. It supports both traditional IPyNB files and MyST Markdown notebooks. Unlike the <code>try_examples</code> directive, these directives do not work with reST-based content. We recommend using MyST Markdown notebooks, as they integrate well with version control.</li>
+<li><code>jupyterlite-sphinx</code> offers directives to render long-form content written in notebooks (the <a href="https://jupyterlite-sphinx.readthedocs.io/en/stable/directives/jupyterlite.html"><code>jupyterlite</code> directive</a>, the <a href="https://jupyterlite-sphinx.readthedocs.io/en/stable/directives/notebooklite.html"><code>notebooklite</code> directive</a>, and so on), which can be configured to open notebooks in new tabs or iframes within the same tab. It supports both traditional IPyNB files and <a href="https://myst-nb.readthedocs.io/en/stable/authoring/text-notebooks.html">MyST Markdown notebooks</a>. Unlike the <code>try_examples</code> directive, these directives do not work with reST-based content. We recommend using MyST Markdown notebooks, as they integrate well with version control.</li>
 <li>The Sphinx-Gallery project offers a <a href="https://sphinx-gallery.github.io/stable/configuration.html#jupyterlite">JupyterLite integration, built with <code>jupyterlite-sphinx</code></a> which enables a &ldquo;JupyterLite&rdquo; button in the secondary sidebar to open a notebook in the JupyterLite deployments. It provides a <code>notebook_modification_function</code> configuration option via <code>conf.py</code> that can be used to configure code cells or Markdown cells at the top of a notebook, with custom <code>%pip</code>-install commands, imports from other libraries, or extra admonitions.</li>
 </ul>
 <hr>

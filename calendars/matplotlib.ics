@@ -26,51 +26,51 @@ BEGIN:VEVENT
 DTSTART;TZID=/ics.py/2020.1/Europe/Berlin:20220324T210000
 DTEND;TZID=/ics.py/2020.1/Europe/Berlin:20220324T220000
 SUMMARY:Matplotlib — Plot Plotting (open project call)
-UID:90ac3531-08e4-4f70-b677-bc8edad9c375@90ac.org
+UID:15e4b5cb-9a5f-4d86-bf2a-722230c303f2@15e4.org
 DESCRIPTION:The Weekly Matplotlib project call.\n\nAll are 
  welcome.\n\nMeeting notes and agenda: https://hackmd.io/@matplotlib
 URL:https://zoom.us/j/384435716?pwd=WFpxVWxoYXArTDFzN1lWaHNoOE8xZz09
-DTSTAMP:20250502T132403Z
+DTSTAMP:20250502T132653Z
 RRULE:FREQ=WEEKLY;BYDAY=TH
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;TZID=/ics.py/2020.1/Europe/Berlin:20230207T190000
 DTEND;TZID=/ics.py/2020.1/Europe/Berlin:20230207T200000
 SUMMARY:Matplotlib Monthly New Contributors Meeting (Americas)
-UID:bbd6d8ef-0864-41de-b6d5-710576a1fca8@bbd6.org
+UID:f0105441-f0b4-4e4e-89c4-7ee8901e7106@f010.org
 DESCRIPTION:The monthly call for new contributors to the Matplotlib project
   🎉\n\nThis is the Americas-friendly meeting.\n\nAll are 
  welcome.\n\nMeeting notes: https://hackmd.io/@matplotlib
 URL:https://numfocus-
  org.zoom.us/j/88077871096?pwd=bTxkJRug4Lmr8AiR9jNyntxBS4yGDe.1
-DTSTAMP:20250502T132403Z
+DTSTAMP:20250502T132653Z
 RRULE:FREQ=MONTHLY;BYDAY=1TU;INTERVAL=2
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;TZID=/ics.py/2020.1/Europe/Berlin:20230307T130000
 DTEND;TZID=/ics.py/2020.1/Europe/Berlin:20230307T140000
 SUMMARY:Matplotlib Monthly New Contributors Meeting (Europe/Asia)
-UID:7f2af921-06cd-4b90-bd1e-5c2039dd8c2f@7f2a.org
+UID:2a03e77b-eae8-4e56-b33c-a77d6d765bfe@2a03.org
 DESCRIPTION:The monthly call for new contributors to the Matplotlib project
   🎉\n\nThis is the Europe/Asia-friendly meeting.\n\nAll are 
  welcome.\n\nMeeting notes: https://hackmd.io/@matplotlib
 URL:https://numfocus-
  org.zoom.us/j/88077871096?pwd=bTxkJRug4Lmr8AiR9jNyntxBS4yGDe.1
-DTSTAMP:20250502T132403Z
+DTSTAMP:20250502T132653Z
 RRULE:FREQ=MONTHLY;BYDAY=1TU;INTERVAL=2
 END:VEVENT
 BEGIN:VEVENT
 DTSTART;TZID=/ics.py/2020.1/Europe/Berlin:20231215T190000
 DTEND;TZID=/ics.py/2020.1/Europe/Berlin:20231215T200000
 SUMMARY:Matplotlib Documentation Meeting
-UID:eafd835c-e069-4b8b-979d-8373f5591094@eafd.org
+UID:e49df141-ab51-4715-b6d2-977b74da5183@e49d.org
 DESCRIPTION:Meeting every other week to discuss all things Matplotlib 
  documentation.\nContributing\, planning\, strategy\, content - anybody 
  with curiosity\, interest\,\nor an opinion is welcome.\n\nMeeting notes: 
  https://hackmd.io/@matplotlib/dwg
 URL:https://us06web.zoom.us/j/81285851006?pwd=Tks2QjRkNWh5NGw0TmU1RUwwOVluZ
  z09
-DTSTAMP:20250502T132403Z
+DTSTAMP:20250502T132653Z
 RRULE:FREQ=WEEKLY;BYDAY=FR;INTERVAL=2
 END:VEVENT
 NAME:Matplotlib Community Calendar
