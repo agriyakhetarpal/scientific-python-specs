@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" data-colorscheme="auto" >
   <head>
-    <!-- Generated 2025-05-02 13:33:48 UTC -->
+    <!-- Generated 2025-05-02 13:50:48 UTC -->
     <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -286,7 +286,7 @@ intended use-cases, and pseudo-code illustrating its use.
 <p>This means that specific modules from the Python standard library are unavailable and have been removed, and there is a lack of support for the <code>threading</code> and <code>multiprocessing</code> modules. Projects relying on parallel programming functionality, for example, using pthreads or OpenMP must adapt their code accordingly.</p>
 <p>For more details, refer to <a href="https://pyodide.org/en/stable/usage/wasm-constraints.html">the Pyodide documentation on &ldquo;Pyodide Python compatibility&rdquo;</a>.</p>
 <h5 id="12-what-does-adding-support-for-webassembly-look-like">1.2. What does adding support for WebAssembly look like?<a class="headerlink" href="#12-what-does-adding-support-for-webassembly-look-like" title="Link to this heading">#</a></h5>
-<p>First, Core Projects should check if this criterion is satisfied already, as <a href="https://github.com/Quansight-Labs/czi-scientific-python-mgmt/issues/18">many Scientific Python projects are now well-tested for usage and interoperability in a WebAssembly runtime provided by Pyodide and emscripten-forge</a>. This goal&rsquo;s accomplishment amplifies the notion of Scientific Python being runnable in browser-based runtimes.</p>
+<p>First, Core Projects should check if they are already supported, as <a href="https://github.com/Quansight-Labs/czi-scientific-python-mgmt/issues/18">many Scientific Python projects are now well-tested for usage and interoperability in a WebAssembly runtime provided by Pyodide and emscripten-forge</a>.</p>
 <p>Compatibility can be established by implementing a CI job that builds wheels for a project and runs the test suite with them in a WebAssembly environment provided by the Pyodide distribution: <a href="https://pyodide.org/en/stable/development/building-and-testing-packages.html">https://pyodide.org/en/stable/development/building-and-testing-packages.html</a>.</p>
 <p>We consider a project well-tested if there exists a CI job, which:</p>
 <ul>

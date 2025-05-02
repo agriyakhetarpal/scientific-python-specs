@@ -26,11 +26,11 @@ BEGIN:VEVENT
 DTSTART;TZID=/ics.py/2020.1/America/Los_Angeles:20240108T110000
 DURATION:PT1H
 SUMMARY:Sparse Array Work Session
-UID:eb906b28-ba05-4155-95ec-d775217a9078@eb90.org
+UID:4b183706-f0fa-436f-8ebb-0a1d03edf9cf@4b18.org
 DESCRIPTION:Meeting Link:  https://meet.google.com/jrp-qgcf-nxh\nMeeting 
  notes: https://hackmd.io/9UCjKdRUTEeoS8KdQNll-A
 URL:https://meet.google.com/jrp-qgcf-nxh
-DTSTAMP:20250502T133347Z
+DTSTAMP:20250502T135048Z
 RRULE:FREQ=DAILY;INTERVAL=14;UNTIL=20251231T000000
 EXDATE;TZID=/ics.py/2020.1/America/Los_Angeles:20240902T110000
 RDATE;TZID=/ics.py/2020.1/America/Los_Angeles:20240826T110000
