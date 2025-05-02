@@ -284,11 +284,10 @@ The emscripten-forge distribution does not have this limitation. Still, packages
 
 ### The maintenance of interactive documentation utilities
 
-After interactive documentation deployments are rolled out, a question arises about their maintenance. Here, we provide the following recommendations:
+After interactive documentation deployments are rolled out, common maintenance patterns include:
 
-- projects that use the Pyodide distribution host interactive documentation deployments on an experimental and best-effort basis, built for quick prototyping and pedagogical use cases for beginners and intermediate users, and
-- issues concerning interactive documentation rollouts be handled only for the "stable" and "development" versions of the documentation.
-<!-- should we recommend that? -->
+- hosting them on an experimental and best-effort basis, built for quick prototyping and pedagogical use cases for beginners and intermediate users, and
+- handling issues concerning these rollouts only for the "stable" and "development" versions of the documentation.
 
 The maintenance of these deployments has a couple of aspects, which we cover below:
 
