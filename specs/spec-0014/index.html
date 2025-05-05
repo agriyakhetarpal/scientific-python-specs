@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" data-colorscheme="auto" >
   <head>
-    <!-- Generated 2025-05-02 13:50:48 UTC -->
+    <!-- Generated 2025-05-05 15:07:15 UTC -->
     <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -337,10 +337,8 @@ intended use-cases, and pseudo-code illustrating its use.
 <p>Once interactive documentation has been configured and deployed, the <a href="#Updating-package-and-kernel-versions-for-Pyodide-powered-or-emscripten-forge-powered-websites">&ldquo;Updating package and kernel versions for Pyodide-powered or emscripten-forge-powered websites&rdquo;</a> section contains information on how to increment the packages&rsquo; and distribution/kernel&rsquo;s versions.</p>
 <p>An end-to-end example of the above steps is also available; see <a href="#an-end-to-end-example">the <code>jupyterlite-sphinx-demo</code> project</a>.</p>
 <h4 id="what-distribution-should-projects-choose-pyodide-or-emscripten-forge">What distribution should projects choose: Pyodide or emscripten-forge?<a class="headerlink" href="#what-distribution-should-projects-choose-pyodide-or-emscripten-forge" title="Link to this heading">#</a></h4>
-<!-- I have not had a better answer to this beyond "it depends" so I don't know how to end this section even though I have known to start it -->
-<p>There are a few differences between the two distributions in terms of runtimes and packaging, and the kernels, which are worth noting:</p>
+<p>There are a few differences between the two distributions in terms of how projects are packaged for them and the kernels that work with them, which are worth noting:</p>
 <ul>
-<li>Available runtimes: It is possible to use the emscripten-forge distribution only through the JupyterLite project, unlike Pyodide, which also supports Node.js and native browser-based JavaScript runtimes.</li>
 <li>ABI differences: the versions of Emscripten used across both projects are different, and therefore the ABI is, too</li>
 <li>Kernels: Pyodide must be used with the <code>jupyterlite-pyodide-kernel</code> project, while the emscripten-forge distribution is available through the Xeus kernel, with both being maintained by the JupyterLite contributors.
 <ul>
@@ -348,8 +346,67 @@ intended use-cases, and pseudo-code illustrating its use.
 </ul>
 </li>
 </ul>
-<p>See <a href="https://jupyterlite.readthedocs.io/en/stable/howto/configure/kernels.html#adding-a-python-kernel">the JupyterLite documentation on &ldquo;Adding a Python kernel&rdquo;</a> for more.</p>
 <p>Therefore, the choice of distribution depends on the project and its needs coming as a part of implementing its interactive documentation deployments. For example, if a project is already available in Pyodide, it may be easier to use that distribution and its kernel. However, if it is required to pre-install packages or use kernels for other languages beyond Python, the emscripten-forge distribution and the Xeus kernel loader would be a better choice.</p>
+<h4 id="what-distribution-should-projects-choose-pyodide-or-emscripten-forge-1">What distribution should projects choose: Pyodide or emscripten-forge?<a class="headerlink" href="#what-distribution-should-projects-choose-pyodide-or-emscripten-forge-1" title="Link to this heading">#</a></h4>
+<p>To help projects make an informed decision between the Pyodide and emscripten-forge distributions, we provide a comparison of their key features below that are relevant to interactive documentation deployments:</p>
+<table>
+  <thead>
+      <tr>
+          <th>Feature</th>
+          <th>Pyodide</th>
+          <th>emscripten-forge</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Package format</strong></td>
+          <td>Python wheels</td>
+          <td>conda packages</td>
+      </tr>
+      <tr>
+          <td><strong>ABI compatibility</strong></td>
+          <td>Uses specific Emscripten version and is updated often</td>
+          <td>Uses a different Emscripten version and is updated less often</td>
+      </tr>
+      <tr>
+          <td><strong>Kernel used in JupyterLite</strong></td>
+          <td><code>jupyterlite-pyodide-kernel</code></td>
+          <td>Xeus loader for the <code>xeus-python</code> kernel</td>
+      </tr>
+      <tr>
+          <td><strong>Dynamically installing packages in the browser</strong></td>
+          <td>Yes, via <code>%pip install</code> magics with <code>piplite</code>/<code>micropip</code></td>
+          <td>Not currently available (an in-browser package manager <a href="https://github.com/mamba-org/picomamba"><code>picomamba</code></a> may soon address this).</td>
+      </tr>
+      <tr>
+          <td><strong>Pre-installation</strong></td>
+          <td>Individual packages can be pre-specified but have to be installed in the browser</td>
+          <td>Uses an environment file to pre-install packages into the web environment</td>
+      </tr>
+      <tr>
+          <td><strong>Programming language support</strong></td>
+          <td>Python only</td>
+          <td>Multiple languages via Xeus kernels</td>
+      </tr>
+      <tr>
+          <td><strong>Package update frequency</strong></td>
+          <td>Packages are tied to Pyodide releases (changing in v0.28+)</td>
+          <td>More frequent updates</td>
+      </tr>
+  </tbody>
+</table>
+<p>The Pyodide distribution may be chosen if:</p>
+<ul>
+<li>the project is already available in the Pyodide distribution</li>
+<li>installing packages during runtime is required, say, for interactive examples that rely on data files or other packages (see <a href="#resolving-common-issues-with-web-requests-in-the-browser">&ldquo;Resolving common issues with web requests in the browser&rdquo;</a> below)</li>
+</ul>
+<p>The emscripten-forge distribution may be chosen if:</p>
+<ul>
+<li>support for programming languages beyond Python is required</li>
+<li>more frequent updates than Pyodide release cycles are required (see <a href="#the-lack-of-synchronisation-between-a-core-projects-documentation-version-and-the-version-of-the-available-binaries-pyodide-kernel-only">&ldquo;The lack of synchronisation between a Core Project’s documentation version and the version of the available binaries (Pyodide kernel only)&rdquo;</a> below)</li>
+<li>one needs more control over the pre-installed environment</li>
+</ul>
+<p>See <a href="https://jupyterlite.readthedocs.io/en/stable/howto/configure/kernels.html#adding-a-python-kernel">the JupyterLite documentation on &ldquo;Adding a Python kernel&rdquo;</a> for more.</p>
 <h3 id="runtime-considerations">Runtime considerations<a class="headerlink" href="#runtime-considerations" title="Link to this heading">#</a></h3>
 <p>During the process, we must discuss common aspects and scenarios that should be considered when enabling interactive documentation deployments.</p>
 <h4 id="webassembly-computation-is-serverless-and-runs-in-the-browser">WebAssembly computation is serverless and runs in the browser<a class="headerlink" href="#webassembly-computation-is-serverless-and-runs-in-the-browser" title="Link to this heading">#</a></h4>
