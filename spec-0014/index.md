@@ -227,15 +227,30 @@ An end-to-end example of the above steps is also available; see [the `jupyterlit
 
 #### What distribution should projects choose: Pyodide or emscripten-forge?
 
-There are a few differences between the two distributions in terms of how projects are packaged for them and the kernels that work with them, which are worth noting:
+To help projects make an informed decision between the Pyodide and emscripten-forge distributions, we provide a comparison of their key features below that are relevant to interactive documentation deployments:
 
-- ABI differences: the versions of Emscripten used across both projects are different, and therefore the ABI is, too
-- Kernels: Pyodide must be used with the `jupyterlite-pyodide-kernel` project, while the emscripten-forge distribution is available through the Xeus kernel, with both being maintained by the JupyterLite contributors.
-    - The key difference between both kernels is that the Pyodide kernel allows one to dynamically install packages with a `%pip install` magic through [`piplite`](https://jupyterlite.readthedocs.io/en/stable/howto/pyodide/packages.html#installing-packages-at-runtime) (a package that provides abstractions over `micropip`). Whereas, the Xeus kernel does not allow this at the moment as it lacks an in-browser package manager ([`picomamba`](https://github.com/mamba-org/picomamba) may soon address this). An environment file has to be used with the Xeus kernel, which pre-installs WASM packages when building the documentation.
+| Feature                                            | Pyodide                                                                          | emscripten-forge                                                                                                                     |
+| -------------------------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| **Package format**                                 | Python wheels                                                                    | conda packages                                                                                                                       |
+| **ABI compatibility**                              | Uses specific Emscripten version and is updated often                            | Uses a different Emscripten version and is updated less often                                                                        |
+| **Kernel used in JupyterLite**                     | `jupyterlite-pyodide-kernel`                                                     | Xeus loader for the `xeus-python` kernel                                                                                             |
+| **Dynamically installing packages in the browser** | Yes, via `%pip install` magics with `piplite`/`micropip`                         | Not currently available (an in-browser package manager [`picomamba`](https://github.com/mamba-org/picomamba) may soon address this). |
+| **Pre-installation**                               | Individual packages can be pre-specified but have to be installed in the browser | Uses an environment file to pre-install packages into the web environment                                                            |
+| **Programming language support**                   | Python only                                                                      | Multiple languages via Xeus kernels                                                                                                  |
+| **Package update frequency**                       | Packages are tied to Pyodide releases (changing in v0.28+)                       | More frequent updates                                                                                                                |
+
+The Pyodide distribution may be chosen if:
+
+- the project is already available in the Pyodide distribution
+- installing packages during runtime is required, say, for interactive examples that rely on data files or other packages (see ["Resolving common issues with web requests in the browser"](#resolving-common-issues-with-web-requests-in-the-browser) below)
+
+The emscripten-forge distribution may be chosen if:
+
+- support for programming languages beyond Python is required
+- more frequent updates than Pyodide release cycles are required (see ["The lack of synchronisation between a Core Project’s documentation version and the version of the available binaries (Pyodide kernel only)"](#the-lack-of-synchronisation-between-a-core-projects-documentation-version-and-the-version-of-the-available-binaries-pyodide-kernel-only) below)
+- one needs more control over the pre-installed environment
 
 See [the JupyterLite documentation on "Adding a Python kernel"](https://jupyterlite.readthedocs.io/en/stable/howto/configure/kernels.html#adding-a-python-kernel) for more.
-
-Therefore, the choice of distribution depends on the project and its needs coming as a part of implementing its interactive documentation deployments. For example, if a project is already available in Pyodide, it may be easier to use that distribution and its kernel. However, if it is required to pre-install packages or use kernels for other languages beyond Python, the emscripten-forge distribution and the Xeus kernel loader would be a better choice.
 
 ### Runtime considerations
 
