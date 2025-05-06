@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" data-colorscheme="auto" >
   <head>
-    <!-- Generated 2025-05-06 05:52:12 UTC -->
+    <!-- Generated 2025-05-06 12:04:08 UTC -->
     <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -420,8 +420,6 @@ intended use-cases, and pseudo-code illustrating its use.
 </ul>
 <p>The best way to address point (1) is to upgrade to as recent a version of Pyodide available via <code>jupyterlite-pyodide-kernel</code> as possible, and upgrade the version of the relevant Core Project(s), or assist the Pyodide maintainers in doing so, so that Pyodide releases can include as up-to-date package versions as possible.</p>
 <p>To address point (2), nightly Pyodide wheels for various packages are now being uploaded on <a href="https://anaconda.org/scientific-python-nightly-wheels">the Scientific Python Nightly Wheels channel on Anaconda.org</a>. They can be installed with <a href="https://jupyterlite.readthedocs.io/en/stable/howto/pyodide/packages.html#installing-packages-at-runtime"><code>piplite</code></a>. See <a href="../spec-0004/">&ldquo;SPEC 4 — Using and Creating Nightly Wheels&rdquo;</a> for more.</p>
-<!-- even though wheels are being uploaded and are being used for scikit-learn, there's no “nice” way to use them yet: see https://github.com/jupyterlite/pyodide-kernel/pull/158 and https://github.com/jupyterlite/pyodide-kernel/issues/166 -->
-<!-- PyPI/TestPyPI has also supported CORS headers for the case of pure Python packages but I don't know if it is necessary to include that point here. -->
 <p>It is also possible to bundle a wheel as a part of the documentation build process in CI; see <a href="https://github.com/scikit-image/scikit-image/pull/7644">https://github.com/scikit-image/scikit-image/pull/7644</a> for an example which configures the Pyodide kernel to load an extra wheel and add it to a local index that is available for Pyodide to install.</p>
 <p>The emscripten-forge distribution does not have this limitation. Still, packages there need to be continually updated, supported, and patched in the same way they need to be for inclusion in Pyodide. This is planning to change with the upcoming <a href="https://github.com/pyodide/pyodide/issues/4918">Pyodide version 0.28</a>, allowing the distribution of Pyodide’s packages outside of Pyodide&rsquo;s releases.</p>
 <h3 id="the-maintenance-of-interactive-documentation-utilities">The maintenance of interactive documentation utilities<a class="headerlink" href="#the-maintenance-of-interactive-documentation-utilities" title="Link to this heading">#</a></h3>
@@ -450,9 +448,6 @@ intended use-cases, and pseudo-code illustrating its use.
 <p>In this case, we recommend wrapping URLs to files within data registries with a CDN that acts as a CORS proxy server and adds CORS headers over such URLs. <a href="https://statically.io/">Statically</a> and <a href="https://raw.githack.com/">GitHack</a> are both reasonable free options with no limits on traffic, and they add CORS headers to the files they serve.</p>
 <p>For example, a URL like <code>https://raw.githubusercontent.com/scikit-image/scikit-image/main/skimage/data/chelsea.png</code> may be wrapped with Statically as <code>https://cdn.statically.io/gh/scikit-image/scikit-image/main/skimage/data/chelsea.png</code>.</p>
 <h2 id="background-and-additional-context">Background and additional context<a class="headerlink" href="#background-and-additional-context" title="Link to this heading">#</a></h2>
-<!-- this section will be linked to in applicable parts of the document, it’s just that HackMD doesn’t support doing this properly →
-
-<!-- this section can also be refined, happy to take more suggestions here -->
 <p>Emscripten, unlike glibc, does not provide a backwards-compatible ABI. There has been a recent effort to standardise support for it through a <code>manylinux</code>-like standard as a means towards uploading to PyPI through <a href="https://peps.python.org/pep-0776/">PEP 776 – Emscripten Support</a> (see also, previous discussion at <a href="https://github.com/pypi/warehouse/issues/10416)">https://github.com/pypi/warehouse/issues/10416)</a>. Emscripten has been a Tier III target platform for CPython (it was restored with the upcoming Python version 3.14). However, the lack of standardisation of a Pyodide ABI means that every package has to be rebuilt with newer versions of Emscripten with each corresponding update in Pyodide or emscripten-forge. This goal is in progress at <a href="https://github.com/pyodide/pyodide/issues/5580">https://github.com/pyodide/pyodide/issues/5580</a> and <a href="https://peps.python.org/pep-0783/">PEP 783 – Emscripten Packaging</a>.</p>
 <p>Usually, it is recommended to reach out to the Pyodide maintainers to see if it is necessary to include a package in Pyodide and attempt to add &ldquo;explicit&rdquo; support for it, especially with pure Python packages, as most of them work out of the box unless they support niche use cases or interact with components of the Python runtime or standard library that are not supported well (see <a href="#11-how-to-assess-compatibility-with-webassembly">&ldquo;How to assess compatibility with WebAssembly&rdquo;</a> for more). As Scientific Python projects are numerical in nature, they have usually worked well with or without patches by collaborators in the Pyodide/WASM ecosystem and with support from the recipe maintainers.</p>
 <h2 id="suggestions-on-other-documentation-tooling">Suggestions on other documentation tooling<a class="headerlink" href="#suggestions-on-other-documentation-tooling" title="Link to this heading">#</a></h2>
@@ -460,7 +455,7 @@ intended use-cases, and pseudo-code illustrating its use.
 <ol>
 <li><a href="https://www.mkdocs.org/">MkDocs</a> does not have a JupyterLite plugin that provides functionality equivalent to <code>jupyterlite-sphinx</code> at the time of writing. However, there are some ways through which interactive documentation deployments can be somewhat achieved:
 <ul>
-<li>Projects like <a href="https://github.com/samuelcolvin/mkdocs-run-code">https://github.com/samuelcolvin/mkdocs-run-code</a> and <a href="https://github.com/JeffersGlass/mkdocs-pyscript">https://github.com/JeffersGlass/mkdocs-pyscript</a> provide integrations to embed interactive components.</li>
+<li>Projects like <a href="https://github.com/samuelcolvin/mkdocs-run-code">https://github.com/samuelcolvin/mkdocs-run-code</a>, <a href="https://github.com/JeffersGlass/mkdocs-pyscript">https://github.com/JeffersGlass/mkdocs-pyscript</a>, and <a href="https://gitlab.com/frederic-zinelli/pyodide-mkdocs-theme">https://gitlab.com/frederic-zinelli/pyodide-mkdocs-theme</a> provide integrations to embed interactive components.</li>
 <li>As a JupyterLite site contains static assets and HTML files, it can be bundled and served alongside an MkDocs-based documentation website, with both separate from each other.</li>
 </ul>
 </li>
