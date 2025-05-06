@@ -333,7 +333,7 @@ Usually, it is recommended to reach out to the Pyodide maintainers to see if it 
 While this SPEC provides recommendations on integration with Sphinx, we also offer brief suggestions for other documentation development tooling as well:
 
 1. [MkDocs](https://www.mkdocs.org/) does not have a JupyterLite plugin that provides functionality equivalent to `jupyterlite-sphinx` at the time of writing. However, there are some ways through which interactive documentation deployments can be somewhat achieved:
-   - Projects like https://github.com/samuelcolvin/mkdocs-run-code and https://github.com/JeffersGlass/mkdocs-pyscript provide integrations to embed interactive components.
+   - Projects like https://github.com/samuelcolvin/mkdocs-run-code, https://github.com/JeffersGlass/mkdocs-pyscript, and https://gitlab.com/frederic-zinelli/pyodide-mkdocs-theme provide integrations to embed interactive components.
    - As a JupyterLite site contains static assets and HTML files, it can be bundled and served alongside an MkDocs-based documentation website, with both separate from each other.
 2. [The MyST-JS project](https://js.mystmd.org/) also provides configuration to integrate with Pyodide and JupyterLite: https://mystmd.org/guide/integrating-jupyter#id-case-using-pyodide-jupyterlite
 3. [The Quarto technical publishing system](https://quarto.org/) provides [Quarto Live](https://r-wasm.github.io/quarto-live/), which enables interactive code blocks for Quarto documents via the webR and Pyodide runtimes to run R and Python code in the browser.
@@ -343,7 +343,6 @@ While this SPEC provides recommendations on integration with Sphinx, we also off
 Work on investigating best practices for interactive documentation for Scientific Python projects, improving tooling for interactive documentation, and developing and documenting workflows was supported by the [CZI grant 2022-316713](czi-scientific-python-grant-2022).
 
 [czi-scientific-python-grant-2022]: https://blog.scientific-python.org/scientific-python/2022-czi-grant/
-
 
 ## Notes
 
