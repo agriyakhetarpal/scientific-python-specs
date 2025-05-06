@@ -284,10 +284,6 @@ The best way to address point (1) is to upgrade to as recent a version of Pyodid
 
 To address point (2), nightly Pyodide wheels for various packages are now being uploaded on [the Scientific Python Nightly Wheels channel on Anaconda.org](https://anaconda.org/scientific-python-nightly-wheels). They can be installed with [`piplite`](https://jupyterlite.readthedocs.io/en/stable/howto/pyodide/packages.html#installing-packages-at-runtime). See ["SPEC 4 — Using and Creating Nightly Wheels"](../spec-0004/) for more.
 
-<!-- even though wheels are being uploaded and are being used for scikit-learn, there's no “nice” way to use them yet: see https://github.com/jupyterlite/pyodide-kernel/pull/158 and https://github.com/jupyterlite/pyodide-kernel/issues/166 -->
-
-<!-- PyPI/TestPyPI has also supported CORS headers for the case of pure Python packages but I don't know if it is necessary to include that point here. -->
-
 It is also possible to bundle a wheel as a part of the documentation build process in CI; see https://github.com/scikit-image/scikit-image/pull/7644 for an example which configures the Pyodide kernel to load an extra wheel and add it to a local index that is available for Pyodide to install.
 
 The emscripten-forge distribution does not have this limitation. Still, packages there need to be continually updated, supported, and patched in the same way they need to be for inclusion in Pyodide. This is planning to change with the upcoming [Pyodide version 0.28](https://github.com/pyodide/pyodide/issues/4918), allowing the distribution of Pyodide’s packages outside of Pyodide's releases.
@@ -327,10 +323,6 @@ In this case, we recommend wrapping URLs to files within data registries with a 
 For example, a URL like `https://raw.githubusercontent.com/scikit-image/scikit-image/main/skimage/data/chelsea.png` may be wrapped with Statically as `https://cdn.statically.io/gh/scikit-image/scikit-image/main/skimage/data/chelsea.png`.
 
 ## Background and additional context
-
-<!-- this section will be linked to in applicable parts of the document, it’s just that HackMD doesn’t support doing this properly →
-
-<!-- this section can also be refined, happy to take more suggestions here -->
 
 Emscripten, unlike glibc, does not provide a backwards-compatible ABI. There has been a recent effort to standardise support for it through a `manylinux`-like standard as a means towards uploading to PyPI through [PEP 776 – Emscripten Support](https://peps.python.org/pep-0776/) (see also, previous discussion at https://github.com/pypi/warehouse/issues/10416). Emscripten has been a Tier III target platform for CPython (it was restored with the upcoming Python version 3.14). However, the lack of standardisation of a Pyodide ABI means that every package has to be rebuilt with newer versions of Emscripten with each corresponding update in Pyodide or emscripten-forge. This goal is in progress at https://github.com/pyodide/pyodide/issues/5580 and [PEP 783 – Emscripten Packaging](https://peps.python.org/pep-0783/).
 
