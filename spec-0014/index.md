@@ -186,7 +186,7 @@ Additionally, during this process, this SPEC recommends that [project contacts](
 
 #### 3. Enabling interactive documentation deployments
 
-Once a project's Webassembly binaries and dependencies are available through Pyodide and/or emscripten-forge, the project may start using them in interactive documentation deployments.
+Once a project's WebAssembly binaries and dependencies are available through Pyodide and/or emscripten-forge, the project may start using them in interactive documentation deployments.
 
 We recommend [the JupyterLite project](https://jupyterlite.readthedocs.io/en/stable/) due to its multiple features and surrounding tooling to ease such deployments.
 
