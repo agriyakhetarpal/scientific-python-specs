@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" data-colorscheme="auto" >
   <head>
-    <!-- Generated 2025-05-06 12:04:08 UTC -->
+    <!-- Generated 2025-05-07 15:45:28 UTC -->
     <meta name="description" content="Community developed and owned ecosystem for scientific computing" />
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -300,7 +300,7 @@ intended use-cases, and pseudo-code illustrating its use.
 <p>After establishing WebAssembly compatibility, the next step is to make binaries available through the appropriate pathways; i.e., through the Pyodide distribution or the emscripten-forge channel.</p>
 <p>Pyodide provides an entire distribution of packages along with its runtime through the jsDelivr CDN as its package index. Packages are bundled as WebAssembly-tagged wheels, which can be installed with <a href="https://github.com/pyodide/micropip/"><code>micropip</code></a>, Pyodide&rsquo;s in-browser package manager. Similarly, <a href="https://emscripten-forge.org/">the <code>emscripten-forge</code> channel</a> also has a growing collection of packages that support the <code>wasm32-unknown-emscripten</code> target, often mirroring Pyodide in terms of the collection of the packages available and their versions. The distinction is that emscripten-forge uses <code>conda</code>-based packaging standards and file formats, while Pyodide builds on those for PyPI (designed around Python wheels).</p>
 <p>We will discuss further the differences between the Pyodide and <code>emscripten-forge</code> distributions when we suggest how to choose between them later in this document.</p>
-<p>Once a project and its dependencies are compatible with WebAssembly as noted above, but may not yet be available via Pyodide or emscripten-forge, it is possible to add them to these distributions. This process is described in their respective documentation websites:</p>
+<p>For a project not yet available via Pyodide or emscripten-forge, once it and its dependencies are established as compatible with WebAssembly (as discussed above), it is relatively straightforward to add it to one or both of these distributions. The process is described in their respective documentation websites:</p>
 <ol>
 <li><a href="https://pyodide.org/en/stable/development/new-packages.html">https://pyodide.org/en/stable/development/new-packages.html</a></li>
 <li><a href="https://emscripten-forge.org/development/adding_packages/">https://emscripten-forge.org/development/adding_packages/</a></li>
