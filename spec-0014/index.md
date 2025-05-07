@@ -173,7 +173,7 @@ Pyodide provides an entire distribution of packages along with its runtime throu
 
 We will discuss further the differences between the Pyodide and `emscripten-forge` distributions when we suggest how to choose between them later in this document.
 
-Once a project and its dependencies are compatible with WebAssembly as noted above, but may not yet be available via Pyodide or emscripten-forge, it is possible to add them to these distributions. This process is described in their respective documentation websites:
+For a project not yet available via Pyodide or emscripten-forge, once it and its dependencies are established as compatible with WebAssembly (as discussed above), it is relatively straightforward to add it to one or both of these distributions. The process is described in their respective documentation websites:
 
 1. https://pyodide.org/en/stable/development/new-packages.html
 2. https://emscripten-forge.org/development/adding_packages/
